@@ -4,7 +4,7 @@
 
 Animation::Animation(rectangles* animatedRect)
 {
-	this->window = window;
+
 	this->animatedObject = animatedRect;
 
 	this->canAnimate = new bool(true);
@@ -32,13 +32,31 @@ void Animation::disableAnimating()
 }
 
 void Animation::enableAnimating()
-{
-	delete this->canAnimate;
+{	
 	this->canAnimate = new bool(true);
 }
 
 void Animation::animate()
 {
+	std::cout << "X of rectangle " << this->animatedObject->destination->x << std::endl;
+	std::cout << "Y of rectangle " << this->animatedObject->destination->y << std::endl;
+
+
+	
+	if (this->canAnimate) {
+		if (this->animatedObject->destination->x <= 800) {
+			//this->animatedObject->destination->x += 1;
+			this->animatedObject->source->x += 1;
+		}
+		else {
+			//this->animatedObject->destination->x -= 1;
+			this->animatedObject->source->x -= 1;
+		}
+	
+		
+	}
+
+	
 
 	
 	

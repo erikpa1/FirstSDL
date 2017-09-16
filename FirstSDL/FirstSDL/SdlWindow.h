@@ -52,8 +52,8 @@ private:
 	SDL_Rect* rectSource;
 	SDL_Rect* rectDestination;
 
-	int windowWidth;
-	int windowHeight;
+	int* windowWidth;
+	int* windowHeight;
 	
 	
 

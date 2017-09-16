@@ -14,10 +14,10 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 	this->actualColor.g = 0;
 	this->actualColor.a = 255;
 
-	/*
+	
 	this->windowWidth = new int(xSize);
 	this->windowHeight = new int(ySize);
-	*/
+	
 
 
 	if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
@@ -44,8 +44,8 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 
 	this->basicRectangle.destination->x = 0;
 	this->basicRectangle.destination->y = 0;
-	this->basicRectangle.destination->w = 100;
-	this->basicRectangle.destination->h = 100;
+	this->basicRectangle.destination->w = 256;
+	this->basicRectangle.destination->h = 256;
 
 
 	SDL_FreeSurface(this->surf);
@@ -63,7 +63,7 @@ void SdlWindow::render()
 	
 	SDL_SetRenderDrawColor(this->renderer, this->actualColor.r, this->actualColor.b, this->actualColor.g, this->actualColor.a);
 	SDL_RenderClear(this->renderer);
-	SDL_RenderCopy(this->renderer, this->texture, this->rectSource, this->rectSource);
+	SDL_RenderCopy(this->renderer, this->texture, this->basicRectangle.destination, this->basicRectangle.source);
 	SDL_RenderPresent(this->renderer);
 	std::cout << "Hallo" << std::endl;
 
@@ -73,11 +73,9 @@ void SdlWindow::render()
 void SdlWindow::cleanup()
 {
 
-	
 	SDL_DestroyWindow(this->window);
 	SDL_DestroyRenderer(this->renderer);
 	SDL_Quit();
-
 
 
 }
@@ -102,10 +100,8 @@ void SdlWindow::changeBackGroundColor(int r, int b, int g, int a)
 
 void SdlWindow::update() 
 {
-
-	std::cout << "x: " << this->rectSource->x << " y: " << this->rectSource->y << std::endl;
-	std::cout << "Window width: " << this->getWindowWidth() << " and height " << this->getWindowHeight() << std::endl;
-	
+	std::cout << "x: " << this->basicRectangle.destination->x << " y: " << this->basicRectangle.destination->y << std::endl;
+	std::cout << "Window width: " << *this->windowWidth << " and height " << *this->windowHeight << std::endl;	
 
 }
 
@@ -126,21 +122,22 @@ rectangles* SdlWindow::getRectangle()
 }
 
 int* SdlWindow::getWindowWidth() {
-	/*
-	SDL_GetWindowSize(this->window, &this->windowWidth, NULL);	
-	return &this->windowWidth;
-	*/
-	return new int(20);
+	
+	SDL_GetWindowSize(this->window, this->windowWidth, NULL);	
+	return this->windowWidth;
+	
+	//return new int(20);
 	
 }
 
 int* SdlWindow::getWindowHeight() {
 		
-	/*
-	SDL_GetWindowSize(this->window, NULL, &this->windowHeight);
-	*/
-	return new int(20);
+	
+	SDL_GetWindowSize(this->window, NULL, this->windowHeight);
+	return this->windowHeight;
 
+	
+	
 }
 
 

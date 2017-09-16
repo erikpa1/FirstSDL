@@ -20,11 +20,11 @@ void LevelController::run()
 	
 	while (this->mainWindow->getRunningState()) {
 		
-		//this->animation->animate();
+		this->animation->animate();
 		this->handleEvent();
 		this->mainWindow->update();
 		this->mainWindow->render();
-		SDL_Delay(100);
+		SDL_Delay(1000);
 				
 	}
 
