@@ -1,2 +1,3 @@
 ﻿  SdlWindow.cpp
-LINK : fatal error LNK1168: cannot open C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe for writing
+  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe
+  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.pdb (Partial PDB)

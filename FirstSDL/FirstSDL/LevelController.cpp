@@ -35,21 +35,24 @@ void LevelController::run()
 
 void LevelController::handleEvent()
 {
-
-	SDL_Event& localEvent = this->mainWindow->getEvent();
-
-	switch (localEvent.type) {
-
+	SDL_PollEvent(&this->mainWindow->getEvent());
+	std::cout << "Nastal event: " << this->mainWindow->getEvent().type << std::endl;
+	switch (this->mainWindow->getEvent().type) {
 
 	case SDL_QUIT:
 		this->mainWindow->stopWindowRun();
-		std::cout << "Nastal event: " << localEvent.type << std::endl;
+		
+		break;
+	case SDL_KEYDOWN:
+		this->animation->sendDown();
 		break;
 
 	default:
 		break;
 
 	}
+
+	this->animation->sendDown();
 	
 }
 

@@ -41,10 +41,11 @@ void Animation::animate()
 	std::cout << "X of rectangle " << this->animatedObject->destination->x << std::endl;
 	std::cout << "Y of rectangle " << this->animatedObject->destination->y << std::endl;
 
+	
 
 	
 	if (this->canAnimate) {
-		if (this->animatedObject->destination->x <= 800) {
+		if (this->animatedObject->source->x <= 800) {
 			//this->animatedObject->destination->x += 1;
 			this->animatedObject->source->x += 1;
 		}
@@ -52,13 +53,10 @@ void Animation::animate()
 			//this->animatedObject->destination->x -= 1;
 			this->animatedObject->source->x -= 1;
 		}
-	
-		
 	}
 
-	
+}
 
-	
-	
-
+void Animation::sendDown() {
+	this->animatedObject->source->y += 10;
 }

@@ -13,6 +13,7 @@ public:
 	void animate();
 	void disableAnimating();
 	void enableAnimating();
+	void sendDown();
 
 private:
 

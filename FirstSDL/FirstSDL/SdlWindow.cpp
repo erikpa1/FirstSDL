@@ -13,24 +13,18 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 	this->actualColor.b = 0;
 	this->actualColor.g = 0;
 	this->actualColor.a = 255;
-
 	
 	this->windowWidth = new int(xSize);
 	this->windowHeight = new int(ySize);
-	
 
 
 	if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
 		std::cout << "Error" << std::endl;
 	}
 
-	this->window = SDL_CreateWindow(title, 500, 500, xSize, ySize, SDL_WINDOW_RESIZABLE);
+	this->window = SDL_CreateWindow(title, xSize, ySize, xSize, ySize, SDL_WINDOW_RESIZABLE);
 	this->renderer = SDL_CreateRenderer(window, -1, 0);
 	
-	SDL_SetRenderDrawColor(renderer, this->actualColor.r, this->actualColor.b, this->actualColor.g, this->actualColor.a);
-	SDL_RenderClear(renderer);
-	SDL_RenderPresent(renderer);
-
 	this->event = new SDL_Event();
 	this->surf = SDL_LoadBMP("SourceFiles/icon.bmp");
 	this->texture = SDL_CreateTextureFromSurface(this->renderer, this->surf);
@@ -38,8 +32,8 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 
 	this->basicRectangle.source->x = 0;
 	this->basicRectangle.source->y = 0;
-	this->basicRectangle.source->w = 100;
-	this->basicRectangle.source->h = 100;
+	this->basicRectangle.source->w = 256;
+	this->basicRectangle.source->h = 256;
 	
 
 	this->basicRectangle.destination->x = 0;
@@ -47,12 +41,10 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 	this->basicRectangle.destination->w = 256;
 	this->basicRectangle.destination->h = 256;
 
-
 	SDL_FreeSurface(this->surf);
 	SDL_QueryTexture(this->texture, NULL, NULL, &this->basicRectangle.source->w, &this->basicRectangle.source->h);
 	
 }
-
 
 SdlWindow::~SdlWindow()
 {
@@ -65,6 +57,9 @@ void SdlWindow::render()
 	SDL_RenderClear(this->renderer);
 	SDL_RenderCopy(this->renderer, this->texture, this->basicRectangle.destination, this->basicRectangle.source);
 	SDL_RenderPresent(this->renderer);
+	
+
+
 	std::cout << "Hallo" << std::endl;
 
 }
@@ -112,7 +107,20 @@ bool SdlWindow::getRunningState()
 
 SDL_Event SdlWindow::getEvent()
 {
+	while (SDL_PollEvent(this->event)) {
+	
+		switch (this->event->type) {
+		case SDL_KEYDOWN:
+			std::cout << "Ahoj" << std::endl;
+			this->basicRectangle.source->x += 10;
+			break;
 
+		default:
+			break;
+
+		}
+
+	}
 	return *this->event;
 }
 
