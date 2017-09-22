@@ -1,11 +1,14 @@
 #include "LevelController.h"
 
 
+
 LevelController::LevelController()
 {
 
-	this->mainWindow = new SdlWindow("SDL first", 800, 600);
-	this->animation = new Animation(this->mainWindow->getRectangle());
+	this->mainWindow = new SdlWindow("SDL first", 900, 700);	
+	this->animation = new TetrisAnimation(this->mainWindow->getRectangle(), 10);
+	
+	
 	
 }
 
@@ -17,14 +20,13 @@ LevelController::~LevelController()
 void LevelController::run()
 {
 	
-	
 	while (this->mainWindow->getRunningState()) {
 		
-		this->animation->animate();
 		this->handleEvent();
+		this->animation->animate();
 		this->mainWindow->update();
 		this->mainWindow->render();
-		SDL_Delay(1000);
+		SDL_Delay(100);
 				
 	}
 
@@ -35,28 +37,31 @@ void LevelController::run()
 
 void LevelController::handleEvent()
 {
-	SDL_PollEvent(&this->mainWindow->getEvent());
-	std::cout << "Nastal event: " << this->mainWindow->getEvent().type << std::endl;
-	switch (this->mainWindow->getEvent().type) {
-
-	case SDL_QUIT:
-		this->mainWindow->stopWindowRun();
-		
-		break;
-	case SDL_KEYDOWN:
-		this->animation->sendDown();
-		break;
-
-	default:
-		break;
-
-	}
-
-	this->animation->sendDown();
 	
+	while (SDL_PollEvent(&this->mainWindow->getEvent())) {
+
+		switch (this->mainWindow->getEvent().type) {	
+
+			case SDL_QUIT:
+				this->mainWindow->stopWindowRun();
+				std::cout << "Nastal event: " << this->mainWindow->getEvent().type << std::endl;
+				this->mainWindow->stopWindowRun();
+				break;
+			case SDL_KEYDOWN:
+				
+				break;
+
+			default:
+				break;
+
+			}
+
+
+		}
+
+
+
 }
-
-
 
 
 

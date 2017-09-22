@@ -9,19 +9,37 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Source Files\Animations">
+      <UniqueIdentifier>{aeed4b3a-ba22-42f5-bc4a-7590d4276f29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{94a65b6f-798c-420f-ac1d-40a91da8860a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainWindow">
+      <UniqueIdentifier>{b38c90dd-e644-44c4-9cb3-05d652a9445c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ManagementOfApplication">
+      <UniqueIdentifier>{9d962cef-a940-4906-8b9f-aaa8c21bc2fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SdlWindow.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\Animations</Filter>
     </ClCompile>
     <ClCompile Include="LevelController.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ManagementOfApplication</Filter>
     </ClCompile>
-    <ClCompile Include="Animation.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SdlWindow.cpp">
+      <Filter>Source Files\MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisAnimation.cpp">
+      <Filter>Source Files\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="GoniometricAnimation.cpp">
+      <Filter>Source Files\Animations</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +56,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GoniometricAnimation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

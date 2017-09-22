@@ -5,28 +5,22 @@
 
 class Animation
 {
+	
 public:
-	Animation(rectangles* animatedRectangles);
+
+	Animation(rectangles* animatedRectangles, int animationSpeed);
 	~Animation();
+	bool* canAnimate;
 
-
-	void animate();
+	virtual void animate() = 0;
 	void disableAnimating();
 	void enableAnimating();
 	void sendDown();
 
-private:
-
-	bool* goingRight;
-	bool* goingLeft;
-	bool* goingUp;
-	bool* goingDown;
-
+	int* speedOfAnimation;
 	rectangles* animatedObject;
 
-	SdlWindow* window;
-
-	bool* canAnimate;
+	
 
 };
 

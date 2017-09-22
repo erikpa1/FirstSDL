@@ -2,16 +2,12 @@
 
 
 
-Animation::Animation(rectangles* animatedRect)
+Animation::Animation(rectangles* animatedRect, int animationSpeed)
 {
 
 	this->animatedObject = animatedRect;
+	this->speedOfAnimation = new int(animationSpeed);
 
-	this->canAnimate = new bool(true);
-	this->goingDown = new bool(true);
-	this->goingUp = new bool(false);
-	this->goingRight = new bool(true);
-	this->goingLeft = new bool(false);
 
 }
 
@@ -19,44 +15,21 @@ Animation::Animation(rectangles* animatedRect)
 Animation::~Animation()
 {
 
-	delete this->goingDown;
-	delete this->goingUp;
-	delete this->goingRight;
-	delete this->goingLeft;
+
 }
 
 void Animation::disableAnimating()
 {
 	delete this->canAnimate;
-	this->canAnimate = new bool(false);
+	this->canAnimate = new bool(true);
+	
 }
 
 void Animation::enableAnimating()
 {	
+	delete this->canAnimate;
 	this->canAnimate = new bool(true);
 }
 
-void Animation::animate()
-{
-	std::cout << "X of rectangle " << this->animatedObject->destination->x << std::endl;
-	std::cout << "Y of rectangle " << this->animatedObject->destination->y << std::endl;
 
-	
 
-	
-	if (this->canAnimate) {
-		if (this->animatedObject->source->x <= 800) {
-			//this->animatedObject->destination->x += 1;
-			this->animatedObject->source->x += 1;
-		}
-		else {
-			//this->animatedObject->destination->x -= 1;
-			this->animatedObject->source->x -= 1;
-		}
-	}
-
-}
-
-void Animation::sendDown() {
-	this->animatedObject->source->y += 10;
-}

@@ -127,16 +127,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="GoniometricAnimation.cpp" />
     <ClCompile Include="LevelController.cpp" />
     <ClCompile Include="SdlWindow.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="TetrisAnimation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="GoniometricAnimation.h" />
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SdlWindow.h" />
     <ClInclude Include="structureDefinition.h" />
+    <ClInclude Include="TetrisAnimation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

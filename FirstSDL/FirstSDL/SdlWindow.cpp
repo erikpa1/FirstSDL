@@ -106,21 +106,7 @@ bool SdlWindow::getRunningState()
 }
 
 SDL_Event SdlWindow::getEvent()
-{
-	while (SDL_PollEvent(this->event)) {
-	
-		switch (this->event->type) {
-		case SDL_KEYDOWN:
-			std::cout << "Ahoj" << std::endl;
-			this->basicRectangle.source->x += 10;
-			break;
-
-		default:
-			break;
-
-		}
-
-	}
+{		
 	return *this->event;
 }
 
@@ -134,17 +120,14 @@ int* SdlWindow::getWindowWidth() {
 	SDL_GetWindowSize(this->window, this->windowWidth, NULL);	
 	return this->windowWidth;
 	
-	//return new int(20);
 	
 }
 
 int* SdlWindow::getWindowHeight() {
-		
 	
 	SDL_GetWindowSize(this->window, NULL, this->windowHeight);
 	return this->windowHeight;
 
-	
 	
 }
 

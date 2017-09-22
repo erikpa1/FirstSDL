@@ -2,6 +2,7 @@
 
 #include "SDLWindow.h"
 #include "Animation.h"
+#include "TetrisAnimation.h"
 #include <SDL.h>
 #include <SDL_main.h>
 
@@ -19,6 +20,7 @@ public:
 private:
 
 	SdlWindow* mainWindow;
+	//Animation* animation;
 	Animation* animation;
 
 	void handleEvent();
