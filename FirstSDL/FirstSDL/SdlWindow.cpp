@@ -40,7 +40,7 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 	this->basicRectangle.destination->y = 0;
 	this->basicRectangle.destination->w = 256;
 	this->basicRectangle.destination->h = 256;
-
+	
 	SDL_FreeSurface(this->surf);
 	SDL_QueryTexture(this->texture, NULL, NULL, &this->basicRectangle.source->w, &this->basicRectangle.source->h);
 	

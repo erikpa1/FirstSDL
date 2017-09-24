@@ -130,7 +130,9 @@
     <ClCompile Include="GoniometricAnimation.cpp" />
     <ClCompile Include="LevelController.cpp" />
     <ClCompile Include="SdlWindow.cpp" />
+    <ClCompile Include="SinCosAnimation.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="TangCotgAnimation.cpp" />
     <ClCompile Include="TetrisAnimation.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,7 +141,9 @@
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SdlWindow.h" />
+    <ClInclude Include="SinCosAnimation.h" />
     <ClInclude Include="structureDefinition.h" />
+    <ClInclude Include="TangCotgAnimation.h" />
     <ClInclude Include="TetrisAnimation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

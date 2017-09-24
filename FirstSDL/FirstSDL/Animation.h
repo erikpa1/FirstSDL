@@ -5,14 +5,19 @@
 
 class Animation
 {
-	
+
 public:
 
 	Animation(rectangles* animatedRectangles, int animationSpeed);
 	~Animation();
+	virtual void animate() = 0;
+	
+protected:
+
+	
 	bool* canAnimate;
 
-	virtual void animate() = 0;
+	
 	void disableAnimating();
 	void enableAnimating();
 	void sendDown();

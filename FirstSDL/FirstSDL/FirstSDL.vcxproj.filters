@@ -23,9 +23,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Animation.cpp">
       <Filter>Source Files\Animations</Filter>
     </ClCompile>
@@ -39,6 +36,15 @@
       <Filter>Source Files\Animations</Filter>
     </ClCompile>
     <ClCompile Include="GoniometricAnimation.cpp">
+      <Filter>Source Files\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="SinCosAnimation.cpp">
+      <Filter>Source Files\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="TangCotgAnimation.cpp">
       <Filter>Source Files\Animations</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,6 +68,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GoniometricAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SinCosAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TangCotgAnimation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
