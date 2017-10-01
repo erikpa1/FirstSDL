@@ -113,18 +113,23 @@ void TetrisAnimation::animate()
 		if (*this->goingDown) {
 
 			if (this->animatedObject->source->y >= 600) {
-
+				delete this->goingDown;
 				this->goingDown = new bool(false);
+				delete this->goingUp;
 				this->goingUp = new bool(true);
 				
 				int i = rand() % 2;
 				switch (i) {
 				case 0:
+					delete this->goingRight;
 					this->goingRight = new bool(true);
+					delete this->goingLeft;
 					this->goingLeft = new bool(false);
 					break;
 				case 1:
+					delete this->goingRight;
 					this->goingRight = new bool(false);
+					delete this->goingLeft;
 					this->goingLeft = new bool(true);
 					break;
 				}
@@ -144,17 +149,23 @@ void TetrisAnimation::animate()
 
 			if (this->animatedObject->source->y <= 0) {
 
+				delete this->goingDown;
 				this->goingDown = new bool(true);
+				delete this->goingUp;
 				this->goingUp = new bool(false);
 
 				int i = rand() % 2;
 				switch (i) {
 				case 0:
+					delete this->goingRight;
 					this->goingRight = new bool(true);
+					delete this->goingLeft;
 					this->goingLeft = new bool(false);
 					break;
 				case 1:
+					delete this->goingRight;
 					this->goingRight = new bool(false);
+					delete this->goingLeft;
 					this->goingLeft = new bool(true);
 					break;
 				}

@@ -1,13 +1,5 @@
-﻿  BasicItem.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  TetrisAnimation.cpp
-  TangCotgAnimation.cpp
-  Source.cpp
-  SinCosAnimation.cpp
-  SdlWindow.cpp
-  LevelController.cpp
-  GoniometricAnimation.cpp
-  Animation.cpp
-  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe
-  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.pdb (Partial PDB)
+﻿  TetrisAnimation.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\basicitem.h(25): error C2061: syntax error: identifier 'Animation'
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\basicitem.h(33): error C2143: syntax error: missing ';' before '*'
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\basicitem.h(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\basicitem.h(33): error C2238: unexpected token(s) preceding ';'

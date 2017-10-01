@@ -7,14 +7,13 @@ LevelController::LevelController()
 
 	this->mainWindow = new SdlWindow("SDL first", 900, 700);
 
-	/*
+	
 	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
 	Animation* anim = new TetrisAnimation(item->getRectangles(), 1);
-	item->addSetAnimation(anim);
-
+	item->addAnimation(anim);
 	this->mainWindow->addAnimableObject(*item);
 
-	*/
+	
 }
 
 
@@ -70,7 +69,7 @@ void LevelController::handleEvent()
 
 				this->createNewObject();
 				std::cout << "KeyDownPressed pressed" << std::endl;
-				this->createNewObject();
+				
 
 				break;
 
@@ -96,11 +95,11 @@ void LevelController::animationChanger()
 
 void LevelController::createNewObject()
 {
-/*
+
 	BasicItem* newItem = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
-	newItem->addSetAnimation(new SinCosAnimation(newItem->getRectangles(), 1, 10, 20, SINUS));
+	newItem->addAnimation(new SinCosAnimation(newItem->getRectangles(), 1, 10, 20, SINUS));
 	this->mainWindow->addAnimableObject(*newItem);
-*/
+
 }
 
 

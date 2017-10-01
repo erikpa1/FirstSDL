@@ -28,7 +28,7 @@ public:
 	void cleanup();
 	void stopWindowRun();
 	void update();
-	//void addAnimableObject(BasicItem item);
+	void addAnimableObject(BasicItem item);
 
 	//backgroud of the program
 	void changeBackGroundColor(int r, int b, int g, int a);
@@ -50,7 +50,7 @@ private:
 
 	bool isRunning;
 
-	//vector<BasicItem>* animableObjects;
+	vector<BasicItem>* animableObjects;
 
 	colorVector actualColor;
 	rectangles basicRectangle;

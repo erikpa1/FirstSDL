@@ -24,7 +24,7 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 
 	this->window = SDL_CreateWindow(title, xSize, ySize, xSize, ySize, SDL_WINDOW_RESIZABLE);
 	this->renderer = SDL_CreateRenderer(window, -1, 0);
-	//this->animableObjects = new std::vector<BasicItem>();
+	this->animableObjects = new std::vector<BasicItem>();
 
 	
 }
@@ -39,13 +39,13 @@ void SdlWindow::render()
 	SDL_SetRenderDrawColor(this->renderer, this->actualColor.r, this->actualColor.b, this->actualColor.g, this->actualColor.a);
 	SDL_RenderClear(this->renderer);
 
-	/*
+	
 	if (!this->animableObjects->empty()) {
 		for (signed int i = 0; i < this->animableObjects->size(); i++) {
 			this->animableObjects->at(i).draw();
 		}
 	}
-	*/
+	
 	SDL_RenderPresent(this->renderer);
 	
 
@@ -122,11 +122,11 @@ SDL_Renderer* SdlWindow::getRenderer()
 	return this->renderer;
 		
 }
-/*
+
 void SdlWindow::addAnimableObject(BasicItem item)
 {
 	this->animableObjects->push_back(item);
 	
 }
-*/
+
 
