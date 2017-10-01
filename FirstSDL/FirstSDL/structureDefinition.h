@@ -14,6 +14,6 @@ struct rectangles {
 	SDL_Rect* destination = new SDL_Rect();
 };
 
-enum gioniometricAnimationTypes {
+enum goniometricAnimationTypes {
 	SINUS, COSINUS, TANGENS, COTANGES
 };

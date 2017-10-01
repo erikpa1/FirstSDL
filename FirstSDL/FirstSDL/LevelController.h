@@ -10,6 +10,8 @@
 #include "SinCosAnimation.h"
 #include "TangCotgAnimation.h"
 
+#include "BasicItem.h"
+
 #include <SDL.h>
 #include <SDL_main.h>
 
@@ -27,10 +29,11 @@ public:
 private:
 
 	SdlWindow* mainWindow;
-	Animation* animation;
 
 	void handleEvent();
 	void animationChanger();
+	void createNewObject();
+
 	
 
 };

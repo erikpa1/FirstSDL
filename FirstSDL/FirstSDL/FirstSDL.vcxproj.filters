@@ -21,6 +21,9 @@
     <Filter Include="Source Files\ManagementOfApplication">
       <UniqueIdentifier>{9d962cef-a940-4906-8b9f-aaa8c21bc2fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\RenderableObject">
+      <UniqueIdentifier>{93d9f726-930b-4ba5-9bab-fed1e17b5773}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -46,6 +49,9 @@
     </ClCompile>
     <ClCompile Include="TangCotgAnimation.cpp">
       <Filter>Source Files\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicItem.cpp">
+      <Filter>Source Files\RenderableObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +80,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TangCotgAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicItem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

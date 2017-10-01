@@ -20,7 +20,7 @@ protected:
 	
 	void disableAnimating();
 	void enableAnimating();
-	void sendDown();
+	
 
 	int* speedOfAnimation;
 	rectangles* animatedObject;

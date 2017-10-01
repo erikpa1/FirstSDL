@@ -24,25 +24,8 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 
 	this->window = SDL_CreateWindow(title, xSize, ySize, xSize, ySize, SDL_WINDOW_RESIZABLE);
 	this->renderer = SDL_CreateRenderer(window, -1, 0);
-	
-	this->event = new SDL_Event();
-	this->surf = SDL_LoadBMP("SourceFiles/icon.bmp");
-	this->texture = SDL_CreateTextureFromSurface(this->renderer, this->surf);
-	
+	//this->animableObjects = new std::vector<BasicItem>();
 
-	this->basicRectangle.source->x = 0;
-	this->basicRectangle.source->y = 0;
-	this->basicRectangle.source->w = 256;
-	this->basicRectangle.source->h = 256;
-	
-
-	this->basicRectangle.destination->x = 0;
-	this->basicRectangle.destination->y = 0;
-	this->basicRectangle.destination->w = 256;
-	this->basicRectangle.destination->h = 256;
-	
-	SDL_FreeSurface(this->surf);
-	SDL_QueryTexture(this->texture, NULL, NULL, &this->basicRectangle.source->w, &this->basicRectangle.source->h);
 	
 }
 
@@ -55,12 +38,18 @@ void SdlWindow::render()
 	
 	SDL_SetRenderDrawColor(this->renderer, this->actualColor.r, this->actualColor.b, this->actualColor.g, this->actualColor.a);
 	SDL_RenderClear(this->renderer);
-	SDL_RenderCopy(this->renderer, this->texture, this->basicRectangle.destination, this->basicRectangle.source);
+
+	/*
+	if (!this->animableObjects->empty()) {
+		for (signed int i = 0; i < this->animableObjects->size(); i++) {
+			this->animableObjects->at(i).draw();
+		}
+	}
+	*/
 	SDL_RenderPresent(this->renderer);
 	
 
-
-	std::cout << "Hallo" << std::endl;
+	std::cout << "Called from render()" << std::endl;
 
 }
 
@@ -110,11 +99,6 @@ SDL_Event SdlWindow::getEvent()
 	return *this->event;
 }
 
-rectangles* SdlWindow::getRectangle()
-{
-	return &this->basicRectangle;
-}
-
 int* SdlWindow::getWindowWidth() {
 	
 	SDL_GetWindowSize(this->window, this->windowWidth, NULL);	
@@ -123,7 +107,8 @@ int* SdlWindow::getWindowWidth() {
 	
 }
 
-int* SdlWindow::getWindowHeight() {
+int* SdlWindow::getWindowHeight() 
+ {
 	
 	SDL_GetWindowSize(this->window, NULL, this->windowHeight);
 	return this->windowHeight;
@@ -132,5 +117,16 @@ int* SdlWindow::getWindowHeight() {
 }
 
 
-
+SDL_Renderer* SdlWindow::getRenderer() 
+{
+	return this->renderer;
+		
+}
+/*
+void SdlWindow::addAnimableObject(BasicItem item)
+{
+	this->animableObjects->push_back(item);
+	
+}
+*/
 

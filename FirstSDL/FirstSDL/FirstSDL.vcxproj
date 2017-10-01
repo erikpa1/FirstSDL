@@ -127,6 +127,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="BasicItem.cpp" />
     <ClCompile Include="GoniometricAnimation.cpp" />
     <ClCompile Include="LevelController.cpp" />
     <ClCompile Include="SdlWindow.cpp" />
@@ -137,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="BasicItem.h" />
     <ClInclude Include="GoniometricAnimation.h" />
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="resource.h" />

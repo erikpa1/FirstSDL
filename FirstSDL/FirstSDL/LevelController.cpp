@@ -7,10 +7,14 @@ LevelController::LevelController()
 
 	this->mainWindow = new SdlWindow("SDL first", 900, 700);
 
-	this->animation = new TetrisAnimation(this->mainWindow->getRectangle(), 1);
-	//this->animation = new SinCosAnimation(this->mainWindow->getRectangle(), 1, 40, 20, COSINUS);
-	//this->animation = new TangCotgAnimation(this->mainWindow->getRectangle(), 1, 100, 5, TANGENS);
-	
+	/*
+	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
+	Animation* anim = new TetrisAnimation(item->getRectangles(), 1);
+	item->addSetAnimation(anim);
+
+	this->mainWindow->addAnimableObject(*item);
+
+	*/
 }
 
 
@@ -23,8 +27,7 @@ void LevelController::run()
 	
 	while (this->mainWindow->getRunningState()) {
 		
-		this->handleEvent();
-		this->animation->animate();
+		this->handleEvent();		
 		this->mainWindow->update();
 		this->mainWindow->render();
 		//SDL_Delay(500);
@@ -38,13 +41,22 @@ void LevelController::run()
 
 void LevelController::handleEvent()
 {
-	
-	while (SDL_PollEvent(&this->mainWindow->getEvent())) {
 
-		switch (this->mainWindow->getEvent().type) {
+	SDL_Event* event = new SDL_Event();
+
+	while (SDL_PollEvent(event)) {
+
+		/*
+		std::cout << "*************" << std::endl;
+		std::cout << "SDL prijalo nejaky event " << this->mainWindow->getEvent().type << std::endl;
+		std::cout << "*************" << std::endl;
+		*/
+
+		switch (event->type) {
 
 			case SDLK_KP_ENTER:
 				//this->mainWindow->stopWindowRun();
+				
 				std::cout << "Enter pressed" << std::endl;
 				break;
 
@@ -55,9 +67,17 @@ void LevelController::handleEvent()
 				break;
 
 			case SDL_KEYDOWN:
-				
+
+				this->createNewObject();
+				std::cout << "KeyDownPressed pressed" << std::endl;
+				this->createNewObject();
+
 				break;
 
+			case SDLK_KP_A:				
+				//this->animation = new SinCosAnimation(this->mainWindow->getRectangle(), 1, 10, 10, SINUS);
+				std::cout << "************************************Button A pressed" << std::endl;
+				break;
 			
 
 			default:
@@ -65,12 +85,24 @@ void LevelController::handleEvent()
 
 			}
 		}
+
+	delete event;
 }
 
 void LevelController::animationChanger()
 {
 
 }
+
+void LevelController::createNewObject()
+{
+/*
+	BasicItem* newItem = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
+	newItem->addSetAnimation(new SinCosAnimation(newItem->getRectangles(), 1, 10, 20, SINUS));
+	this->mainWindow->addAnimableObject(*newItem);
+*/
+}
+
 
 
 
