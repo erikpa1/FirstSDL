@@ -1,0 +1,7 @@
+﻿  BasicItem.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Source.cpp
+  SdlWindow.cpp
+  LevelController.cpp
+LINK : fatal error LNK1561: entry point must be defined

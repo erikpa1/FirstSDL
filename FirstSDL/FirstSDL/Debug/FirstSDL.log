@@ -1,3 +1,14 @@
-﻿  LevelController.cpp
-  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe
-  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.pdb (Partial PDB)
+﻿  TetrisAnimation.cpp
+  TangCotgAnimation.cpp
+  Source.cpp
+  SinCosAnimation.cpp
+  SdlWindow.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\sdlwindow.cpp(44): warning C4018: '<': signed/unsigned mismatch
+  LevelController.cpp
+  GoniometricAnimation.cpp
+  BasicItem.cpp
+  Animation.cpp
+  Generating Code...
+     Creating library C:\Tvorba\Programovanie\GitRepo\FirstSDL\Debug\FirstSDL.lib and object C:\Tvorba\Programovanie\GitRepo\FirstSDL\Debug\FirstSDL.exp
+  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\Debug\FirstSDL.exe
+  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\Debug\FirstSDL.pdb (Partial PDB)

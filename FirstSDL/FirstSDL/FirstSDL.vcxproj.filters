@@ -44,14 +44,14 @@
     <ClCompile Include="SinCosAnimation.cpp">
       <Filter>Source Files\Animations</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files\Animations</Filter>
-    </ClCompile>
     <ClCompile Include="TangCotgAnimation.cpp">
       <Filter>Source Files\Animations</Filter>
     </ClCompile>
     <ClCompile Include="BasicItem.cpp">
       <Filter>Source Files\RenderableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files\MainWindow</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
