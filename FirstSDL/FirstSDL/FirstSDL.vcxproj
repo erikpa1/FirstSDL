@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LibraryPath>C:\Tvorba\Programovanie\FirstSDL\FirstSDL\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
@@ -80,10 +80,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -130,6 +130,7 @@
     <ClCompile Include="BasicItem.cpp" />
     <ClCompile Include="GoniometricAnimation.cpp" />
     <ClCompile Include="LevelController.cpp" />
+    <ClCompile Include="MainParticle.cpp" />
     <ClCompile Include="SdlWindow.cpp" />
     <ClCompile Include="SinCosAnimation.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -141,6 +142,7 @@
     <ClInclude Include="BasicItem.h" />
     <ClInclude Include="GoniometricAnimation.h" />
     <ClInclude Include="LevelController.h" />
+    <ClInclude Include="MainParticle.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SdlWindow.h" />
     <ClInclude Include="SinCosAnimation.h" />

@@ -57,6 +57,10 @@ void BasicItem::commonConstructor(SDL_Renderer* renderer)
 	this->mainRectangle = new rectangles;
 	this->surf = SDL_LoadBMP("SourceFiles/icon.bmp");	
 	this->renderer = renderer;
+
+	this->texture = SDL_CreateTextureFromSurface(this->renderer, this->surf);
+	
+
 	
 
 }
@@ -70,9 +74,7 @@ SDL_Texture* BasicItem::getTexture()
 void BasicItem::draw()
 {
 
-	this->texture = SDL_CreateTextureFromSurface(this->renderer, this->surf);
 	SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);
-
 
 	if (this->someAnimation != NULL) {
 		this->someAnimation->animate();

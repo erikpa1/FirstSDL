@@ -9,7 +9,7 @@ LevelController::LevelController()
 
 	
 	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
-	Animation* anim = new TetrisAnimation(item->getRectangles(), 1);
+	Animation* anim = new TetrisAnimation(item->getRectangles(), 1, false);
 	item->addAnimation(anim);
 	this->mainWindow->addAnimableObject(*item);
 
@@ -30,7 +30,7 @@ void LevelController::run()
 		this->mainWindow->update();
 		this->mainWindow->render();
 		//SDL_Delay(500);
-				
+		
 	}
 
 	this->mainWindow->cleanup();
@@ -83,9 +83,12 @@ void LevelController::handleEvent()
 				break;
 
 			}
+
+		
 		}
 
 	delete event;
+
 }
 
 void LevelController::animationChanger()

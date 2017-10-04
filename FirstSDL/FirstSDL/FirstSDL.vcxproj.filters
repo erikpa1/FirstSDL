@@ -24,6 +24,9 @@
     <Filter Include="Source Files\RenderableObject">
       <UniqueIdentifier>{93d9f726-930b-4ba5-9bab-fed1e17b5773}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Particle">
+      <UniqueIdentifier>{c426900c-524d-4205-8983-0e717dcacd25}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -52,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files\MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="MainParticle.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +89,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BasicItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainParticle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
