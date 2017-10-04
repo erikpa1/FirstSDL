@@ -7,10 +7,10 @@
 TetrisAnimation::TetrisAnimation(rectangles* animatedRect, int animationSpeed) : Animation(animatedRect, animationSpeed)
 {	
 	this->canAnimate = new bool(true);
-	this->goingDown = new bool(true);
-	this->goingUp = new bool(false);
-	this->goingRight = new bool(true);
-	this->goingLeft = new bool(false);	
+	this->goingDown = true;
+	this->goingUp = false;
+	this->goingRight = true;
+	this->goingLeft = false;
 
 }
 
@@ -18,10 +18,6 @@ TetrisAnimation::TetrisAnimation(rectangles* animatedRect, int animationSpeed) :
 TetrisAnimation::~TetrisAnimation()
 {
 
-	delete this->goingDown;
-	delete this->goingUp;
-	delete this->goingRight;
-	delete this->goingLeft;
 }
 	
 /*
@@ -110,34 +106,28 @@ void TetrisAnimation::animate()
 
 	if (*this->canAnimate) {
 
-		if (*this->goingDown) {
+		if (this->goingDown) {
 
-			if (this->animatedObject->source->y >= 600) {
-				delete this->goingDown;
-				this->goingDown = new bool(false);
-				delete this->goingUp;
-				this->goingUp = new bool(true);
+			if (this->animatedObject->source->y >= 600) {				
+				this->goingDown = false;			
+				this->goingUp = true;
 				
 				int i = rand() % 2;
 				switch (i) {
-				case 0:
-					delete this->goingRight;
-					this->goingRight = new bool(true);
-					delete this->goingLeft;
-					this->goingLeft = new bool(false);
+				case 0:				
+					this->goingRight = true;
+					this->goingLeft = false;
 					break;
-				case 1:
-					delete this->goingRight;
-					this->goingRight = new bool(false);
-					delete this->goingLeft;
-					this->goingLeft = new bool(true);
+				case 1:				
+					this->goingRight = false;
+					this->goingLeft = true;
 					break;
 				}
 
 			}
 			else {
 				this->animatedObject->source->y += *this->speedOfAnimation;
-				std::cout << "going down " << *this->goingDown << std::endl;
+				std::cout << "going down " << this->goingDown << std::endl;
 
 			}
 
@@ -145,28 +135,22 @@ void TetrisAnimation::animate()
 
 		std::cout << "toto sa preskoci" << std::endl;
 
-		if (*this->goingUp) {
+		if (this->goingUp) {
 
 			if (this->animatedObject->source->y <= 0) {
 
-				delete this->goingDown;
-				this->goingDown = new bool(true);
-				delete this->goingUp;
-				this->goingUp = new bool(false);
+				this->goingDown = true;
+				this->goingUp = false;
 
 				int i = rand() % 2;
 				switch (i) {
-				case 0:
-					delete this->goingRight;
-					this->goingRight = new bool(true);
-					delete this->goingLeft;
-					this->goingLeft = new bool(false);
+				case 0:			
+					this->goingRight = true;
+					this->goingLeft = false;
 					break;
-				case 1:
-					delete this->goingRight;
-					this->goingRight = new bool(false);
-					delete this->goingLeft;
-					this->goingLeft = new bool(true);
+				case 1:			
+					this->goingRight = false;
+					this->goingLeft = true;
 					break;
 				}
 
@@ -174,57 +158,57 @@ void TetrisAnimation::animate()
 
 			else {
 				this->animatedObject->source->y -= *this->speedOfAnimation;
-				std::cout << "going up " << *this->goingUp << std::endl;
+				std::cout << "going up " << this->goingUp << std::endl;
 			}
 		}
 			
 
-		if (*this->goingRight) {
+		if (this->goingRight) {
 
 			if (this->animatedObject->source->x >= 800) {
-				this->goingRight = new bool(false);
-				this->goingLeft = new bool(true);
+				this->goingRight = false;
+				this->goingLeft = true;
 
 				int i = rand() % 2;
 				switch (i) {
 				case 0:
 					this->goingUp = new bool(true);
-					this->goingDown = new bool(false);
+					this->goingDown = false;
 					break;
 				case 1:
-					this->goingUp = new bool(false);
-					this->goingDown = new bool(true);
+					this->goingUp = false;
+					this->goingDown = true; 
 					break;
 				}
 			}
 			else {
 				this->animatedObject->source->x += *speedOfAnimation;
-				std::cout << "going right " << *this->goingRight << std::endl;
+				std::cout << "going right " << this->goingRight << std::endl;
 			}
 
 		}
 
-		if (*this->goingLeft) {
+		if (this->goingLeft) {
 
 			if (this->animatedObject->source->x <= 0) {
-				this->goingLeft = new bool(false);
-				this->goingRight = new bool(true);
+				this->goingLeft = false;
+				this->goingRight = true;
 
 				int i = rand() % 2;
 				switch (i) {
 				case 0:
-					this->goingUp = new bool(true);
-					this->goingDown = new bool(false);
+					this->goingUp = true;
+					this->goingDown = false;
 					break;
 				case 1:
-					this->goingUp = new bool(false);
-					this->goingDown = new bool(true);
+					this->goingUp = false;
+					this->goingDown = true;
 					break;
 				}
 			}
 			else {
 				this->animatedObject->source->x -= *this->speedOfAnimation;
-				std::cout << "going left " << *this->goingLeft << std::endl;
+				std::cout << "going left " << this->goingLeft << std::endl;
 
 			}
 

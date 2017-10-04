@@ -2,6 +2,7 @@
 
 
 
+
 BasicItem::BasicItem(SDL_Renderer* renderer, int basicX, int basicY, int basicW, int basicH, int destinationX, int destinationY, int destinationW, int destinationH)
 {
 
@@ -71,6 +72,7 @@ void BasicItem::draw()
 
 	this->texture = SDL_CreateTextureFromSurface(this->renderer, this->surf);
 	SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);
+
 
 	if (this->someAnimation != NULL) {
 		this->someAnimation->animate();

@@ -126,7 +126,7 @@ SDL_Renderer* SdlWindow::getRenderer()
 void SdlWindow::addAnimableObject(BasicItem item)
 {
 	this->animableObjects->push_back(item);
-	
+
 }
 
 

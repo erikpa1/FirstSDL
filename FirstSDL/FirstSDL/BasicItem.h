@@ -1,11 +1,12 @@
 #pragma once
 
-#include <SDL.h>
-#include <SDL_main.h>
 
+#include "SDL2-2.0.5\include\SDL_main.h"
+#include "SDL2-2.0.5\include\SDL.h"
 #include "structureDefinition.h"
 #include "Animation.h"
 
+class Animation;
 
 
 class BasicItem

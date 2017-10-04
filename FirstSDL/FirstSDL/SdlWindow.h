@@ -3,21 +3,19 @@
 
 
 #include <iostream>
-#include <SDL.h>
-#include <SDL_main.h>
+#include "SDL2-2.0.5\include\SDL_main.h"
+#include "SDL2-2.0.5\include\SDL.h"
 #include <vector>
 
 #include "structureDefinition.h"
 #include "BasicItem.h"
-
-
-
 
 using namespace std;
 
 
 class SdlWindow
 {
+
 public:
 
 	SdlWindow(const char* title, int xSize, int ySize);

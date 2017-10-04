@@ -12,10 +12,10 @@ public:
 
 private:
 	
-	bool* goingRight;
-	bool* goingLeft;
-	bool* goingUp;
-	bool* goingDown;
+	bool goingRight;
+	bool goingLeft;
+	bool goingUp;
+	bool goingDown;
 
 
 };
