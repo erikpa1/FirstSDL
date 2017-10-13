@@ -1,7 +1,10 @@
 #pragma once
 
 
-#include "Animation.h"
+#include "BasicItem.h"
+#include "SdlWindow.h"
+
+
 
 
 
@@ -11,6 +14,10 @@ public:
 	MainParticle();
 	~MainParticle();
 
-	void doYourEffect(rectangles* rect);
+	/*static void doYourEffect(int x, int y, int number);
+	static int numberOfObjects;
+	static SdlWindow* existingWindow;
+	*/
+
 };
 

@@ -47,6 +47,8 @@ void TetrisAnimation::animateWithoutBackSequance()
 				this->goingDown = false;
 				this->goingUp = true;
 				
+				
+
 			}
 			else {
 				this->animatedObject->source->y += *this->speedOfAnimation;

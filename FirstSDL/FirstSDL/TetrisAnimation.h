@@ -1,5 +1,6 @@
 #pragma once
 #include "Animation.h"
+#include "MainParticle.h"
 class TetrisAnimation : public Animation
 {
 

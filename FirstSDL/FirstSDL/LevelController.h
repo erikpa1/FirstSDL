@@ -10,6 +10,8 @@
 #include "SinCosAnimation.h"
 #include "TangCotgAnimation.h"
 
+#include "MainParticle.h"
+
 #include "BasicItem.h"
 
 #include "SDL2\include\SDL_main.h"
@@ -25,6 +27,7 @@ public:
 	~LevelController();
 	
 	void run();
+	
 
 private:
 
@@ -33,7 +36,7 @@ private:
 	void handleEvent();
 	void animationChanger();
 	void createNewObject();
-
+	void spawnParicle();
 	
 
 };

@@ -7,6 +7,8 @@ LevelController::LevelController()
 
 	this->mainWindow = new SdlWindow("SDL first", 900, 700);
 
+	//MainParticle::existingWindow = this->mainWindow;
+
 	
 	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
 	Animation* anim = new TetrisAnimation(item->getRectangles(), 1, false);
@@ -100,11 +102,14 @@ void LevelController::createNewObject()
 {
 
 	BasicItem* newItem = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
-	newItem->addAnimation(new SinCosAnimation(newItem->getRectangles(), 1, 10, 20, SINUS));
+	newItem->addAnimation(new TetrisAnimation(newItem->getRectangles(), 10, true));
 	this->mainWindow->addAnimableObject(*newItem);
 
 }
 
+void LevelController::spawnParicle() {
 
+	//MainParticle::doYourEffect(50, 50, 5);
 
+}
 

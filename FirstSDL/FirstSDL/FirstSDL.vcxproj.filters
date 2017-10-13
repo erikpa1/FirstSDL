@@ -27,6 +27,9 @@
     <Filter Include="Source Files\Particle">
       <UniqueIdentifier>{c426900c-524d-4205-8983-0e717dcacd25}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Listeners">
+      <UniqueIdentifier>{d69e654f-f52a-4db5-8058-7434a3000b91}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -57,7 +60,7 @@
       <Filter>Source Files\MainWindow</Filter>
     </ClCompile>
     <ClCompile Include="MainParticle.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Particle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

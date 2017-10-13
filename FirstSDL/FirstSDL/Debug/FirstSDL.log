@@ -1,4 +1,6 @@
-﻿  MainParticle.cpp
-     Creating library C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.lib and object C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exp
+﻿  SdlWindow.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\sdlwindow.cpp(43): warning C4018: '<': signed/unsigned mismatch
+  LevelController.cpp
+  Generating Code...
   FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe
   FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.pdb (Partial PDB)
