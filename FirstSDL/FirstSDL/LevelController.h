@@ -36,7 +36,9 @@ private:
 	void handleEvent();
 	void animationChanger();
 	void createNewObject();
+	void createNewObject(int x, int y);
 	void spawnParicle();
+	void pencilDraw();
 	
 
 };

@@ -11,7 +11,7 @@ LevelController::LevelController()
 
 	
 	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
-	Animation* anim = new TetrisAnimation(item->getRectangles(), 1, false);
+	Animation* anim = new TetrisAnimation(item->getRectangles(), 10, false);
 	item->addAnimation(anim);
 	this->mainWindow->addAnimableObject(*item);
 
@@ -52,12 +52,11 @@ void LevelController::handleEvent()
 		std::cout << "SDL prijalo nejaky event " << this->mainWindow->getEvent().type << std::endl;
 		std::cout << "*************" << std::endl;
 		*/
-
+		
 		switch (event->type) {
 
 			case SDLK_KP_ENTER:
-				//this->mainWindow->stopWindowRun();
-				
+				//this->mainWindow->stopWindowRun();				
 				std::cout << "Enter pressed" << std::endl;
 				break;
 
@@ -68,19 +67,25 @@ void LevelController::handleEvent()
 				break;
 
 			case SDL_KEYDOWN:
-
 				this->createNewObject();
-				std::cout << "KeyDownPressed pressed" << std::endl;
-				
-
+				std::cout << "KeyDownPressed pressed" << std::endl;	
 				break;
 
 			case SDLK_KP_A:				
 				//this->animation = new SinCosAnimation(this->mainWindow->getRectangle(), 1, 10, 10, SINUS);
 				std::cout << "************************************Button A pressed" << std::endl;
 				break;
-			
+			case SDL_MOUSEBUTTONDOWN:
 
+				switch (event->button.button)
+				{
+					case SDL_BUTTON_LEFT:
+						this->createNewObject(event->button.x, event->button.y);						
+					break;
+				}
+				break;		
+				
+			
 			default:
 				break;
 
@@ -88,6 +93,17 @@ void LevelController::handleEvent()
 
 		
 		}
+
+	int* x = NULL;
+	int* y = NULL;
+
+	SDL_GetMouseState(x, y);
+	if (x != NULL)
+	{
+		std::cout << "Mouse x " << *x << " and y " << *y << std::endl;
+	}
+	
+
 
 	delete event;
 
@@ -107,9 +123,22 @@ void LevelController::createNewObject()
 
 }
 
+void LevelController::createNewObject(int x, int y)
+{
+
+	BasicItem* newItem = new BasicItem(this->mainWindow->getRenderer(), x, y, 10, 10);
+	//newItem->addAnimation(new TetrisAnimation(newItem->getRectangles(), 10, true));
+	this->mainWindow->addAnimableObject(*newItem);
+
+}
+
 void LevelController::spawnParicle() {
 
 	//MainParticle::doYourEffect(50, 50, 5);
 
 }
 
+void LevelController::pencilDraw()
+{
+
+}

@@ -76,7 +76,7 @@ void BasicItem::draw()
 
 	SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);
 
-	if (this->someAnimation != NULL) {
+	if (!this->someAnimation) {
 		this->someAnimation->animate();
 	}
 	

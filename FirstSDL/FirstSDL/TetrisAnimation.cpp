@@ -138,6 +138,7 @@ void TetrisAnimation::animateWithBackSequance()
 			}
 			else {
 				this->animatedObject->source->y += *this->speedOfAnimation;
+				this->animatedObject->destination->y += *this->speedOfAnimation;
 				std::cout << "going down " << this->goingDown << std::endl;
 
 			}
@@ -169,6 +170,7 @@ void TetrisAnimation::animateWithBackSequance()
 
 			else {
 				this->animatedObject->source->y -= *this->speedOfAnimation;
+				this->animatedObject->destination->y -= *this->speedOfAnimation;
 				std::cout << "going up " << this->goingUp << std::endl;
 			}
 		}
@@ -194,6 +196,7 @@ void TetrisAnimation::animateWithBackSequance()
 			}
 			else {
 				this->animatedObject->source->x += *speedOfAnimation;
+				this->animatedObject->destination->x += *speedOfAnimation;
 				std::cout << "going right " << this->goingRight << std::endl;
 			}
 
@@ -219,6 +222,7 @@ void TetrisAnimation::animateWithBackSequance()
 			}
 			else {
 				this->animatedObject->source->x -= *this->speedOfAnimation;
+				this->animatedObject->destination->x -= *this->speedOfAnimation;
 				std::cout << "going left " << this->goingLeft << std::endl;
 
 			}
