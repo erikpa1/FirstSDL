@@ -6,9 +6,9 @@
 #include "SDL2\include\SDL_main.h"
 #include "SDL2\include\SDL.h"
 #include <vector>
-
 #include "structureDefinition.h"
 #include "BasicItem.h"
+#include "Button.h"
 
 using namespace std;
 
@@ -25,8 +25,11 @@ public:
 	void render();
 	void cleanup();
 	void stopWindowRun();
+	void pauseRendering(int milis);
 	void update();
-	void addAnimableObject(BasicItem item);
+	void addAnimableObject(BasicItem* item);
+	void addClickableObject(Button* item);
+	void checkButtons(int x, int y);
 
 	//backgroud of the program
 	void changeBackGroundColor(int r, int b, int g, int a);
@@ -49,6 +52,7 @@ private:
 	bool isRunning;
 
 	vector<BasicItem>* animableObjects;
+	vector<Button>* clickAbleObjects;
 
 	colorVector actualColor;
 	rectangles basicRectangle;

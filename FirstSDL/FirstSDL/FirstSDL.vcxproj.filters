@@ -30,6 +30,9 @@
     <Filter Include="Source Files\Listeners">
       <UniqueIdentifier>{d69e654f-f52a-4db5-8058-7434a3000b91}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\RenderableObject\GuiElement">
+      <UniqueIdentifier>{d89409b5-f73f-4715-83f5-4b59686b7cad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -61,6 +64,9 @@
     </ClCompile>
     <ClCompile Include="MainParticle.cpp">
       <Filter>Source Files\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files\RenderableObject\GuiElement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +101,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MainParticle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

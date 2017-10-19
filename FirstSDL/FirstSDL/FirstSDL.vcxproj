@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="BasicItem.cpp" />
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="GoniometricAnimation.cpp" />
     <ClCompile Include="LevelController.cpp" />
     <ClCompile Include="MainParticle.cpp" />
@@ -140,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="BasicItem.h" />
+    <ClInclude Include="Button.h" />
     <ClInclude Include="GoniometricAnimation.h" />
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="MainParticle.h" />

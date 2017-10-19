@@ -1,6 +1,3 @@
-﻿  SdlWindow.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\sdlwindow.cpp(43): warning C4018: '<': signed/unsigned mismatch
-  MainParticle.cpp
-  Generating Code...
+﻿  Button.cpp
   FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe
   FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.pdb (Partial PDB)

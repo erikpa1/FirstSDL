@@ -25,6 +25,7 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 	this->window = SDL_CreateWindow(title, xSize, ySize, xSize, ySize, SDL_WINDOW_RESIZABLE);
 	this->renderer = SDL_CreateRenderer(window, -1, 0);
 	this->animableObjects = new std::vector<BasicItem>();
+	this->clickAbleObjects = new std::vector<Button>();
 
 	
 }
@@ -42,13 +43,11 @@ void SdlWindow::render()
 	if (!this->animableObjects->empty()) {
 		for (signed int i = 0; i < this->animableObjects->size(); i++) {
 			this->animableObjects->at(i).draw();
+			
 		}
 	}
 	
 	SDL_RenderPresent(this->renderer);
-	
-
-	std::cout << "Called from render()" << std::endl;
 
 }
 
@@ -68,6 +67,11 @@ void SdlWindow::stopWindowRun()
 	this->isRunning = false;
 }
 
+void SdlWindow::pauseRendering(int milis)
+{
+	SDL_Delay(milis);
+}
+
 void SdlWindow::changeBackGroundColor(int r, int b, int g, int a)
 {
 	this->actualColor.r = r;
@@ -83,8 +87,7 @@ void SdlWindow::changeBackGroundColor(int r, int b, int g, int a)
 
 void SdlWindow::update() 
 {
-	std::cout << "x: " << this->basicRectangle.destination->x << " y: " << this->basicRectangle.destination->y << std::endl;
-	std::cout << "Window width: " << *this->windowWidth << " and height " << *this->windowHeight << std::endl;	
+	
 
 }
 
@@ -122,9 +125,30 @@ SDL_Renderer* SdlWindow::getRenderer()
 		
 }
 
-void SdlWindow::addAnimableObject(BasicItem item)
+void SdlWindow::addAnimableObject(BasicItem* item)
 {
-	this->animableObjects->push_back(item);
+	this->animableObjects->push_back(*item);
+	
+
+}
+
+void SdlWindow::addClickableObject(Button* item)
+{
+	this->animableObjects->push_back(*item);
+	this->clickAbleObjects->push_back(*item);
+	
+}
+
+void SdlWindow::checkButtons(int x, int y)
+{
+
+	if (!this->clickAbleObjects->empty()) {
+		for (signed int i = 0; i < this->clickAbleObjects->size(); i++) {
+			this->clickAbleObjects->at(i).wasClicked(x, y);
+
+			
+		}
+	}
 
 }
 

@@ -145,8 +145,6 @@ void TetrisAnimation::animateWithBackSequance()
 
 		}
 
-		std::cout << "toto sa preskoci" << std::endl;
-
 		if (this->goingUp) {
 
 			if (this->animatedObject->source->y <= 0) {

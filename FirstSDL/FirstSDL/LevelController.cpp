@@ -5,22 +5,23 @@
 LevelController::LevelController()
 {
 
-	this->mainWindow = new SdlWindow("SDL first", 900, 700);
-
-	//MainParticle::existingWindow = this->mainWindow;
-
+	this->mainWindow = new SdlWindow("SDL first", 900, 700);	
 	
 	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
-	Animation* anim = new TetrisAnimation(item->getRectangles(), 10, false);
+	Animation* anim = new TetrisAnimation(item->getRectangles(), 5, false);
 	item->addAnimation(anim);
-	this->mainWindow->addAnimableObject(*item);
+	this->mainWindow->addAnimableObject(item);
 
-	
+	Button* btn = new Button(this->mainWindow->getRenderer(), 10, 10, 100, 10);
+	this->mainWindow->addClickableObject(btn);
+
+
 }
 
 
 LevelController::~LevelController()
 {
+
 }
 
 void LevelController::run()
@@ -31,7 +32,7 @@ void LevelController::run()
 		this->handleEvent();		
 		this->mainWindow->update();
 		this->mainWindow->render();
-		//SDL_Delay(500);
+		this->mainWindow->pauseRendering(1000);
 		
 	}
 
@@ -80,7 +81,8 @@ void LevelController::handleEvent()
 				switch (event->button.button)
 				{
 					case SDL_BUTTON_LEFT:
-						this->createNewObject(event->button.x, event->button.y);						
+						//this->createNewObject(event->button.x, event->button.y);		
+						this->mainWindow->checkButtons(event->button.x, event->button.y);
 					break;
 				}
 				break;		
@@ -111,15 +113,15 @@ void LevelController::handleEvent()
 
 void LevelController::animationChanger()
 {
-
+	
 }
 
 void LevelController::createNewObject()
 {
 
 	BasicItem* newItem = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
-	newItem->addAnimation(new TetrisAnimation(newItem->getRectangles(), 10, true));
-	this->mainWindow->addAnimableObject(*newItem);
+	newItem->addAnimation(new TetrisAnimation(newItem->getRectangles(), 10, false));
+	this->mainWindow->addAnimableObject(newItem);
 
 }
 
@@ -128,7 +130,7 @@ void LevelController::createNewObject(int x, int y)
 
 	BasicItem* newItem = new BasicItem(this->mainWindow->getRenderer(), x, y, 10, 10);
 	//newItem->addAnimation(new TetrisAnimation(newItem->getRectangles(), 10, true));
-	this->mainWindow->addAnimableObject(*newItem);
+	this->mainWindow->addAnimableObject(newItem);
 
 }
 
