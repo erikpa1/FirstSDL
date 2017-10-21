@@ -33,6 +33,9 @@
     <Filter Include="Source Files\RenderableObject\GuiElement">
       <UniqueIdentifier>{d89409b5-f73f-4715-83f5-4b59686b7cad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\EventHandlers">
+      <UniqueIdentifier>{867f0138-f5a2-459b-8cda-54f1cb7cd28e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -67,6 +70,12 @@
     </ClCompile>
     <ClCompile Include="Button.cpp">
       <Filter>Source Files\RenderableObject\GuiElement</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>Source Files\EventHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMouseClick.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +113,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnMouseClick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

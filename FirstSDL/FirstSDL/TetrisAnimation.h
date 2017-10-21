@@ -1,7 +1,11 @@
 #pragma once
 #include "Animation.h"
 #include "MainParticle.h"
+#include "ClickableObject.h"
+
+
 class TetrisAnimation : public Animation
+
 {
 
 public:
@@ -10,6 +14,7 @@ public:
 	~TetrisAnimation();
 	
 	void Animation::animate();
+	
 
 private:
 

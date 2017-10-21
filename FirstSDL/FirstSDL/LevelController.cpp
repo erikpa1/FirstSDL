@@ -12,7 +12,8 @@ LevelController::LevelController()
 	item->addAnimation(anim);
 	this->mainWindow->addAnimableObject(item);
 
-	Button* btn = new Button(this->mainWindow->getRenderer(), 10, 10, 100, 10);
+	Button* btn = new Button(this->mainWindow->getRenderer(), 10, 10, 100, 50);
+	btn->addFunctionality();
 	this->mainWindow->addClickableObject(btn);
 
 

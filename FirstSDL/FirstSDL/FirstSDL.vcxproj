@@ -129,9 +129,11 @@
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="BasicItem.cpp" />
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="EventHandler.cpp" />
     <ClCompile Include="GoniometricAnimation.cpp" />
     <ClCompile Include="LevelController.cpp" />
     <ClCompile Include="MainParticle.cpp" />
+    <ClCompile Include="OnMouseClick.cpp" />
     <ClCompile Include="SdlWindow.cpp" />
     <ClCompile Include="SinCosAnimation.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -142,9 +144,11 @@
     <ClInclude Include="Animation.h" />
     <ClInclude Include="BasicItem.h" />
     <ClInclude Include="Button.h" />
+    <ClInclude Include="EventHandler.h" />
     <ClInclude Include="GoniometricAnimation.h" />
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="MainParticle.h" />
+    <ClInclude Include="OnMouseClick.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SdlWindow.h" />
     <ClInclude Include="SinCosAnimation.h" />

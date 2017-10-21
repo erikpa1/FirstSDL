@@ -5,12 +5,14 @@
 #include "SDL2\include\SDL.h"
 #include "structureDefinition.h"
 #include "Animation.h"
+#include "OnMouseClick.h"
+
 
 
 class Animation;
 
 
-class BasicItem
+class BasicItem : OnMouseClick
 
 {
 public:
@@ -25,6 +27,7 @@ public:
 	
 	void draw();
 	void addAnimation(Animation* animation);
+	void OnMouseClick::onClick();
 
 private:
 	
@@ -33,6 +36,8 @@ private:
 	SDL_Texture* texture;
 	SDL_Renderer* renderer;
 	Animation* someAnimation;
+
+	bool canBeDrawed;
 	
 	
 	void commonConstructor(SDL_Renderer* renderer);

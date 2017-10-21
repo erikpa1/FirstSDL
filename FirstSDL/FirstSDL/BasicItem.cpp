@@ -33,6 +33,8 @@ BasicItem::BasicItem(SDL_Renderer* renderer, int univerzalX, int univerzalY, int
 	this->mainRectangle->destination->w = univerzalW;
 	this->mainRectangle->destination->h = univerzalH;
 
+
+
 }
 
 
@@ -59,6 +61,7 @@ void BasicItem::commonConstructor(SDL_Renderer* renderer)
 	this->renderer = renderer;
 	this->texture = SDL_CreateTextureFromSurface(this->renderer, this->surf);
 	this->someAnimation = nullptr;
+	this->canBeDrawed = true;
 
 	
 
@@ -73,9 +76,13 @@ SDL_Texture* BasicItem::getTexture()
 void BasicItem::draw()
 {
 
-	SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);
+	if(this->canBeDrawed) {
 
-	if (this->someAnimation != nullptr) {
+		SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);
+
+	}
+
+	if ((this->someAnimation != nullptr)) {
 		this->someAnimation->animate();
 	}
 	
@@ -86,4 +93,15 @@ void BasicItem::draw()
 void BasicItem::addAnimation(Animation* animation)
 {
 	this->someAnimation = animation;
+}
+
+void BasicItem::onClick()
+{
+	if (this->canBeDrawed) {
+		this->canBeDrawed = false;
+	}
+	else {
+		this->canBeDrawed = true;
+	}
+	
 }

@@ -22,7 +22,7 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 		std::cout << "Error" << std::endl;
 	}
 
-	this->window = SDL_CreateWindow(title, xSize, ySize, xSize, ySize, SDL_WINDOW_RESIZABLE);
+	this->window = SDL_CreateWindow(title, 50, 50, xSize, ySize, SDL_WINDOW_RESIZABLE);	
 	this->renderer = SDL_CreateRenderer(window, -1, 0);
 	this->animableObjects = new std::vector<BasicItem>();
 	this->clickAbleObjects = new std::vector<Button>();
