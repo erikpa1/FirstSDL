@@ -29,6 +29,8 @@ public:
 	void addAnimation(Animation* animation);
 	void OnMouseClick::onClick();
 
+	void setRenderingBool(bool hodnota);
+
 private:
 	
 	rectangles* mainRectangle;
@@ -36,15 +38,11 @@ private:
 	SDL_Texture* texture;
 	SDL_Renderer* renderer;
 	Animation* someAnimation;
-
-	bool canBeDrawed;
-	
-	
+	bool* canBeDrawed;	
+	bool* wasClicked;
 	void commonConstructor(SDL_Renderer* renderer);
 
-
-	
-	
+		
 
 };
 

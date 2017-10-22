@@ -38,11 +38,12 @@ void SdlWindow::render()
 {	
 	
 	SDL_SetRenderDrawColor(this->renderer, this->actualColor.r, this->actualColor.b, this->actualColor.g, this->actualColor.a);
+	
 	SDL_RenderClear(this->renderer);
 		
 	if (!this->animableObjects->empty()) {
 		for (signed int i = 0; i < this->animableObjects->size(); i++) {
-			this->animableObjects->at(i).draw();
+			this->animableObjects->at(i).draw();	
 			
 		}
 	}
@@ -80,8 +81,6 @@ void SdlWindow::changeBackGroundColor(int r, int b, int g, int a)
 	this->actualColor.r = a;
 
 	std::cout << r << " " << b << " " << g << std::endl;
-	
-
 	
 }
 

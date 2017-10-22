@@ -7,6 +7,7 @@
 TetrisAnimation::TetrisAnimation(rectangles* animatedRect, int animationSpeed, bool returnSequence) : Animation(animatedRect, animationSpeed)
 {	
 	this->canAnimate = new bool(true);
+	this->returnSequence = returnSequence;
 	this->goingDown = true;
 	this->goingUp = false;
 	this->goingRight = true;
@@ -32,11 +33,9 @@ void TetrisAnimation::animate() {
 
 void TetrisAnimation::animateWithoutBackSequance() 
 {
-    
-	
+ 
 	std::cout << "X of rectangle " << this->animatedObject->source->x << std::endl;
 	std::cout << "Y of rectangle " << this->animatedObject->source->y << std::endl;
-
 
 	if (*this->canAnimate) {
 
@@ -111,7 +110,7 @@ void TetrisAnimation::animateWithoutBackSequance()
 
 void TetrisAnimation::animateWithBackSequance()
 {
-	
+
 	std::cout << "X of rectangle " << this->animatedObject->source->x << std::endl;
 	std::cout << "Y of rectangle " << this->animatedObject->source->y << std::endl;
 
@@ -137,8 +136,7 @@ void TetrisAnimation::animateWithBackSequance()
 
 			}
 			else {
-				this->animatedObject->source->y += *this->speedOfAnimation;
-				this->animatedObject->destination->y += *this->speedOfAnimation;
+				this->animatedObject->source->y += *this->speedOfAnimation;				
 				std::cout << "going down " << this->goingDown << std::endl;
 
 			}
@@ -167,8 +165,7 @@ void TetrisAnimation::animateWithBackSequance()
 			}
 
 			else {
-				this->animatedObject->source->y -= *this->speedOfAnimation;
-				this->animatedObject->destination->y -= *this->speedOfAnimation;
+				this->animatedObject->source->y -= *this->speedOfAnimation;				
 				std::cout << "going up " << this->goingUp << std::endl;
 			}
 		}
@@ -193,8 +190,7 @@ void TetrisAnimation::animateWithBackSequance()
 				}
 			}
 			else {
-				this->animatedObject->source->x += *speedOfAnimation;
-				this->animatedObject->destination->x += *speedOfAnimation;
+				this->animatedObject->source->x += *speedOfAnimation;				
 				std::cout << "going right " << this->goingRight << std::endl;
 			}
 
@@ -220,7 +216,6 @@ void TetrisAnimation::animateWithBackSequance()
 			}
 			else {
 				this->animatedObject->source->x -= *this->speedOfAnimation;
-				this->animatedObject->destination->x -= *this->speedOfAnimation;
 				std::cout << "going left " << this->goingLeft << std::endl;
 
 			}

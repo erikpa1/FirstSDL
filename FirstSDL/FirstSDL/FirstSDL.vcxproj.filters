@@ -75,7 +75,7 @@
       <Filter>Source Files\EventHandlers</Filter>
     </ClCompile>
     <ClCompile Include="OnMouseClick.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\EventHandlers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

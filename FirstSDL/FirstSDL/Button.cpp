@@ -24,7 +24,7 @@ void Button::wasClicked(int x, int y)
 	rectangles* help = BasicItem::getRectangles();
 
 	if (((help->source->x <= x) && (x <= (help->source->w + help->source->x))) && ((help->source->y <= y) && (y <= help->source->h + help->source->y ))) {
-		if (this->clickable != nullptr)
+		if (this->clickable)
 		{
 			this->clickable->onClick();
 		}
@@ -35,6 +35,7 @@ void Button::wasClicked(int x, int y)
 
 void Button::addFunctionality(BasicItem* item)
 {
+	this->clickable = item;
 }
 
 

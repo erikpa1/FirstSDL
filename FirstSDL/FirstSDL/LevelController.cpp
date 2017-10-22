@@ -8,14 +8,14 @@ LevelController::LevelController()
 	this->mainWindow = new SdlWindow("SDL first", 900, 700);	
 	
 	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
-	Animation* anim = new TetrisAnimation(item->getRectangles(), 5, false);
+	Animation* anim = new TetrisAnimation(item->getRectangles(), 5, true);	
 	item->addAnimation(anim);
 	this->mainWindow->addAnimableObject(item);
 
-	Button* btn = new Button(this->mainWindow->getRenderer(), 10, 10, 100, 50);
-	btn->addFunctionality();
+	Button* btn = new Button(this->mainWindow->getRenderer(), 800, 0, 200, 50);
+	btn->addFunctionality(item);	
 	this->mainWindow->addClickableObject(btn);
-
+	
 
 }
 
@@ -33,7 +33,7 @@ void LevelController::run()
 		this->handleEvent();		
 		this->mainWindow->update();
 		this->mainWindow->render();
-		this->mainWindow->pauseRendering(1000);
+		//this->mainWindow->pauseRendering(500);
 		
 	}
 
@@ -77,8 +77,8 @@ void LevelController::handleEvent()
 				//this->animation = new SinCosAnimation(this->mainWindow->getRectangle(), 1, 10, 10, SINUS);
 				std::cout << "************************************Button A pressed" << std::endl;
 				break;
-			case SDL_MOUSEBUTTONDOWN:
 
+			case SDL_MOUSEBUTTONDOWN:
 				switch (event->button.button)
 				{
 					case SDL_BUTTON_LEFT:
@@ -86,15 +86,12 @@ void LevelController::handleEvent()
 						this->mainWindow->checkButtons(event->button.x, event->button.y);
 					break;
 				}
-				break;		
-				
+				break;				
 			
 			default:
 				break;
 
-			}
-
-		
+			}		
 		}
 
 	int* x = NULL;
