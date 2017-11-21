@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{D1FDD404-2E1F-4AC1-B317-9E4E4F1A4E23}</ProjectGuid>
     <RootNamespace>FirstSDL</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -130,6 +130,8 @@
     <ClCompile Include="BasicItem.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="FileLoader.cpp" />
+    <ClCompile Include="FileWriter.cpp" />
     <ClCompile Include="GoniometricAnimation.cpp" />
     <ClCompile Include="LevelController.cpp" />
     <ClCompile Include="MainParticle.cpp" />
@@ -145,6 +147,8 @@
     <ClInclude Include="BasicItem.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="EventHandler.h" />
+    <ClInclude Include="FileLoader.h" />
+    <ClInclude Include="FileWriter.h" />
     <ClInclude Include="GoniometricAnimation.h" />
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="MainParticle.h" />

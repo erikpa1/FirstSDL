@@ -36,6 +36,12 @@
     <Filter Include="Source Files\EventHandlers">
       <UniqueIdentifier>{867f0138-f5a2-459b-8cda-54f1cb7cd28e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\FIleManagement">
+      <UniqueIdentifier>{c4994153-93bf-466e-b80f-622c03c6097d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{e06865cc-28d7-4bb7-9328-f53bf3c4e8ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -76,6 +82,12 @@
     </ClCompile>
     <ClCompile Include="OnMouseClick.cpp">
       <Filter>Source Files\EventHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="FileWriter.cpp">
+      <Filter>Source Files\FIleManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLoader.cpp">
+      <Filter>Source Files\FIleManagement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +131,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="OnMouseClick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

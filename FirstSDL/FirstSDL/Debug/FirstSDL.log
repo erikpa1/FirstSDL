@@ -1,5 +1,2 @@
 ﻿  LevelController.cpp
-  BasicItem.cpp
-  Generating Code...
-  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe
-  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.pdb (Partial PDB)
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\levelcontroller.cpp(27): error C2276: '&': illegal operation on bound member function expression

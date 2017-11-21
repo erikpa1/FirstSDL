@@ -5,7 +5,10 @@
 #include <iostream>
 #include "SDL2\include\SDL_main.h"
 #include "SDL2\include\SDL.h"
+
+
 #include <vector>
+
 #include "structureDefinition.h"
 #include "BasicItem.h"
 #include "Button.h"
