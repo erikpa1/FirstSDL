@@ -24,7 +24,6 @@ LevelController::LevelController()
 	writer.writeData("test.txt");
 
 
-	std::thread t1(&LevelController::methodForThread, this);
 	
 	
 	
@@ -40,7 +39,9 @@ LevelController::~LevelController()
 
 void LevelController::run()
 {
-	
+	std::thread t1(&LevelController::methodForThread, this);
+
+
 	while (this->mainWindow->getRunningState()) {
 		
 		
