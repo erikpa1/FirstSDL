@@ -1,2 +1,6 @@
 ﻿  LevelController.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\levelcontroller.cpp(27): error C2276: '&': illegal operation on bound member function expression
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  FileWriter.cpp
+  FileLoader.cpp
+  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe
