@@ -1,0 +1,5 @@
+﻿  Koder.cpp
+c:\users\erikp\source\repos\morzeovka\morzeovka\koder.cpp(19): warning C4018: '<': signed/unsigned mismatch
+c:\users\erikp\source\repos\morzeovka\morzeovka\koder.cpp(28): warning C4018: '<': signed/unsigned mismatch
+c:\users\erikp\source\repos\morzeovka\morzeovka\koder.cpp(41): warning C4018: '<': signed/unsigned mismatch
+  Morzeovka.vcxproj -> C:\Users\erikp\source\repos\Morzeovka\Debug\Morzeovka.exe
