@@ -2,6 +2,7 @@
 #include "FileLoader.h"
 #include "FileWriter.h"
 
+#include <glew.h>
 
 #include <thread>
 

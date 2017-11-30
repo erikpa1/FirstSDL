@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\GLEW\lib\Release\Win32;C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LibraryPath>C:\Tvorba\Programovanie\FirstSDL\FirstSDL\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
@@ -80,10 +80,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\GLEW\include\GL;C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\GLEW\lib\Release\Win32;C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\FirstSDL\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -136,9 +136,12 @@
     <ClCompile Include="LevelController.cpp" />
     <ClCompile Include="MainParticle.cpp" />
     <ClCompile Include="OnMouseClick.cpp" />
+    <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="PhysicsController.cpp" />
     <ClCompile Include="SdlWindow.cpp" />
     <ClCompile Include="SinCosAnimation.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="StaticObjectPhys.cpp" />
     <ClCompile Include="TangCotgAnimation.cpp" />
     <ClCompile Include="TetrisAnimation.cpp" />
   </ItemGroup>
@@ -153,9 +156,13 @@
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="MainParticle.h" />
     <ClInclude Include="OnMouseClick.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="PhysicsController.h" />
+    <ClInclude Include="PhysicsFlag.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SdlWindow.h" />
     <ClInclude Include="SinCosAnimation.h" />
+    <ClInclude Include="StaticObjectPhysics.h" />
     <ClInclude Include="structureDefinition.h" />
     <ClInclude Include="TangCotgAnimation.h" />
     <ClInclude Include="TetrisAnimation.h" />

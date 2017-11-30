@@ -3,7 +3,7 @@
 
 using namespace std;
 
-struct colorVector {
+struct vec4 {
 	int r;
 	int b;
 	int g;
@@ -16,6 +16,8 @@ struct rectangles {
 	SDL_Rect* destination = new SDL_Rect();
 };
 
+
 enum goniometricAnimationTypes {
 	SINUS, COSINUS, TANGENS, COTANGES
 };
+

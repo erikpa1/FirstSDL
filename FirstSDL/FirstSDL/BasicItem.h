@@ -6,7 +6,7 @@
 #include "structureDefinition.h"
 #include "Animation.h"
 #include "OnMouseClick.h"
-
+#include "Physics.h"
 
 
 class Animation;
@@ -26,7 +26,10 @@ public:
 	SDL_Texture* getTexture();
 	
 	void draw();
+	void update();
+	void init();
 	void addAnimation(Animation* animation);
+	void addPhysics(Physics physicsController);
 	void OnMouseClick::onClick();
 
 	void setRenderingBool(bool hodnota);
@@ -38,9 +41,13 @@ private:
 	SDL_Texture* texture;
 	SDL_Renderer* renderer;
 	Animation* someAnimation;
-	bool* canBeDrawed;	
-	bool* wasClicked;
+	Physics* physicsMesh ;
+
+
+	bool canBeDrawed;	
+	bool wasClicked;
 	void commonConstructor(SDL_Renderer* renderer);
+
 
 		
 

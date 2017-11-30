@@ -54,10 +54,11 @@ private:
 
 	bool isRunning;
 
-	vector<BasicItem>* animableObjects;
+	vector<BasicItem>* renderableObjects;
 	vector<Button>* clickAbleObjects;
+	
 
-	colorVector actualColor;
+	vec4 actualColor;
 	rectangles basicRectangle;
 
 	SDL_Window* window;

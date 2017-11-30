@@ -1,5 +1,10 @@
 #include "SdlWindow.h"
 
+#include <glew.h>
+#include <SDL_opengl.h>
+
+
+
 
 
 SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
@@ -24,8 +29,14 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 
 	this->window = SDL_CreateWindow(title, 50, 50, xSize, ySize, SDL_WINDOW_RESIZABLE);	
 	this->renderer = SDL_CreateRenderer(window, -1, 0);
-	this->animableObjects = new std::vector<BasicItem>();
+	this->renderableObjects = new std::vector<BasicItem>();
 	this->clickAbleObjects = new std::vector<Button>();
+
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+
+
 
 	
 }
@@ -41,9 +52,9 @@ void SdlWindow::render()
 	
 	SDL_RenderClear(this->renderer);
 		
-	if (!this->animableObjects->empty()) {
-		for (signed int i = 0; i < this->animableObjects->size(); i++) {
-			this->animableObjects->at(i).draw();	
+	if (!this->renderableObjects->empty()) {
+		for (signed int i = 0; i < this->renderableObjects->size(); i++) {
+			this->renderableObjects->at(i).draw();	
 			
 		}
 	}
@@ -126,14 +137,14 @@ SDL_Renderer* SdlWindow::getRenderer()
 
 void SdlWindow::addAnimableObject(BasicItem* item)
 {
-	this->animableObjects->push_back(*item);
+	this->renderableObjects->push_back(*item);
 	
 
 }
 
 void SdlWindow::addClickableObject(Button* item)
 {
-	this->animableObjects->push_back(*item);
+	this->renderableObjects->push_back(*item);
 	this->clickAbleObjects->push_back(*item);
 	
 }

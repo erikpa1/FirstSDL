@@ -42,6 +42,24 @@
     <Filter Include="Source Files\Physics">
       <UniqueIdentifier>{e06865cc-28d7-4bb7-9328-f53bf3c4e8ea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Animation">
+      <UniqueIdentifier>{ea76cf55-19ce-44a7-bf9a-6cdac62d968a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PuttableToWorld">
+      <UniqueIdentifier>{7da71705-9a98-47c0-9497-77429ebc13a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FileManagement">
+      <UniqueIdentifier>{bb9e11d5-bf4d-4e76-a960-11e2180c2d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Listeners">
+      <UniqueIdentifier>{70acaa6d-4e3c-4c07-b8a6-bb75b6df4e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Structures">
+      <UniqueIdentifier>{6adc50c2-cbc3-4bdb-a1a8-7cb8d300e9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{f3cc13d6-d5e5-4a4f-891a-28c60e260b13}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -89,12 +107,18 @@
     <ClCompile Include="FileLoader.cpp">
       <Filter>Source Files\FIleManagement</Filter>
     </ClCompile>
+    <ClCompile Include="StaticObjectPhys.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SdlWindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="structureDefinition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LevelController.h">
@@ -104,40 +128,55 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Animation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TetrisAnimation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GoniometricAnimation.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Animation</Filter>
     </ClInclude>
     <ClInclude Include="SinCosAnimation.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisAnimation.h">
+      <Filter>Header Files\Animation</Filter>
     </ClInclude>
     <ClInclude Include="TangCotgAnimation.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="GoniometricAnimation.h">
+      <Filter>Header Files\Animation</Filter>
     </ClInclude>
     <ClInclude Include="BasicItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MainParticle.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\PuttableToWorld</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\PuttableToWorld</Filter>
     </ClInclude>
-    <ClInclude Include="EventHandler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="OnMouseClick.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FileWriter.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="MainParticle.h">
+      <Filter>Header Files\PuttableToWorld</Filter>
     </ClInclude>
     <ClInclude Include="FileLoader.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\FileManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="FileWriter.h">
+      <Filter>Header Files\FileManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>Header Files\Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="OnMouseClick.h">
+      <Filter>Header Files\Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="structureDefinition.h">
+      <Filter>Header Files\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsController.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticObjectPhysics.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsFlag.h">
+      <Filter>Header Files\Structures</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

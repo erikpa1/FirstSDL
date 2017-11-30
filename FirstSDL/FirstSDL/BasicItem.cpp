@@ -60,7 +60,8 @@ void BasicItem::commonConstructor(SDL_Renderer* renderer)
 	this->texture = SDL_CreateTextureFromSurface(this->renderer, this->surf);
 	
 	this->someAnimation = nullptr;
-	this->canBeDrawed = new bool (true);	
+	this->physicsMesh = nullptr;
+	this->canBeDrawed = true;;
 
 }
 
@@ -73,7 +74,7 @@ SDL_Texture* BasicItem::getTexture()
 void BasicItem::draw()
 {
 
-	if(*this->canBeDrawed) {		
+	if(this->canBeDrawed) {		
 		SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);
 	}
 	if ((this->someAnimation != nullptr)) {
@@ -81,10 +82,23 @@ void BasicItem::draw()
 	}	
 }
 
+void BasicItem::update()
+{
+}
+
+void BasicItem::init()
+{
+}
+
 
 void BasicItem::addAnimation(Animation* animation)
 {
+
 	this->someAnimation = animation;
+}
+
+void BasicItem::addPhysics(Physics physicsController)
+{
 }
 
 void BasicItem::setRenderingBool(bool hodnota)
@@ -94,12 +108,12 @@ void BasicItem::setRenderingBool(bool hodnota)
 
 void BasicItem::onClick()
 {	
-	if (*this->canBeDrawed)
+	if (this->canBeDrawed)
 	{
-		*this->canBeDrawed = false;
+		this->canBeDrawed = false;
 	}
 	else {
-		*this->canBeDrawed = true;
+		this->canBeDrawed = true;
 	}
 	
 		

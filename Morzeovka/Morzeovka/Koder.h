@@ -11,6 +11,7 @@ public:
 	~Koder();
 
 	void zakoduj(std::string slovo);
+	bool precitajZoSuboru(std::string nazovSuboru);
 	void vypis();
 	void zapisDoSuboru();
 	

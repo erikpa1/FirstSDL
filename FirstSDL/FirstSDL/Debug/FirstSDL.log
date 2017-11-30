@@ -1,2 +1,15 @@
-﻿     Creating library C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.lib and object C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exp
+﻿  StaticObjectPhys.cpp
+  SdlWindow.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\sdlwindow.cpp(56): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\sdlwindow.cpp(156): warning C4018: '<': signed/unsigned mismatch
+  LevelController.cpp
+  BasicItem.cpp
+  Generating Code...
+  Compiling...
+  TetrisAnimation.cpp
+  Source.cpp
+  MainParticle.cpp
+  Button.cpp
+  Generating Code...
+     Creating library C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.lib and object C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exp
   FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe

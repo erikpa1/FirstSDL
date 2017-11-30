@@ -1,6 +1,7 @@
 #include "Koder.h"
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -21,6 +22,35 @@ void Koder::zakoduj(std::string slovo)
 		this->slovnaSekvencia.push_back(this->getMorse(slovo.at(i)));
 	}
 	 
+}
+
+bool Koder::precitajZoSuboru(std::string nazovSuboru)
+{
+	ifstream file;
+	file.open(nazovSuboru);
+	std::stringstream ss;
+
+	if (file.is_open()) {
+		while (!file.eof()) {
+			std::string pomoc;
+			file >> pomoc;
+			ss << pomoc;
+			ss << " ";
+		}
+
+	}
+	else {
+		std::cout << "Nepodarilo sa otvorit subor" << std::endl;
+		return false;
+	}
+
+	
+
+	std::string help = ss.str();
+	std::cout << help << std::endl;
+	this->zakoduj(help);
+	return true;
+
 }
 
 void Koder::vypis()
@@ -110,8 +140,7 @@ std::string Koder::getMorse(char a)
 		return "Not matching";
 
 	}
-
-	return std::string();
+		
 }
 
 
