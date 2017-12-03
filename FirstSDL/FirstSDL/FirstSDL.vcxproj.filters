@@ -98,12 +98,6 @@
     <ClCompile Include="FileLoader.cpp">
       <Filter>Source Files\FIleManagement</Filter>
     </ClCompile>
-    <ClCompile Include="PhysicsController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Physics.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SdlWindow.h">
@@ -152,9 +146,6 @@
       <Filter>Header Files\Listeners</Filter>
     </ClInclude>
     <ClInclude Include="structureDefinition.h">
-      <Filter>Header Files\Structures</Filter>
-    </ClInclude>
-    <ClInclude Include="PhysicsFlag.h">
       <Filter>Header Files\Structures</Filter>
     </ClInclude>
   </ItemGroup>
