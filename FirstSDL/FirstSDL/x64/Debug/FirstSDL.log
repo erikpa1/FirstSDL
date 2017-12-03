@@ -1,4 +1,22 @@
-﻿BasicItem.obj : error LNK2019: unresolved external symbol SDL_RWFromFile referenced in function "private: void __cdecl BasicItem::commonConstructor(struct SDL_Renderer *)" (?commonConstructor@BasicItem@@AEAAXPEAUSDL_Renderer@@@Z)
+﻿  TetrisAnimation.cpp
+  TangCotgAnimation.cpp
+  Source.cpp
+  SinCosAnimation.cpp
+  SdlWindow.cpp
+  PhysicsController.cpp
+  Physics.cpp
+  OnMouseClick.cpp
+  MainParticle.cpp
+  LevelController.cpp
+  GoniometricAnimation.cpp
+  FileWriter.cpp
+  FileLoader.cpp
+  EventHandler.cpp
+  Button.cpp
+  BasicItem.cpp
+  Animation.cpp
+  Generating Code...
+BasicItem.obj : error LNK2019: unresolved external symbol SDL_RWFromFile referenced in function "private: void __cdecl BasicItem::commonConstructor(struct SDL_Renderer *)" (?commonConstructor@BasicItem@@AEAAXPEAUSDL_Renderer@@@Z)
 BasicItem.obj : error LNK2019: unresolved external symbol SDL_LoadBMP_RW referenced in function "private: void __cdecl BasicItem::commonConstructor(struct SDL_Renderer *)" (?commonConstructor@BasicItem@@AEAAXPEAUSDL_Renderer@@@Z)
 BasicItem.obj : error LNK2019: unresolved external symbol SDL_CreateTextureFromSurface referenced in function "private: void __cdecl BasicItem::commonConstructor(struct SDL_Renderer *)" (?commonConstructor@BasicItem@@AEAAXPEAUSDL_Renderer@@@Z)
 BasicItem.obj : error LNK2019: unresolved external symbol SDL_RenderCopy referenced in function "public: void __cdecl BasicItem::draw(void)" (?draw@BasicItem@@QEAAXXZ)

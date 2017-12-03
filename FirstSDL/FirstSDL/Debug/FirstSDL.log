@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  StaticObjectPhys.cpp
   SdlWindow.cpp
 c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\sdlwindow.cpp(56): warning C4018: '<': signed/unsigned mismatch
@@ -13,3 +14,7 @@ c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\sdlwindow.cpp(156): w
   Generating Code...
      Creating library C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.lib and object C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exp
   FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe
+=======
+﻿  LevelController.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\levelcontroller.cpp(27): error C2276: '&': illegal operation on bound member function expression
+>>>>>>> parent of 95a6f10... commit thread updates

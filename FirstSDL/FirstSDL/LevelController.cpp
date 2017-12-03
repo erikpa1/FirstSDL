@@ -24,8 +24,8 @@ LevelController::LevelController()
 	FileWriter writer;
 	writer.writeData("test.txt");
 
-
 	
+	//std::thread t1(&LevelController::methodForThread, methodForThread());
 	
 	
 	
@@ -49,8 +49,10 @@ void LevelController::run()
 		this->handleEvent();		
 		this->mainWindow->update();
 		this->mainWindow->render();
-		//this->mainWindow->pauseRendering(5000);
+		this->mainWindow->pauseRendering(5000);
 		
+	
+
 		
 		
 	}
