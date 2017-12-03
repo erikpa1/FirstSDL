@@ -94,6 +94,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -141,7 +144,6 @@
     <ClCompile Include="SdlWindow.cpp" />
     <ClCompile Include="SinCosAnimation.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="StaticObjectPhys.cpp" />
     <ClCompile Include="TangCotgAnimation.cpp" />
     <ClCompile Include="TetrisAnimation.cpp" />
   </ItemGroup>
@@ -156,13 +158,10 @@
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="MainParticle.h" />
     <ClInclude Include="OnMouseClick.h" />
-    <ClInclude Include="Physics.h" />
-    <ClInclude Include="PhysicsController.h" />
     <ClInclude Include="PhysicsFlag.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SdlWindow.h" />
     <ClInclude Include="SinCosAnimation.h" />
-    <ClInclude Include="StaticObjectPhysics.h" />
     <ClInclude Include="structureDefinition.h" />
     <ClInclude Include="TangCotgAnimation.h" />
     <ClInclude Include="TetrisAnimation.h" />

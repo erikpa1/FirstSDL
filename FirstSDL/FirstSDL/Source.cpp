@@ -5,7 +5,7 @@
 
 
 
-int main(int, char**) {
+int main() {
 
 	
 	LevelController* controller = new LevelController();

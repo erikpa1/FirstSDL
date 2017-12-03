@@ -6,7 +6,7 @@ Physics::Physics(PhysicsType type)
 	switch (type)
 	{
 	case STATIC:
-		this->controller = new StaticObjectPhys();
+		this->controller = nullptr;
 		break;
 	case KYNEMATIC:
 		break;

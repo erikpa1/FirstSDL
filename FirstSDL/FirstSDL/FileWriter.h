@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "SDL_rwops.h"
+
 
 class FileWriter
 {

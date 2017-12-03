@@ -1,7 +1,5 @@
 #include "SdlWindow.h"
 
-#include <glew.h>
-#include <SDL_opengl.h>
 
 
 

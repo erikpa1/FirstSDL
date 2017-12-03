@@ -60,7 +60,7 @@ void BasicItem::commonConstructor(SDL_Renderer* renderer)
 	this->texture = SDL_CreateTextureFromSurface(this->renderer, this->surf);
 	
 	this->someAnimation = nullptr;
-	this->physicsMesh = nullptr;
+
 	this->canBeDrawed = true;;
 
 }
@@ -97,9 +97,6 @@ void BasicItem::addAnimation(Animation* animation)
 	this->someAnimation = animation;
 }
 
-void BasicItem::addPhysics(Physics physicsController)
-{
-}
 
 void BasicItem::setRenderingBool(bool hodnota)
 {
