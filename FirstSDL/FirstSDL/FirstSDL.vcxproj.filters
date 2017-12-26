@@ -51,6 +51,9 @@
     <Filter Include="Header Files\RenderableObject">
       <UniqueIdentifier>{7da71705-9a98-47c0-9497-77429ebc13a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Futball">
+      <UniqueIdentifier>{c99f1603-d944-4e00-8d4e-1e270f01564a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -97,6 +100,9 @@
     </ClCompile>
     <ClCompile Include="FileLoader.cpp">
       <Filter>Source Files\FIleManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="Futball.cpp">
+      <Filter>Source Files\Futball</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +153,9 @@
     </ClInclude>
     <ClInclude Include="structureDefinition.h">
       <Filter>Header Files\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Futball.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

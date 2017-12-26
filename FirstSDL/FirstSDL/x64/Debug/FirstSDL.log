@@ -1,20 +1,3 @@
-﻿BasicItem.obj : error LNK2019: unresolved external symbol SDL_RWFromFile referenced in function "private: void __cdecl BasicItem::commonConstructor(struct SDL_Renderer *)" (?commonConstructor@BasicItem@@AEAAXPEAUSDL_Renderer@@@Z)
-BasicItem.obj : error LNK2019: unresolved external symbol SDL_LoadBMP_RW referenced in function "private: void __cdecl BasicItem::commonConstructor(struct SDL_Renderer *)" (?commonConstructor@BasicItem@@AEAAXPEAUSDL_Renderer@@@Z)
-BasicItem.obj : error LNK2019: unresolved external symbol SDL_CreateTextureFromSurface referenced in function "private: void __cdecl BasicItem::commonConstructor(struct SDL_Renderer *)" (?commonConstructor@BasicItem@@AEAAXPEAUSDL_Renderer@@@Z)
-BasicItem.obj : error LNK2019: unresolved external symbol SDL_RenderCopy referenced in function "public: void __cdecl BasicItem::draw(void)" (?draw@BasicItem@@QEAAXXZ)
-LevelController.obj : error LNK2019: unresolved external symbol SDL_GetMouseState referenced in function "private: void __cdecl LevelController::handleEvent(void)" (?handleEvent@LevelController@@AEAAXXZ)
-LevelController.obj : error LNK2019: unresolved external symbol SDL_PollEvent referenced in function "private: void __cdecl LevelController::handleEvent(void)" (?handleEvent@LevelController@@AEAAXXZ)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_CreateWindow referenced in function "public: __cdecl SdlWindow::SdlWindow(char const *,int,int)" (??0SdlWindow@@QEAA@PEBDHH@Z)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_GetWindowSize referenced in function "public: int * __cdecl SdlWindow::getWindowHeight(void)" (?getWindowHeight@SdlWindow@@QEAAPEAHXZ)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_DestroyWindow referenced in function "public: void __cdecl SdlWindow::cleanup(void)" (?cleanup@SdlWindow@@QEAAXXZ)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_GL_SetAttribute referenced in function "public: __cdecl SdlWindow::SdlWindow(char const *,int,int)" (??0SdlWindow@@QEAA@PEBDHH@Z)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_CreateRenderer referenced in function "public: __cdecl SdlWindow::SdlWindow(char const *,int,int)" (??0SdlWindow@@QEAA@PEBDHH@Z)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_SetRenderDrawColor referenced in function "public: void __cdecl SdlWindow::render(void)" (?render@SdlWindow@@QEAAXXZ)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_RenderClear referenced in function "public: void __cdecl SdlWindow::render(void)" (?render@SdlWindow@@QEAAXXZ)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_RenderPresent referenced in function "public: void __cdecl SdlWindow::render(void)" (?render@SdlWindow@@QEAAXXZ)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_DestroyRenderer referenced in function "public: void __cdecl SdlWindow::cleanup(void)" (?cleanup@SdlWindow@@QEAAXXZ)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_Delay referenced in function "public: void __cdecl SdlWindow::pauseRendering(int)" (?pauseRendering@SdlWindow@@QEAAXH@Z)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_Init referenced in function "public: __cdecl SdlWindow::SdlWindow(char const *,int,int)" (??0SdlWindow@@QEAA@PEBDHH@Z)
-SdlWindow.obj : error LNK2019: unresolved external symbol SDL_Quit referenced in function "public: void __cdecl SdlWindow::cleanup(void)" (?cleanup@SdlWindow@@QEAAXXZ)
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\x64\Debug\FirstSDL.exe : fatal error LNK1120: 19 unresolved externals
+﻿  Source.cpp
+     Creating library C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\x64\Debug\FirstSDL.lib and object C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\x64\Debug\FirstSDL.exp
+  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\x64\Debug\FirstSDL.exe

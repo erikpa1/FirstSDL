@@ -1,15 +1,15 @@
-#include <stdio.h>
+
 #include <stdlib.h>
 #include "LevelController.h"
 
+#include <iostream>
 
 
-
-int main() {
+int main(int argc, char* argv[]) {
 
 	
-	LevelController* controller = new LevelController();
-	controller->run();
+	LevelController controller;
+	controller.run();
 	
 
 	

@@ -2,8 +2,6 @@
 #include "FileLoader.h"
 #include "FileWriter.h"
 
-
-
 #include <thread>
 
 
@@ -12,23 +10,19 @@ LevelController::LevelController()
 {
 
 	this->mainWindow = new SdlWindow("SDL first", 900, 700);		
-	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);
+	BasicItem* item = new BasicItem(this->mainWindow->getRenderer(), 10, 10, 10, 10);	
 	Animation* anim = new TetrisAnimation(item->getRectangles(), 5, true);	
+	
+
 	item->addAnimation(anim);
 	this->mainWindow->addAnimableObject(item);
-
 	Button* btn = new Button(this->mainWindow->getRenderer(), 800, 0, 200, 50);
-	btn->addFunctionality(item);	
-	this->mainWindow->addClickableObject(btn);
-
-	FileWriter writer;
-	writer.writeData("test.txt");
+	btn->addFunctionality(item);
+		
+	//this->mainWindow->addClickableObject(btn);
 
 	
-	//std::thread t1(&LevelController::methodForThread, methodForThread());
-	
-	
-	
+
 
 }
 
@@ -40,19 +34,15 @@ LevelController::~LevelController()
 
 void LevelController::run()
 {
-	std::thread t1(&LevelController::methodForThread, this);
+	//std::thread t1(&LevelController::methodForThread, this);
 
 
-	while (this->mainWindow->getRunningState()) {
-		
+	while (this->mainWindow->getRunningState()) {		
 		
 		this->handleEvent();		
 		this->mainWindow->update();
 		this->mainWindow->render();
-		this->mainWindow->pauseRendering(5000);
-		
-	
-
+		//this->mainWindow->pauseRendering(5000);
 		
 		
 	}

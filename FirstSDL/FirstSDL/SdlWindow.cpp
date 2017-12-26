@@ -2,13 +2,10 @@
 
 
 
-
-
-
 SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 {
 
-	
+
 	this->isRunning = new bool(true);
 
 	// initializing basic color
@@ -27,12 +24,8 @@ SdlWindow::SdlWindow(const char* title, int xSize, int ySize)
 
 	this->window = SDL_CreateWindow(title, 50, 50, xSize, ySize, SDL_WINDOW_RESIZABLE);	
 	this->renderer = SDL_CreateRenderer(window, -1, 0);
-	this->renderableObjects = new std::vector<BasicItem>();
-	this->clickAbleObjects = new std::vector<Button>();
-
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+	//this->renderableObjects = new std::vector<BasicItem>();
+	//this->clickAbleObjects = new std::vector<Button>();
 
 
 
@@ -46,17 +39,26 @@ SdlWindow::~SdlWindow()
 void SdlWindow::render()
 {	
 	
-	SDL_SetRenderDrawColor(this->renderer, this->actualColor.r, this->actualColor.b, this->actualColor.g, this->actualColor.a);
-	
+	SDL_SetRenderDrawColor(this->renderer, this->actualColor.r, this->actualColor.b, this->actualColor.g, this->actualColor.a);	
 	SDL_RenderClear(this->renderer);
-		
-	if (!this->renderableObjects->empty()) {
-		for (signed int i = 0; i < this->renderableObjects->size(); i++) {
-			this->renderableObjects->at(i).draw();	
-			
+
+
+
+	//if (!this->renderableObjects->empty()) {
+	//	for (signed int i = 0; i < this->renderableObjects->size(); i++) {
+	//		std::cout << "Vypis " << this->renderableObjects->at(i).getRenderingBool() << std::endl;
+	//		this->renderableObjects->at(i).draw();						
+	//	}
+	//}
+	
+
+	if (!this->renderableObjects.empty()) {
+		for (signed int i = 0; i < this->renderableObjects.size(); i++) {
+			std::cout << "Vypis " << this->renderableObjects.at(i).getRenderingBool() << std::endl;
+			this->renderableObjects.at(i).draw();
 		}
 	}
-	
+
 	SDL_RenderPresent(this->renderer);
 
 }
@@ -135,25 +137,24 @@ SDL_Renderer* SdlWindow::getRenderer()
 
 void SdlWindow::addAnimableObject(BasicItem* item)
 {
-	this->renderableObjects->push_back(*item);
 	
-
+	this->renderableObjects.push_back(*item);
 }
 
 void SdlWindow::addClickableObject(Button* item)
 {
-	this->renderableObjects->push_back(*item);
-	this->clickAbleObjects->push_back(*item);
+	this->renderableObjects.push_back(*item);
+	this->clickAbleObjects.push_back(*item);
 	
 }
 
 void SdlWindow::checkButtons(int x, int y)
 {
 
-	if (!this->clickAbleObjects->empty()) {
-		for (signed int i = 0; i < this->clickAbleObjects->size(); i++) {
-			this->clickAbleObjects->at(i).wasClicked(x, y);
-
+	if (!this->clickAbleObjects.empty()) {
+		for (signed int i = 0; i < this->clickAbleObjects.size(); i++) {
+			
+			this->clickAbleObjects.at(i).wasClicked(x, y);
 			
 		}
 	}

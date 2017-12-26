@@ -1,18 +1,19 @@
 #pragma once
 
 
-#include "SDL2\include\SDL_main.h"
-#include "SDL2\include\SDL.h"
+#include "SDL_main.h"
+#include "SDL.h"
 #include "structureDefinition.h"
 #include "Animation.h"
 #include "OnMouseClick.h"
+#include "EventHandler.h"
 
 
 
 class Animation;
 
 
-class BasicItem : OnMouseClick
+class BasicItem : private OnMouseClick
 
 {
 public:
@@ -29,10 +30,12 @@ public:
 	void update();
 	void init();
 	void addAnimation(Animation* animation);
-
+	
 	void OnMouseClick::onClick();
 
 	void setRenderingBool(bool hodnota);
+
+	bool getRenderingBool() { return canBeDrawed; };
 
 private:
 	
@@ -41,7 +44,7 @@ private:
 	SDL_Texture* texture;
 	SDL_Renderer* renderer;
 	Animation* someAnimation;
-
+	void switchRendering();
 
 
 	bool canBeDrawed;	

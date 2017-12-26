@@ -14,6 +14,7 @@ public:
 	~TetrisAnimation();
 	
 	void Animation::animate();
+	bool getTest();
 	
 
 private:

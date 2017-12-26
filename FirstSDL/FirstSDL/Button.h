@@ -2,7 +2,7 @@
 
 
 #include "BasicItem.h"
-#include "EventHandler.h"
+#include "OnMouseClick.h"
 
 class Button : public BasicItem
 {
@@ -15,7 +15,7 @@ public:
 
 	void wasClicked(int x, int y);	
 	void addFunctionality(BasicItem* item);
-	
+	void OnMouseClick::onClick();
 	
 
 private:

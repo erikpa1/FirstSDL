@@ -21,7 +21,13 @@ TetrisAnimation::~TetrisAnimation()
 
 }
 
+bool TetrisAnimation::getTest()
+{
+	return true;
+}
+
 void TetrisAnimation::animate() {
+
 	if (this->returnSequence) {
 		this->animateWithBackSequance();
 	}

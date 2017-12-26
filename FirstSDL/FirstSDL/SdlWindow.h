@@ -1,17 +1,15 @@
 #pragma once
 
 
-
-#include <iostream>
-#include "SDL2\include\SDL_main.h"
-#include "SDL2\include\SDL.h"
-
+#include "SDL.h"
 
 #include <vector>
 
 #include "structureDefinition.h"
 #include "BasicItem.h"
 #include "Button.h"
+
+
 
 using namespace std;
 
@@ -54,8 +52,8 @@ private:
 
 	bool isRunning;
 
-	vector<BasicItem>* renderableObjects;
-	vector<Button>* clickAbleObjects;
+	vector<BasicItem> renderableObjects;
+	vector<Button> clickAbleObjects;
 	
 
 	vec4 actualColor;
@@ -64,7 +62,6 @@ private:
 	SDL_Window* window;
 	SDL_Renderer* renderer;
 	SDL_Event* event;
-
 	
 
 	int* windowWidth;

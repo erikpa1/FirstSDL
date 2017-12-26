@@ -21,12 +21,7 @@ void FileLoader::endWriting()
 
 char * FileLoader::getText()
 {
-/*
-	ifstream loader(this->filePath);
-	char *a;
-	loader >> *a;
-	loader.close();
-*/
+
 	return nullptr;
 }
 

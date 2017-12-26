@@ -1,2 +1,20 @@
-﻿SDL2main.lib(SDL_windows_main.obj) : error LNK2019: unresolved external symbol _SDL_main referenced in function _main_utf8
-C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe : fatal error LNK1120: 1 unresolved externals
+﻿  Animation.cpp
+  Generating Code...
+  Compiling...
+  LevelController.cpp
+  Generating Code...
+  Compiling...
+  TetrisAnimation.cpp
+  Source.cpp
+  SdlWindow.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\sdlwindow.cpp(50): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\firstsdl\firstsdl\sdlwindow.cpp(150): warning C4018: '<': signed/unsigned mismatch
+  MainParticle.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  TangCotgAnimation.cpp
+  SinCosAnimation.cpp
+  GoniometricAnimation.cpp
+  Button.cpp
+  BasicItem.cpp
+  FirstSDL.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\FirstSDL\Debug\FirstSDL.exe

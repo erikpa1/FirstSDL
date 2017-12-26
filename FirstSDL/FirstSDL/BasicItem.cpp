@@ -1,6 +1,6 @@
 #include "BasicItem.h"
 
-
+#include <iostream>
 
 
 BasicItem::BasicItem(SDL_Renderer* renderer, int basicX, int basicY, int basicW, int basicH, int destinationX, int destinationY, int destinationW, int destinationH)
@@ -38,6 +38,7 @@ BasicItem::BasicItem(SDL_Renderer* renderer, int univerzalX, int univerzalY, int
 
 BasicItem::~BasicItem()
 {
+	delete this->someAnimation;
 }
 
 rectangles* BasicItem::getRectangles() const
@@ -61,7 +62,8 @@ void BasicItem::commonConstructor(SDL_Renderer* renderer)
 	
 	this->someAnimation = nullptr;
 
-	this->canBeDrawed = true;;
+	this->canBeDrawed = true;
+	this->wasClicked = true;
 
 }
 
@@ -74,12 +76,20 @@ SDL_Texture* BasicItem::getTexture()
 void BasicItem::draw()
 {
 
+	std::cout << this->canBeDrawed << std::endl;
 	if(this->canBeDrawed) {		
-		SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);
+		SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);	
+	
 	}
-	if ((this->someAnimation != nullptr)) {
-		this->someAnimation->animate();
+
+	if (this->someAnimation != nullptr) 
+	{
+		someAnimation->animate();
+ 	
+		
 	}	
+
+	
 }
 
 void BasicItem::update()
@@ -88,6 +98,7 @@ void BasicItem::update()
 
 void BasicItem::init()
 {
+	this->switchRendering();
 }
 
 
@@ -95,16 +106,13 @@ void BasicItem::addAnimation(Animation* animation)
 {
 
 	this->someAnimation = animation;
+	std::cout << "I wasCalled " << animation->getAnimationSpeed() << std::endl;
+
+	
 }
 
-
-void BasicItem::setRenderingBool(bool hodnota)
+void BasicItem::switchRendering()
 {
-	this->canBeDrawed = new bool(hodnota);
-}
-
-void BasicItem::onClick()
-{	
 	if (this->canBeDrawed)
 	{
 		this->canBeDrawed = false;
@@ -112,6 +120,29 @@ void BasicItem::onClick()
 	else {
 		this->canBeDrawed = true;
 	}
-	
+
+}
+
+
+void BasicItem::setRenderingBool(bool hodnota)
+{
+	this->canBeDrawed = new bool(hodnota);
+
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+	std::cout << "*************" << std::endl;
+}
+
+void BasicItem::onClick()
+{
+	std::cout << "Clicked" << std::endl;
 		
 }

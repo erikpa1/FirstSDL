@@ -31,5 +31,10 @@ void Animation::enableAnimating()
 	this->canAnimate = new bool(true);
 }
 
+int Animation::getAnimationSpeed()
+{
+	return *this->speedOfAnimation;
+}
+
 
 

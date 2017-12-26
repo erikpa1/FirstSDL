@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUITesting", "GUITesting\GUITesting.vcxproj", "{CBB57494-79D6-4D96-A239-F2F766F49485}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBB57494-79D6-4D96-A239-F2F766F49485}.Debug|x64.ActiveCfg = Debug|Win32
+		{CBB57494-79D6-4D96-A239-F2F766F49485}.Debug|x64.Build.0 = Debug|Win32
+		{CBB57494-79D6-4D96-A239-F2F766F49485}.Debug|x86.ActiveCfg = Debug|Win32
+		{CBB57494-79D6-4D96-A239-F2F766F49485}.Debug|x86.Build.0 = Debug|Win32
+		{CBB57494-79D6-4D96-A239-F2F766F49485}.Release|x64.ActiveCfg = Debug|Win32
+		{CBB57494-79D6-4D96-A239-F2F766F49485}.Release|x64.Build.0 = Debug|Win32
+		{CBB57494-79D6-4D96-A239-F2F766F49485}.Release|x86.ActiveCfg = Release|Win32
+		{CBB57494-79D6-4D96-A239-F2F766F49485}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C136A487-7FF8-4781-BC91-2E1286C29965}
+	EndGlobalSection
+EndGlobal
