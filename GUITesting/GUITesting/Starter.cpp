@@ -1,11 +1,15 @@
 #pragma once
 
+#include "Application.h"
 #include "Window.h"
 
 int main()
 {
-
-	Window window;
+	Application app;
+	Window *window = new Window();
+	app.addWindow(window);	
+	app.TickAutomaticly();
 	
-	return 0;
+	
+	return 0;;
 }

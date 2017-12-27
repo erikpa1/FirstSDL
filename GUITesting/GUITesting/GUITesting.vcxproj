@@ -70,12 +70,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>..\SFML;$(IncludePath)</IncludePath>
-    <LibraryPath>..\External\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\External\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\External\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>..\SFML;$(IncludePath)</IncludePath>
-    <LibraryPath>..\External\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\External\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\External\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -130,10 +130,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Buton.cpp" />
+    <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="MouseEvents.cpp" />
+    <ClCompile Include="PopUpWindow.cpp" />
+    <ClCompile Include="Renderable.cpp" />
     <ClCompile Include="Starter.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Buton.h" />
+    <ClInclude Include="Canvas.h" />
+    <ClInclude Include="MouseEvents.h" />
+    <ClInclude Include="PopUpWindow.h" />
+    <ClInclude Include="Renderable.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

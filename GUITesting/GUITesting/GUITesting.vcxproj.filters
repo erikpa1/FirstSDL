@@ -22,18 +22,60 @@
     <Filter Include="Source Files\GuiElements">
       <UniqueIdentifier>{f34a36f4-ec8a-4c90-9dff-8ef5ad4f9385}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\EventHandler">
+      <UniqueIdentifier>{d7855ce6-d90b-4616-a887-f655200a6c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{f1d15f09-4568-4517-b1db-2077c2952800}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Starter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Renderable.cpp">
+      <Filter>Source Files\GuiElements</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEvents.cpp">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
+      <Filter>Source Files\GuiElements</Filter>
+    </ClCompile>
+    <ClCompile Include="PopUpWindow.cpp">
+      <Filter>Source Files\SecondaryWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Source Files\PrimaryWindow</Filter>
     </ClCompile>
+    <ClCompile Include="Buton.cpp">
+      <Filter>Source Files\GuiElements</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Renderable.h">
+      <Filter>Source Files\GuiElements</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEvents.h">
+      <Filter>Source Files\EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas.h">
+      <Filter>Source Files\GuiElements</Filter>
+    </ClInclude>
+    <ClInclude Include="PopUpWindow.h">
+      <Filter>Source Files\SecondaryWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Source Files\Application</Filter>
+    </ClInclude>
     <ClInclude Include="Window.h">
       <Filter>Source Files\PrimaryWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Buton.h">
+      <Filter>Source Files\GuiElements</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
