@@ -48,11 +48,14 @@
     <ClCompile Include="Application.cpp">
       <Filter>Source Files\Application</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Source Files\PrimaryWindow</Filter>
-    </ClCompile>
     <ClCompile Include="Buton.cpp">
       <Filter>Source Files\GuiElements</Filter>
+    </ClCompile>
+    <ClCompile Include="AppWindow.cpp">
+      <Filter>Source Files\PrimaryWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="TestObject.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -71,11 +74,14 @@
     <ClInclude Include="Application.h">
       <Filter>Source Files\Application</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>Source Files\PrimaryWindow</Filter>
-    </ClInclude>
     <ClInclude Include="Buton.h">
       <Filter>Source Files\GuiElements</Filter>
+    </ClInclude>
+    <ClInclude Include="AppWindow.h">
+      <Filter>Source Files\PrimaryWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="TestObject.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

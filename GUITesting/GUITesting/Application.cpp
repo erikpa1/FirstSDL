@@ -11,7 +11,7 @@ Application::~Application()
 {
 }
 
-void Application::addWindow(Window *window)
+void Application::AddWindow(AppWindow *window)
 {
 	//this->_windowses.push_back(*window);
 }

@@ -9,30 +9,50 @@ class Renderable
 
 public:
 
-	Renderable(const sf::RenderWindow *window);
-	Renderable(const sf::RenderWindow *window, const sf::Vector2f universal);
+	//Renderable(Renderable &parent);
+	Renderable(sf::RenderWindow *window);
+	Renderable(const sf::RenderWindow *window, const sf::Vector2f universal);	
 	Renderable(const sf::RenderWindow *window, const sf::Vector2f position, const sf::Vector2f dimension);
 	~Renderable();
 
-	virtual void Start() = 0;
+
+	//Basic rendering voids
+	virtual void Start();
 	virtual void Update();
 	virtual void Render();
 
+	//Parent controlling
+	void SetParent(Renderable &parent);
+	void ParentInitialization(const sf::RenderWindow *window);
 
+	//Drawing controlling
 	void ChangeDrawinStatus(bool value);
 	void ChangeUpdateStatus(bool value);
+
+	//Object properties
+	void setPosition(sf::Vector2f newPosition);
 	void setID(signed int ID);
 	signed int GetID();
+
+	//Parent attributes
+	sf::RenderWindow *getRenderWindow() { return _window; };
+	sf::Vector2f &getPosition() { return _position; };
+	sf::Vector2f &getDimension() { return _dimension; };
+	bool GetDrawingState() { return _canBeDrawed; };
+	bool GetUpdateState() { return _canRecieveUpdate; };
+
 
 protected:
 
 	void CommonContructior();
 
 	sf::RenderWindow *_window;
-	sf::Drawable *_drawable;
-	sf::Vector2f position;
-	sf::Vector2f dimension;
+	sf::Shape *_shape;
+
+	sf::Vector2f _position;
+	sf::Vector2f _dimension;
 	
+	Renderable* _child;
 
 	bool _canBeDrawed;
 	bool _canRecieveUpdate;

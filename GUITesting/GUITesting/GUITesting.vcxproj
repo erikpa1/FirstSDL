@@ -137,7 +137,8 @@
     <ClCompile Include="PopUpWindow.cpp" />
     <ClCompile Include="Renderable.cpp" />
     <ClCompile Include="Starter.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="AppWindow.cpp" />
+    <ClCompile Include="TestObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -146,7 +147,8 @@
     <ClInclude Include="MouseEvents.h" />
     <ClInclude Include="PopUpWindow.h" />
     <ClInclude Include="Renderable.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="AppWindow.h" />
+    <ClInclude Include="TestObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

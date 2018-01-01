@@ -17,7 +17,7 @@ Buton::Buton(sf::RenderWindow* renderer, const sf::Vector2f universal)
 }
 
 Buton::Buton(sf::RenderWindow* renderer, const sf::Vector2f position, const sf::Vector2f dimension)
-			//: Renderable(renderer, position, dimension)
+			//: Renderable(renderer, _position, _dimension)
 {
 
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "Window.h"
+#include "AppWindow.h"
 #include <vector>
 
 class Application
@@ -9,8 +9,8 @@ public:
 	Application();
 	~Application();
 
-	void addWindow(Window *window);
-	void removeWindow(Window *window);
+	void AddWindow(AppWindow *window);
+	void RemoveWindow(AppWindow *window);
 
 	void TickAutomaticly();
 	void TickPause();
@@ -21,7 +21,7 @@ public:
 
 private:
 
-	vector<Window> _windowses;
+	vector<AppWindow> _windowses;
 
 	
 

@@ -1,5 +1,5 @@
 #include "PopUpWindow.h"
-#include "Window.h"
+#include "AppWindow.h"
 
 
 PopUpWindow::PopUpWindow()
@@ -15,6 +15,6 @@ PopUpWindow::~PopUpWindow()
 void PopUpWindow::ShowWindow()
 {
 
-	Window window;
+	AppWindow window;
 	window.IndependentStart();
 }
