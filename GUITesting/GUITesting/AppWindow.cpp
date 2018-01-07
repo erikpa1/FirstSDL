@@ -1,14 +1,13 @@
 #include "AppWindow.h"
 #include "Buton.h"
+#include "EventReactable.h"
 
 
 
 AppWindow::AppWindow()
 {
 	this->_window = new sf::RenderWindow(sf::VideoMode(800, 600), "Its working");
-	
-	
-		
+
 }
 
 
@@ -35,6 +34,7 @@ void AppWindow::Tick()
 
 void AppWindow::AddElement(Renderable* renderable, sf::Vector2f position)
 {	
+	renderable->SetRenderer(this->_window);
 	this->_renderableObjects.push_back(*renderable);
 	renderable->setPosition(position);
 }
@@ -66,38 +66,15 @@ void AppWindow::particalTick()
 
 }
 
-void AppWindow::LeftClicked(int x, int y)
-{
 
-
-	//for (int i = 0; i < this->_renderableObjects.size(); i++)
-	//{		
-	//	Buton *help = this->_renderableObjects.at(i);
-
-	//	if (((help->source->x <= x) && (x <= (help->source->w + help->source->x))) && ((help->source->y <= y) && (y <= help->source->h + help->source->y))) {
-	//		if (this->clickable)
-	//		{
-	//			//;
-	//		}
-
-	//	}
-	//	this->_renderableObjects.at(i).Update();
-
-	//}
-	
-
-}
 
 void AppWindow::HandleEvents(sf::Event event)
 {
-	switch(event.type)
+	for (int i = 0; i < this->_renderableObjects.size(); i++)
 	{
-
-	case sf::Event::EventType::MouseButtonPressed :
-		this->LeftClicked(0, 0);
-		break;
-
-
-		
+		if (typeid(this->_renderableObjects.at(i)) == typeid(EventReactable&));
+		{
+			//(EventReactable)this->_renderableObjects.at(i).Start();
+		}
 	}
 }

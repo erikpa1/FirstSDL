@@ -77,17 +77,10 @@ void BasicItem::draw()
 {
 
 	std::cout << this->canBeDrawed << std::endl;
-	if(this->canBeDrawed) {		
-		SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);	
-	
-	}
+	if (this->canBeDrawed) {
+		SDL_RenderCopy(this->renderer, this->texture, this->mainRectangle->destination, this->mainRectangle->source);
 
-	if (this->someAnimation != nullptr) 
-	{
-		someAnimation->animate();
- 	
-		
-	}	
+	}
 
 	
 }

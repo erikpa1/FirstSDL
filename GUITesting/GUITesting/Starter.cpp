@@ -3,6 +3,7 @@
 #include "Application.h"
 #include "AppWindow.h"
 #include "Renderable.h"
+#include "Buton.h"
 #include "TestObject.h"
 #include <memory>
 #include <iostream>
@@ -12,7 +13,7 @@ int main()
 	Application app;
 	AppWindow window;	
 	
-	window.AddElement(new Renderable(window.GetRenderWindow()), sf::Vector2f(10, 10));
+	window.AddElement(new Buton(), sf::Vector2f(10, 10));
 	window.IndependentStart();
 
 	//app.AddWindow(window);	

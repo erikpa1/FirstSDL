@@ -133,6 +133,7 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Buton.cpp" />
     <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="EventReactable.cpp" />
     <ClCompile Include="MouseEvents.cpp" />
     <ClCompile Include="PopUpWindow.cpp" />
     <ClCompile Include="Renderable.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="Buton.h" />
     <ClInclude Include="Canvas.h" />
+    <ClInclude Include="EventReactable.h" />
     <ClInclude Include="MouseEvents.h" />
     <ClInclude Include="PopUpWindow.h" />
     <ClInclude Include="Renderable.h" />

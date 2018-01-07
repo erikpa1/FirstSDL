@@ -1,7 +1,7 @@
 #include "Buton.h"
 
 
-Buton::Buton(sf::RenderWindow *renderer) 
+Buton::Buton() : Renderable()
 		//	: Renderable(renderer)
 {
 
@@ -9,14 +9,14 @@ Buton::Buton(sf::RenderWindow *renderer)
 
 }
 
-Buton::Buton(sf::RenderWindow* renderer, const sf::Vector2f universal) 
+Buton::Buton(const sf::Vector2f universal) : Renderable(universal)
 			//: Renderable(renderer, universal)
 {
 
 
 }
 
-Buton::Buton(sf::RenderWindow* renderer, const sf::Vector2f position, const sf::Vector2f dimension)
+Buton::Buton(const sf::Vector2f position, const sf::Vector2f dimension) : Renderable(position, dimension)
 			//: Renderable(renderer, _position, _dimension)
 {
 
@@ -37,4 +37,9 @@ void Buton::Update()
 
 void Buton::Render()
 {
+}
+
+void Buton::OnClick(sf::Vector2f position)
+{
+
 }

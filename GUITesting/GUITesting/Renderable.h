@@ -10,9 +10,9 @@ class Renderable
 public:
 
 	//Renderable(Renderable &parent);
-	Renderable(sf::RenderWindow *window);
-	Renderable(const sf::RenderWindow *window, const sf::Vector2f universal);	
-	Renderable(const sf::RenderWindow *window, const sf::Vector2f position, const sf::Vector2f dimension);
+	Renderable();
+	Renderable(const sf::Vector2f universal);	
+	Renderable(const sf::Vector2f position, const sf::Vector2f dimension);
 	~Renderable();
 
 
@@ -23,6 +23,7 @@ public:
 
 	//Parent controlling
 	void SetParent(Renderable &parent);
+	void SetRenderer(sf::RenderWindow *_window);
 	void ParentInitialization(const sf::RenderWindow *window);
 
 	//Drawing controlling

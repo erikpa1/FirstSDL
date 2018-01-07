@@ -15,9 +15,9 @@
 //
 //}
 
-Renderable::Renderable(sf::RenderWindow *window)
+Renderable::Renderable()
 {	
-	this->_window = window;
+	
 
 	this->CommonContructior();
 	
@@ -32,7 +32,7 @@ Renderable::Renderable(sf::RenderWindow *window)
 	
 }
 
-Renderable::Renderable(const sf::RenderWindow* window, const sf::Vector2f universal)
+Renderable::Renderable(const sf::Vector2f universal)
 {
 	this->_window = _window;
 	this->CommonContructior();
@@ -41,7 +41,7 @@ Renderable::Renderable(const sf::RenderWindow* window, const sf::Vector2f univer
 
 }
 
-Renderable::Renderable(const sf::RenderWindow* window, const sf::Vector2f position, const sf::Vector2f dimension)
+Renderable::Renderable(const sf::Vector2f position, const sf::Vector2f dimension)
 {
 	this->_window = _window;
 	this->CommonContructior();
@@ -90,6 +90,11 @@ void Renderable::Render()
 void Renderable::SetParent(Renderable &parent)
 {
 	this->_child = &parent;
+}
+
+void Renderable::SetRenderer(sf::RenderWindow *window)
+{
+	this->_window = window;
 }
 
 void Renderable::ChangeDrawinStatus(bool value)
