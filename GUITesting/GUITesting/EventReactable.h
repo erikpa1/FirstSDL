@@ -7,6 +7,6 @@ public:
 	EventReactable();
 	~EventReactable();
 
-	virtual void EventHappened(sf::Event event);
+	virtual void EventHappened(sf::Event event) = 0;
 };
 

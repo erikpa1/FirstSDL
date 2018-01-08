@@ -60,6 +60,9 @@ void Renderable::CommonContructior()
 
 Renderable::~Renderable()
 {
+	delete _child;
+	delete _shape;
+
 	
 }
 

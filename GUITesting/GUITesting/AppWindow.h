@@ -40,7 +40,7 @@ private:
 	void HandleEvents(sf::Event event);
 	bool _canWork;
 
-	vector<Renderable> _renderableObjects;
+	vector<Renderable*> _renderableObjects;
 	sf::RenderWindow *_window;
 
 

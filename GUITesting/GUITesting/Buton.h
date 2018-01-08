@@ -18,7 +18,10 @@ public:
 	void Update();	
 	void Render();
 
-	void OnClick(sf::Vector2f position) override;
+	void EventHappened(sf::Event event) override;
+
+
+	
 
 };
 

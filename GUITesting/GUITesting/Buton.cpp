@@ -25,21 +25,28 @@ Buton::Buton(const sf::Vector2f position, const sf::Vector2f dimension) : Render
 
 Buton::~Buton()
 {
+
 }
 
 void Buton::Start()
 {
+	Renderable::Start();
 }
 
 void Buton::Update()
 {
+	Renderable::Update();
 }
 
 void Buton::Render()
 {
+	Renderable::Render();
+
 }
 
-void Buton::OnClick(sf::Vector2f position)
+void Buton::EventHappened(sf::Event event)
 {
-
+	
+	int a = 10;
 }
+

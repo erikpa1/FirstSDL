@@ -1,6 +1,4 @@
-﻿  Starter.cpp
-  Buton.cpp
-  AppWindow.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(57): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+﻿  AppWindow.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(65): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(79): warning C4018: '<': signed/unsigned mismatch
   GUITesting.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\Debug\GUITesting.exe
