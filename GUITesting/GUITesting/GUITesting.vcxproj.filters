@@ -28,6 +28,15 @@
     <Filter Include="Source Files\Application">
       <UniqueIdentifier>{f1d15f09-4568-4517-b1db-2077c2952800}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\AI">
+      <UniqueIdentifier>{246fa58a-ed2a-42e5-8136-969b2e258a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AI\DataStructures">
+      <UniqueIdentifier>{494c96cd-f0f3-4d5b-aa96-28fbe748b710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AI\FileManagement">
+      <UniqueIdentifier>{4ae25d4e-e1de-4731-a1c4-e0d11cf6533e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Starter.cpp">
@@ -60,6 +69,24 @@
     <ClCompile Include="EventReactable.cpp">
       <Filter>Source Files\EventHandler</Filter>
     </ClCompile>
+    <ClCompile Include="EllaAi.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Orders.cpp">
+      <Filter>Source Files\AI\DataStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="BrainBuffer.cpp">
+      <Filter>Source Files\AI\FileManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="StringArraysAnalyzer.cpp">
+      <Filter>Source Files\AI\DataStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="Subject.cpp">
+      <Filter>Source Files\AI\DataStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files\AI\DataStructures</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderable.h">
@@ -88,6 +115,24 @@
     </ClInclude>
     <ClInclude Include="EventReactable.h">
       <Filter>Source Files\EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="EllaAi.h">
+      <Filter>Source Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Orders.h">
+      <Filter>Source Files\AI\DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="BrainBuffer.h">
+      <Filter>Source Files\AI\FileManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="StringArraysAnalyzer.h">
+      <Filter>Source Files\AI\DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Source Files\AI\DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Source Files\AI\DataStructures</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

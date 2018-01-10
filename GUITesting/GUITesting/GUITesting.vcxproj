@@ -131,25 +131,37 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="BrainBuffer.cpp" />
     <ClCompile Include="Buton.cpp" />
     <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="EllaAi.cpp" />
     <ClCompile Include="EventReactable.cpp" />
     <ClCompile Include="MouseEvents.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Orders.cpp" />
     <ClCompile Include="PopUpWindow.cpp" />
     <ClCompile Include="Renderable.cpp" />
     <ClCompile Include="Starter.cpp" />
     <ClCompile Include="AppWindow.cpp" />
+    <ClCompile Include="StringArraysAnalyzer.cpp" />
+    <ClCompile Include="Subject.cpp" />
     <ClCompile Include="TestObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="BrainBuffer.h" />
     <ClInclude Include="Buton.h" />
     <ClInclude Include="Canvas.h" />
+    <ClInclude Include="EllaAi.h" />
     <ClInclude Include="EventReactable.h" />
     <ClInclude Include="MouseEvents.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Orders.h" />
     <ClInclude Include="PopUpWindow.h" />
     <ClInclude Include="Renderable.h" />
     <ClInclude Include="AppWindow.h" />
+    <ClInclude Include="StringArraysAnalyzer.h" />
+    <ClInclude Include="Subject.h" />
     <ClInclude Include="TestObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
