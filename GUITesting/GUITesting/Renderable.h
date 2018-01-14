@@ -1,6 +1,7 @@
 #pragma once
 
 #include "SFML/Graphics.hpp"
+#include <vector>
 
 
 
@@ -22,7 +23,7 @@ public:
 	virtual void Render();
 
 	//Parent controlling
-	void SetParent(Renderable &parent);
+
 	void SetRenderer(sf::RenderWindow *_window);
 	void ParentInitialization(const sf::RenderWindow *window);
 
@@ -42,18 +43,30 @@ public:
 	bool GetDrawingState() { return _canBeDrawed; };
 	bool GetUpdateState() { return _canRecieveUpdate; };
 
+	void AddChild(Renderable *child);
+	void AddParent(Renderable *parent);
+	void DisconnectFromParent();
+	void DisconnectChildren();
+	void EraseChildren();
+	
+	
 
 protected:
 
 	void CommonContructior();
+	inline void DrawChildren();
+	inline void UpdateChildren();
 
+
+	std::vector<Renderable*> _children;
+	Renderable* _parent;
 	sf::RenderWindow *_window;
+
+
 	sf::Shape *_shape;
 
 	sf::Vector2f _position;
-	sf::Vector2f _dimension;
-	
-	Renderable* _child;
+	sf::Vector2f _dimension;	
 
 	bool _canBeDrawed;
 	bool _canRecieveUpdate;

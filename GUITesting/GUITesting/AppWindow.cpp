@@ -7,6 +7,7 @@
 AppWindow::AppWindow()
 {
 	this->_window = new sf::RenderWindow(sf::VideoMode(800, 600), "Its working");
+	
 
 }
 

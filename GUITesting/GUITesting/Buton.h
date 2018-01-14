@@ -3,6 +3,7 @@
 #include "Renderable.h"
 #include "MouseEvents.h"
 #include "EventReactable.h"
+#include "Label.h"
 
 
 class Buton : public Renderable, EventReactable
@@ -17,8 +18,16 @@ public:
 	void Start();
 	void Update();	
 	void Render();
-
+	void SetText(std::string text);
 	void EventHappened(sf::Event event) override;
+
+	std::string GetButtonText() { return _buttonText.GetText().getString(); };
+
+private:
+
+	Label _buttonText;
+	sf::Image _image;
+	
 
 
 	

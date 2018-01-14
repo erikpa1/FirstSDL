@@ -15,6 +15,14 @@ Orders::~Orders()
 {
 }
 
+void Orders::AddSynonym(string string)
+{
+}
+
+void Orders::DoMyWork()
+{
+}
+
 bool Orders::ChceckVocabulary(string word)
 {
 	for(int i = 0; i < this->_dictionary.size(); i++)

@@ -8,13 +8,18 @@
 #include <memory>
 #include <iostream>
 
+
 int main()
 {
 	Application app;
 	AppWindow window;	
 	
-	window.AddElement(new Buton(), sf::Vector2f(10, 10));
+	Buton* btn = new Buton();
+	btn->SetText("No nazdar");
+	window.AddElement(btn, sf::Vector2f(10, 10));
 	window.IndependentStart();
+
+
 
 	//app.AddWindow(window);	
 	//app.TickAutomaticly();

@@ -44,6 +44,13 @@ void Buton::Render()
 
 }
 
+void Buton::SetText(std::string text)
+{
+	this->_buttonText.AddParent(this);
+	this->_buttonText.SetText("Toto neni text zvrchu");
+	
+}
+
 void Buton::EventHappened(sf::Event event)
 {
 	

@@ -16,9 +16,7 @@
 //}
 
 Renderable::Renderable()
-{	
-	
-
+{		
 	this->CommonContructior();
 	
 	this->_position.x = 1;
@@ -34,7 +32,7 @@ Renderable::Renderable()
 
 Renderable::Renderable(const sf::Vector2f universal)
 {
-	this->_window = _window;
+	
 	this->CommonContructior();
 	this->_position = universal;
 	this->_dimension = universal;
@@ -42,13 +40,44 @@ Renderable::Renderable(const sf::Vector2f universal)
 }
 
 Renderable::Renderable(const sf::Vector2f position, const sf::Vector2f dimension)
-{
-	this->_window = _window;
+{	
 	this->CommonContructior();
 	this->_position = position;
 	this->_dimension = dimension;
 	
 }
+
+void Renderable::AddChild(Renderable* child)
+{
+	this->_children.push_back(child);
+}
+
+void Renderable::AddParent(Renderable* parent)
+{
+	this->_parent = parent;
+	this->_window = parent->getRenderWindow();
+}
+
+void Renderable::DisconnectFromParent()
+{
+	this->_parent = nullptr;
+}
+
+void Renderable::DisconnectChildren()
+{
+	this->_children.clear();
+}
+
+void Renderable::EraseChildren()
+{
+	for (auto i = 0; i < this->_children.size(); i++)
+	{
+		delete this->_children.at(i);
+	}
+
+	this->_children.clear();
+}
+
 
 void Renderable::CommonContructior()
 {
@@ -58,9 +87,25 @@ void Renderable::CommonContructior()
 		
 }
 
+void Renderable::DrawChildren()
+{
+	for (auto i = 0; i < this->_children.size(); i++)
+	{
+		this->_children.at(i)->Render();
+	}
+}
+
+void Renderable::UpdateChildren()
+{
+	for (auto i = 0; i < this->_children.size(); i++)
+	{
+		this->_children.at(i)->Update();
+	}
+}
+
 Renderable::~Renderable()
 {
-	delete _child;
+	delete _parent;
 	delete _shape;
 
 	
@@ -84,16 +129,13 @@ void Renderable::Render()
 	
 	if (this->_canBeDrawed && this->_shape)
 	{
+		if (this->_parent)		
 		this->_window->draw(*this->_shape);		
 		std::cout << this->_shape->getPosition().x <<std::endl;
 		std::cout << this->_shape->getScale().x << std::endl;
 	}
 }
 
-void Renderable::SetParent(Renderable &parent)
-{
-	this->_child = &parent;
-}
 
 void Renderable::SetRenderer(sf::RenderWindow *window)
 {

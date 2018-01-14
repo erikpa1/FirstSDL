@@ -1,4 +1,2 @@
-﻿  AppWindow.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(65): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(79): warning C4018: '<': signed/unsigned mismatch
+﻿  Label.cpp
   GUITesting.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\Debug\GUITesting.exe
