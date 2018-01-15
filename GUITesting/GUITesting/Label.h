@@ -21,9 +21,6 @@ public:
 
 	sf::Text GetText() const { return _actualText; };
 
-
-
-
 private:
 
 	

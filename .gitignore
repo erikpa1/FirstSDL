@@ -250,3 +250,7 @@ ModelManifest.xml
 *.ilk
 *.pdb
 *.idb
+GUITesting/GUITesting/Debug/MouseEvents.obj
+*.obj
+*.idb
+*.pdb

@@ -2,8 +2,8 @@
   Subject.cpp
   StringArraysAnalyzer.cpp
   AppWindow.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(66): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(80): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(67): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(81): warning C4018: '<': signed/unsigned mismatch
   Starter.cpp
   Renderable.cpp
 c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(73): warning C4018: '<': signed/unsigned mismatch

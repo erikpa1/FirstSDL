@@ -146,12 +146,10 @@ void Renderable::Render()
 		if (this->_window)
 		{
 			this->_window->draw(*this->_shape);
-		}
+		}	
 		
-		
-		std::cout << this->ID << std::endl;
-		std::cout << this->_shape->getPosition().x <<std::endl;
-		std::cout << this->_shape->getScale().x << std::endl;
+		// std::cout << this->ID << std::endl;
+
 	}
 }
 

@@ -48,12 +48,9 @@ public:
 	void DisconnectChildren();
 	void EraseChildren();
 	void SetColor(int r, int g, int b, int a);
-	
-	
 
 protected:
-
-	void CommonContructor();
+	
 	inline void DrawChildren();
 	inline void UpdateChildren();
 
@@ -61,7 +58,6 @@ protected:
 	std::vector<Renderable*> _children;
 	Renderable* _parent;
 	sf::RenderWindow *_window;
-
 
 	sf::Shape *_shape;
 
@@ -74,7 +70,8 @@ protected:
 	signed int ID;
 
 
-
+private:
+	void CommonContructor();
 
 };
 

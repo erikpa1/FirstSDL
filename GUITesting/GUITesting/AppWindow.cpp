@@ -36,8 +36,10 @@ void AppWindow::Tick()
 void AppWindow::AddElement(Renderable* renderable, sf::Vector2f position)
 {	
 	renderable->SetRenderer(this->_window);
+	
 	this->_renderableObjects.push_back(renderable);
 	renderable->SetPosition(position);
+
 }
 
 void AppWindow::TestingMethod()
@@ -57,8 +59,7 @@ void AppWindow::particalTick()
 			_window->close();
 		}			
 		else
-		{
-			
+		{			
 			this->HandleEvents(event);
 		}
 	}

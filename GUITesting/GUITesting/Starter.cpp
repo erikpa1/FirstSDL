@@ -15,9 +15,11 @@ int main()
 	AppWindow window;	
 	
 	Buton* btn = new Buton();
-	btn->SetText("No nazdar");
-	btn->SetFontColor(45, 45, 45, 20);
-	window.AddElement(btn, sf::Vector2f(10, 10));
+	Label* createLabel = new Label();
+
+	btn->SetLabel(createLabel);
+	
+	window.AddElement(createLabel, sf::Vector2f(10, 10));
 	window.IndependentStart();
 
 
