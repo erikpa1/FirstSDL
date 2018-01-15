@@ -18,6 +18,7 @@ public:
 	void Start();
 	void Update();	
 	void Render();
+	void SetFontColor(int r, int g, int b, int a);
 	void SetText(std::string text);
 	void EventHappened(sf::Event event) override;
 

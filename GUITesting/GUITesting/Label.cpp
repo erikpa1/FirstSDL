@@ -26,17 +26,18 @@ Label::~Label()
 
 void Label::Start()
 {
+	Renderable::Start();
 }
 
 void Label::Update()
 {
-
+	Renderable::Update();
 }
 
 void Label::Render()
 {
+	Renderable::Render();
 	this->_window->draw(this->_actualText);
-
 }
 
 void Label::SetText(std::string text)
@@ -44,11 +45,19 @@ void Label::SetText(std::string text)
 	this->_actualText.setString("Toto neni text zhora");
 }
 
+void Label::SetButtonColor(int r, int g, int b, int a)
+{
+	this->_actualText.setFillColor(sf::Color(r, g, b, a));
+	
+
+}
+
 void Label::CommonConstructor()
 {
+	
 	sf::Font font;	
 	this->_actualText.setFont(font);
 	this->_actualText.setString("");
-	this->_actualText.setCharacterSize((unsigned)this->_parent->getDimension().y);
-
+	this->_actualText.setCharacterSize((unsigned)this->_parent->GetDimension().y);
+	
 }

@@ -37,7 +37,7 @@ void AppWindow::AddElement(Renderable* renderable, sf::Vector2f position)
 {	
 	renderable->SetRenderer(this->_window);
 	this->_renderableObjects.push_back(renderable);
-	renderable->setPosition(position);
+	renderable->SetPosition(position);
 }
 
 void AppWindow::TestingMethod()
@@ -90,18 +90,18 @@ void AppWindow::HandleEvents(sf::Event event)
 				acceptable->EventHappened(event);
 			} else
 			{
-				std::cout << "Came here" << std::endl;
+				/*std::cout << "Came here" << std::endl;
 				sf::Time a;
 				a = sf::seconds(1);
-				sf::sleep(a);
+				sf::sleep(a);*/
 			}
 			
 		} else
 		{
-			std::cout << "Came here" << std::endl;
+			/*std::cout << "Came here" << std::endl;
 			sf::Time a;
 			a = sf::seconds(1);
-			sf::sleep(a);
+			sf::sleep(a);*/
 		}
 		}
 	}

@@ -244,3 +244,9 @@ ModelManifest.xml
 .fake/
 /Platform/Settings/Logs/Compressed
 /PlatformProjects/Lisovna 2 _ Vnutro Lisu/Versions/Default
+*.obj
+*.idb
+*.tlog
+*.ilk
+*.pdb
+*.idb
