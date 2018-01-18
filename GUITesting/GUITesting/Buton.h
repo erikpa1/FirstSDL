@@ -21,15 +21,19 @@ public:
 	void SetFontColor(int r, int g, int b, int a);
 	void SetText(std::string text);
 	void EventHappened(sf::Event event) override;
-	void SetLabel(Label *label);
+	void CopyLabelStyle(Label *label);
+	void SetLabelRenderer(sf::RenderWindow *window);
 
 	Label *GetLabel();
 
-	std::string GetButtonText() { return _buttonText->GetText().getString(); };
+	std::string GetButtonText() { return _buttonText.GetText().getString(); };
 
 private:
+
+	void CommonConstructor();
 	
-	Label *_buttonText;
+	
+	Label _buttonText;
 	sf::Image _image;
 	
 

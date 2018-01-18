@@ -31,8 +31,7 @@ Renderable::Renderable()
 }
 
 Renderable::Renderable(const sf::Vector2f universal)
-{
-	
+{	
 	this->CommonContructor();
 	this->_position = universal;
 	this->_dimension = universal;
@@ -52,10 +51,10 @@ void Renderable::AddChild(Renderable* child)
 	this->_children.push_back(child);
 }
 
-void Renderable::AddParent(Renderable* parent)
+void Renderable::SetParent(Renderable* parent)
 {
 	this->_parent = parent;
-	this->_window = &parent->GetRenderWindow();
+	this->_window = parent->GetRenderWindow();
 }
 
 void Renderable::DisconnectFromParent()
@@ -111,9 +110,7 @@ void Renderable::UpdateChildren()
 Renderable::~Renderable()
 {
 	delete _parent;
-	delete _shape;
-
-	
+	delete _shape;	
 }
 
 void Renderable::Start()

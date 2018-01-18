@@ -35,8 +35,7 @@ void AppWindow::Tick()
 
 void AppWindow::AddElement(Renderable* renderable, sf::Vector2f position)
 {	
-	renderable->SetRenderer(this->_window);
-	
+	renderable->SetRenderer(this->_window);	
 	this->_renderableObjects.push_back(renderable);
 	renderable->SetPosition(position);
 
@@ -80,8 +79,6 @@ void AppWindow::HandleEvents(sf::Event event)
 {
 	for (auto i = 0; i < this->_renderableObjects.size(); i++)
 	{
-	
-		
 		std::cout << " hello " << std::endl;
 		if (typeid(this->_renderableObjects.at(i)) == typeid(Renderable&))
 		{			

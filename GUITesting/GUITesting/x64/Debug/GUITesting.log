@@ -1,4 +1,0 @@
-﻿  Window.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\window.cpp(3): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
-  Starter.cpp
-  Generating Code...

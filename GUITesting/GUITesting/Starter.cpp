@@ -16,10 +16,12 @@ int main()
 	
 	Buton* btn = new Buton();
 	Label* createLabel = new Label();
+	createLabel->SetText("No nazdar");
 
-	btn->SetLabel(createLabel);
+	btn->CopyLabelStyle(createLabel);
 	
-	window.AddElement(createLabel, sf::Vector2f(10, 10));
+	window.AddElement(createLabel, sf::Vector2f(80, 80));
+	window.AddElement(btn, sf::Vector2f(10, 10));
 	window.IndependentStart();
 
 
@@ -28,7 +30,7 @@ int main()
 	//app.TickAutomaticly();
 	
 	
-	return 0;;
+	return 0;
 }
 
 /* Poznamky na spracovanie

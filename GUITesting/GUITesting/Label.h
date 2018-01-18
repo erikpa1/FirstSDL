@@ -26,6 +26,7 @@ private:
 	
 	void CommonConstructor();
 	sf::Text _actualText;
+	sf::Font *font;
 
 
 

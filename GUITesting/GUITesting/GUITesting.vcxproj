@@ -86,7 +86,7 @@
       <AdditionalIncludeDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\External\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sfml-audio.lib;sfml-main.lib;sfml-graphics.lib;sfml-network.lib;sfml-system.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-main-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\External\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -111,7 +111,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>sfml-audio.lib;sfml-main.lib;sfml-graphics.lib;sfml-network.lib;sfml-system.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-main-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\External\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -144,6 +144,7 @@
     <ClCompile Include="Renderable.cpp" />
     <ClCompile Include="Starter.cpp" />
     <ClCompile Include="AppWindow.cpp" />
+    <ClCompile Include="StaticManager.cpp" />
     <ClCompile Include="StringArraysAnalyzer.cpp" />
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="TestObject.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="PopUpWindow.h" />
     <ClInclude Include="Renderable.h" />
     <ClInclude Include="AppWindow.h" />
+    <ClInclude Include="StaticManager.h" />
     <ClInclude Include="StringArraysAnalyzer.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="TestObject.h" />

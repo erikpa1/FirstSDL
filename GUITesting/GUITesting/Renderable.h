@@ -24,7 +24,7 @@ public:
 
 	//Parent controlling
 
-	void SetRenderer(sf::RenderWindow *_window);
+	void SetRenderer(sf::RenderWindow *window);
 
 	//Drawing controlling
 	void ChangeDrawinStatus(bool value);
@@ -36,14 +36,14 @@ public:
 	signed int GetID();
 
 	//Parent attributes
-	sf::RenderWindow &GetRenderWindow() { return *_window; };
+	sf::RenderWindow *GetRenderWindow() { return _window; };
 	sf::Vector2f &GetPosition() { return _position; };
 	sf::Vector2f &GetDimension() { return _dimension; };
 	bool GetDrawingState() { return _canBeDrawed; };
 	bool GetUpdateState() { return _canRecieveUpdate; };
 
 	void AddChild(Renderable *child);
-	void AddParent(Renderable *parent);
+	void SetParent(Renderable *parent);
 	void DisconnectFromParent();
 	void DisconnectChildren();
 	void EraseChildren();

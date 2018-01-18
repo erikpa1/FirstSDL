@@ -1,27 +1,8 @@
-﻿  TestObject.cpp
-  Subject.cpp
-  StringArraysAnalyzer.cpp
-  AppWindow.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(67): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(81): warning C4018: '<': signed/unsigned mismatch
-  Starter.cpp
-  Renderable.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(73): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(97): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(105): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(140): warning C4018: '<': signed/unsigned mismatch
-  PopUpWindow.cpp
-  Orders.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\orders.cpp(28): warning C4018: '<': signed/unsigned mismatch
-  Object.cpp
-  MouseEvents.cpp
-  Label.cpp
-  EventReactable.cpp
-  EllaAi.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\ellaai.cpp(25): warning C4018: '<': signed/unsigned mismatch
-  Canvas.cpp
-  Buton.cpp
-  BrainBuffer.cpp
+﻿  Renderable.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(72): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(96): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(104): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(137): warning C4018: '<': signed/unsigned mismatch
   Application.cpp
 c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\application.cpp(21): warning C4018: '<': signed/unsigned mismatch
   Generating Code...

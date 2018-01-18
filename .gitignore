@@ -254,3 +254,8 @@ GUITesting/GUITesting/Debug/MouseEvents.obj
 *.obj
 *.idb
 *.pdb
+*.obj
+*.obj
+*.pdb
+*.ilk
+*.exe

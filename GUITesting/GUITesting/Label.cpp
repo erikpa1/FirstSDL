@@ -1,5 +1,6 @@
 #include "Label.h"
-
+#include <iostream>
+#include <fstream>
 
 
 Label::Label()
@@ -40,13 +41,13 @@ void Label::Update()
 
 void Label::Render()
 {
-	Renderable::Render();
-	this->_window->draw(this->_actualText);
+	Renderable::Render();		
+	this->_parent->GetRenderWindow()->draw(this->_actualText);		
 }
 
 void Label::SetText(std::string text)
 {
-	this->_actualText.setString("Toto neni text zhora");
+	this->_actualText.setString("Ahoj");
 }
 
 void Label::SetButtonColor(int r, int g, int b, int a)
@@ -57,11 +58,16 @@ void Label::SetButtonColor(int r, int g, int b, int a)
 
 void Label::CommonConstructor()
 {	
-	sf::Font font;	
-	this->_actualText.setFont(font);
-	this->_actualText.setString(" No te pic pero");
+	
+	this->font = new sf::Font();
+	if(!this->font->loadFromFile("digital-7.ttf"))
+	{ 
+	}
+	this->_actualText.setFont(*font);
+	this->_actualText.setStyle(sf::Text::Bold);
+	this->_actualText.setString("Ahoj");
 	this->_actualText.setCharacterSize(30);
-	this->_actualText.setFillColor(sf::Color(12, 12, 12, 255));
-
+	this->_actualText.setFillColor(sf::Color::Red);
+	
 	
 }

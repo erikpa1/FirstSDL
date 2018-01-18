@@ -90,6 +90,9 @@
     <ClCompile Include="Label.cpp">
       <Filter>Source Files\GuiElements</Filter>
     </ClCompile>
+    <ClCompile Include="StaticManager.cpp">
+      <Filter>Source Files\PrimaryWindow</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderable.h">
@@ -139,6 +142,9 @@
     </ClInclude>
     <ClInclude Include="Label.h">
       <Filter>Source Files\GuiElements</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticManager.h">
+      <Filter>Source Files\PrimaryWindow</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
