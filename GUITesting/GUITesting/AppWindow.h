@@ -29,7 +29,7 @@ public:
 	sf::Vector2u GetWindowDimension() const { return _window->getSize();};
 	sf::RenderWindow *GetRenderWindow() { return _window; };
 
-	enum ELEMENT_POSES{TOP, LEFT, MIDDLE, BOTTOM};
+	
 
 	
 	

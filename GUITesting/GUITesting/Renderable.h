@@ -19,26 +19,24 @@ public:
 
 	//Basic rendering voids
 	virtual void Start();
-	virtual void Update();
-	virtual void Render();
-
-	//Parent controlling
-
-	void SetRenderer(sf::RenderWindow *window);
+	virtual void Update();	
+	virtual void Render();	
+	virtual void SetRenderer(sf::RenderWindow *window);
+	virtual void SetPosition(sf::Vector2f newPosition);
+	virtual void SetDimension(sf::Vector2f newDimension);
+	virtual void HandleEvents(int event);
+	virtual sf::Vector2f GetPosition() const { return _position; };
+	virtual sf::Vector2f GetDimension() const { return _dimension; };
 
 	//Drawing controlling
 	void ChangeDrawinStatus(bool value);
 	void ChangeUpdateStatus(bool value);
-
-	//Object properties
-	void SetPosition(sf::Vector2f newPosition);
+	
 	void SetID(signed int ID);
 	signed int GetID();
 
 	//Parent attributes
-	sf::RenderWindow *GetRenderWindow() { return _window; };
-	sf::Vector2f &GetPosition() { return _position; };
-	sf::Vector2f &GetDimension() { return _dimension; };
+	sf::RenderWindow *GetRenderWindow();
 	bool GetDrawingState() { return _canBeDrawed; };
 	bool GetUpdateState() { return _canRecieveUpdate; };
 
@@ -47,20 +45,18 @@ public:
 	void DisconnectFromParent();
 	void DisconnectChildren();
 	void EraseChildren();
-	void SetColor(int r, int g, int b, int a);
 
+	static sf::Vector2f GetMiddlePostion(const Renderable &parent, const Renderable &child);
+	
 protected:
 	
 	inline void DrawChildren();
 	inline void UpdateChildren();
 
-
 	std::vector<Renderable*> _children;
 	Renderable* _parent;
 	sf::RenderWindow *_window;
-
-	sf::Shape *_shape;
-
+	sf::Drawable *_drawable;
 	sf::Vector2f _position;
 	sf::Vector2f _dimension;	
 
@@ -71,7 +67,7 @@ protected:
 
 
 private:
-	void CommonContructor();
+	void CommonConstructor();
 
 };
 

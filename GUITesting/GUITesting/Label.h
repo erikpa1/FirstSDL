@@ -16,21 +16,19 @@ public:
 	void Start();
 	void Update();
 	void Render();
+	void SetPosition(sf::Vector2f newPosition);
+	void SetDimension(sf::Vector2f newDimension);	
 	void SetText(std::string text);
 	void SetButtonColor(int r, int g, int b, int a);
 
 	sf::Text GetText() const { return _actualText; };
+	sf::Vector2f GetDimension() const override;
 
-private:
+private:	
 
-	
 	void CommonConstructor();
 	sf::Text _actualText;
-	sf::Font *font;
-
-
-
-
+	sf::Font *font;	
 
 
 };

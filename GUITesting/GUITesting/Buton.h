@@ -16,13 +16,15 @@ public:
 	~Buton();
 
 	void Start();
-	void Update();	
+	void Update();		
+	void SetPosition(sf::Vector2f newPosition);
+	void SetDimension(sf::Vector2f newDimension);
 	void Render();
+	void SetRenderer(sf::RenderWindow* window);
 	void SetFontColor(int r, int g, int b, int a);
 	void SetText(std::string text);
 	void EventHappened(sf::Event event) override;
 	void CopyLabelStyle(Label *label);
-	void SetLabelRenderer(sf::RenderWindow *window);
 
 	Label *GetLabel();
 
@@ -30,11 +32,12 @@ public:
 
 private:
 
-	void CommonConstructor();
-	
-	
+	void CommonConstructor();	
 	Label _buttonText;
+
 	sf::Image _image;
+	sf::Shape *_backgroundShape;
+
 	
 
 

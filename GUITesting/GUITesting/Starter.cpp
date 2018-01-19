@@ -15,12 +15,7 @@ int main()
 	AppWindow window;	
 	
 	Buton* btn = new Buton();
-	Label* createLabel = new Label();
-	createLabel->SetText("No nazdar");
 
-	btn->CopyLabelStyle(createLabel);
-	
-	window.AddElement(createLabel, sf::Vector2f(80, 80));
 	window.AddElement(btn, sf::Vector2f(10, 10));
 	window.IndependentStart();
 

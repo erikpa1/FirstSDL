@@ -3,6 +3,7 @@
 #include <fstream>
 
 
+
 Label::Label()
 {
 	this->CommonConstructor();
@@ -42,7 +43,19 @@ void Label::Update()
 void Label::Render()
 {
 	Renderable::Render();		
-	this->_parent->GetRenderWindow()->draw(this->_actualText);		
+	this->_window->draw(this->_actualText);
+}
+
+void Label::SetPosition(sf::Vector2f newPosition)
+{
+	Renderable::SetPosition(newPosition);
+	this->_actualText.setPosition(newPosition);
+}
+
+void Label::SetDimension(sf::Vector2f newDimension)
+{
+	Renderable::SetDimension(newDimension);
+	this->_actualText.setScale(newDimension);
 }
 
 void Label::SetText(std::string text)
@@ -52,22 +65,24 @@ void Label::SetText(std::string text)
 
 void Label::SetButtonColor(int r, int g, int b, int a)
 {
-	this->_actualText.setFillColor(sf::Color(r, g, b, a));
-	
+	this->_actualText.setFillColor(sf::Color(r, g, b, a));	
+}
+
+sf::Vector2f Label::GetDimension() const
+{
+
+	return sf::Vector2f(this->_actualText.getGlobalBounds().width, this->_actualText.getGlobalBounds().height);
 }
 
 void Label::CommonConstructor()
 {	
-	
 	this->font = new sf::Font();
-	if(!this->font->loadFromFile("digital-7.ttf"))
-	{ 
-	}
+	this->font->loadFromFile("Platform/Data/Fonts/micross.ttf");
 	this->_actualText.setFont(*font);
 	this->_actualText.setStyle(sf::Text::Bold);
-	this->_actualText.setString("Ahoj");
-	this->_actualText.setCharacterSize(30);
-	this->_actualText.setFillColor(sf::Color::Red);
-	
+	this->_actualText.setString("Nazdar");
+	this->_actualText.setCharacterSize(20);
+	this->_actualText.setFillColor(sf::Color::White);
+	this->_drawable = &_actualText;
 	
 }

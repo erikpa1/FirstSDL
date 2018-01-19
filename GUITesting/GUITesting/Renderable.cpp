@@ -17,22 +17,18 @@
 
 Renderable::Renderable()
 {		
-	this->CommonContructor();
+	this->CommonConstructor();
 	
 	this->_position.x = 1;
 	this->_position.y = 1;
 	this->_dimension.x = 200;
 	this->_dimension.y = 100;
 
-	this->_shape = new sf::RectangleShape(this->_position);
-	this->_shape->setFillColor(sf::Color(sf::Color::White));
-	this->_shape->setScale(this->GetDimension());
-	
 }
 
 Renderable::Renderable(const sf::Vector2f universal)
 {	
-	this->CommonContructor();
+	this->CommonConstructor();
 	this->_position = universal;
 	this->_dimension = universal;
 
@@ -40,7 +36,7 @@ Renderable::Renderable(const sf::Vector2f universal)
 
 Renderable::Renderable(const sf::Vector2f position, const sf::Vector2f dimension)
 {	
-	this->CommonContructor();
+	this->CommonConstructor();
 	this->_position = position;
 	this->_dimension = dimension;
 	
@@ -77,13 +73,7 @@ void Renderable::EraseChildren()
 	this->_children.clear();
 }
 
-void Renderable::SetColor(int r, int g, int b, int a)
-{
-	this->_shape->setFillColor(sf::Color(r, g, b, a));
-}
-
-
-void Renderable::CommonContructor()
+void Renderable::CommonConstructor()
 {
 	this->ID = rand();
 	this->_canBeDrawed = true;
@@ -110,7 +100,7 @@ void Renderable::UpdateChildren()
 Renderable::~Renderable()
 {
 	delete _parent;
-	delete _shape;	
+	delete _drawable;	
 }
 
 void Renderable::Start()
@@ -127,10 +117,8 @@ void Renderable::Update()
 }
 
 void Renderable::Render()
-{
-	
-	
-	if (this->_canBeDrawed && this->_shape)
+{	
+	if (this->_canBeDrawed && this->_drawable)
 	{
 		if (!this->_children.empty())
 		{
@@ -142,10 +130,8 @@ void Renderable::Render()
 
 		if (this->_window)
 		{
-			this->_window->draw(*this->_shape);
+			this->_window->draw(*this->_drawable);
 		}	
-		
-		// std::cout << this->ID << std::endl;
 
 	}
 }
@@ -168,8 +154,17 @@ void Renderable::ChangeUpdateStatus(bool value)
 
 void Renderable::SetPosition(sf::Vector2f newPosition)
 {
-	this->_position = newPosition;
-	
+	this->_position = newPosition;		
+}
+
+void Renderable::SetDimension(sf::Vector2f newDimension)
+{
+	this->_dimension = newDimension;
+}
+
+void Renderable::HandleEvents(int event)
+{
+	std::cout << "Object " << this->ID << " prijal event" << event;
 }
 
 void Renderable::SetID(int ID)
@@ -177,4 +172,20 @@ void Renderable::SetID(int ID)
 	this->ID = ID;
 }
 
+sf::RenderWindow* Renderable::GetRenderWindow()
+{
+	return this->_window;
+}
 
+
+/**
+ * Calculates position for aligment to parent
+ */
+sf::Vector2f Renderable::GetMiddlePostion(const Renderable& parent, const Renderable& child)
+{
+	sf::Vector2f temporary = parent.GetPosition();
+	temporary.x += (parent.GetDimension().x/2) - child.GetDimension().x / 2;
+	temporary.y += (parent.GetDimension().y/2) - child.GetDimension().y / 2;
+	
+	return temporary;
+}
