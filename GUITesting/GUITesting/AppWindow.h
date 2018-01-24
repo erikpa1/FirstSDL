@@ -4,6 +4,7 @@
 
 #include "Renderable.h"
 #include "SFML/Graphics.hpp"
+#include "SFML/OpenGL.hpp"
 
 
 

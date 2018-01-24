@@ -67,6 +67,8 @@ protected:
 
 
 private:
+
+	static int numberOfMe;
 	void CommonConstructor();
 
 };

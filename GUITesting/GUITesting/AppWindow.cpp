@@ -22,10 +22,8 @@ void AppWindow::IndependentStart()
 
 	while (this->_canWork && this->_window->isOpen())
 	{
-		this->particalTick();
-		
+		this->particalTick();		
 	}
-
 }
 
 void AppWindow::Tick()
@@ -38,7 +36,6 @@ void AppWindow::AddElement(Renderable* renderable, sf::Vector2f position)
 	renderable->SetRenderer(this->_window);	
 	this->_renderableObjects.push_back(renderable);
 	renderable->SetPosition(position);
-
 }
 
 void AppWindow::TestingMethod()
@@ -50,6 +47,7 @@ void AppWindow::TestingMethod()
 void AppWindow::particalTick()
 {
 
+	this->_window->clear();
 	sf::Event event;
 	while (this->_window->pollEvent(event))
 	{
@@ -64,14 +62,13 @@ void AppWindow::particalTick()
 	}
 
 	for (auto i = 0; i < this->_renderableObjects.size(); i++)
-	{
-		this->_window->clear();
+	{		
 		this->_renderableObjects.at(i)->Update();
 		this->_renderableObjects.at(i)->Render();
-		this->_window->display();
-
+		
 	}
 
+	this->_window->display();
 }
 
 
@@ -79,7 +76,7 @@ void AppWindow::HandleEvents(sf::Event event)
 {
 	for (auto i = 0; i < this->_renderableObjects.size(); i++)
 	{
-		std::cout << " hello " << std::endl;
+		std::cout << " hellow " << std::endl;
 		if (typeid(this->_renderableObjects.at(i)) == typeid(Renderable&))
 		{			
 			EventReactable* acceptable = dynamic_cast<EventReactable*>(this->_renderableObjects.at(i));

@@ -10,9 +10,9 @@ Label::Label()
 }
 
 Label::Label(std::string text) 
-{
-	this->_actualText.setString(text);
+{	
 	this->CommonConstructor();
+	this->_actualText.setString(text);
 }
 
 Label::Label(std::string text, const sf::Vector2f universal) : Renderable(universal)
@@ -80,7 +80,7 @@ void Label::CommonConstructor()
 	this->font->loadFromFile("Platform/Data/Fonts/micross.ttf");
 	this->_actualText.setFont(*font);
 	this->_actualText.setStyle(sf::Text::Bold);
-	this->_actualText.setString("Nazdar");
+	this->_actualText.setString("Default");
 	this->_actualText.setCharacterSize(20);
 	this->_actualText.setFillColor(sf::Color::White);
 	this->_drawable = &_actualText;

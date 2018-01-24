@@ -73,11 +73,16 @@ void Renderable::EraseChildren()
 	this->_children.clear();
 }
 
+int Renderable::numberOfMe = 0;
+
 void Renderable::CommonConstructor()
 {
 	this->ID = rand();
 	this->_canBeDrawed = true;
 	this->_canRecieveUpdate = true;
+
+	Renderable::numberOfMe++;
+	std::cout << Renderable::numberOfMe << std::endl;
 		
 }
 

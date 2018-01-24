@@ -7,6 +7,7 @@
 #include "TestObject.h"
 #include <memory>
 #include <iostream>
+#include <random>
 
 
 int main()
@@ -15,8 +16,16 @@ int main()
 	AppWindow window;	
 	
 	Buton* btn = new Buton();
+	Label* lbl = new Label("Text");
 
-	window.AddElement(btn, sf::Vector2f(10, 10));
+
+	for (auto i = 0; i < 1000; i++)
+	{
+		Label* btn = new Label("Cawes");
+		window.AddElement(btn, sf::Vector2f(std::rand()%400, std::rand() % 400));
+	}
+
+	//window.AddElement(lbl, sf::Vector2f(50, 50));
 	window.IndependentStart();
 
 
