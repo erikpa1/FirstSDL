@@ -73,6 +73,7 @@ void Renderable::EraseChildren()
 	this->_children.clear();
 }
 
+
 int Renderable::numberOfMe = 0;
 
 void Renderable::CommonConstructor()

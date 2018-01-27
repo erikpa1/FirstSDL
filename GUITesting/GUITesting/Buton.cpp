@@ -78,6 +78,11 @@ void Buton::CopyLabelStyle(Label* label)
 
 }
 
+void Buton::setColor(int r, int g, int b, int a)
+{
+	this->_backgroundShape->setFillColor(sf::Color(r, g, b, a));
+}
+
 Label* Buton::GetLabel()
 {
 	return &this->_buttonText;

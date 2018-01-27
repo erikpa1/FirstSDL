@@ -46,6 +46,7 @@ public:
 	void DisconnectChildren();
 	void EraseChildren();
 
+
 	static sf::Vector2f GetMiddlePostion(const Renderable &parent, const Renderable &child);
 	
 protected:
@@ -53,8 +54,9 @@ protected:
 	inline void DrawChildren();
 	inline void UpdateChildren();
 
-	std::vector<Renderable*> _children;
 	Renderable* _parent;
+
+	std::vector<Renderable*> _children;	
 	sf::RenderWindow *_window;
 	sf::Drawable *_drawable;
 	sf::Vector2f _position;

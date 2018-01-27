@@ -37,6 +37,30 @@
     <Filter Include="Source Files\AI\FileManagement">
       <UniqueIdentifier>{4ae25d4e-e1de-4731-a1c4-e0d11cf6533e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\NamedPipe">
+      <UniqueIdentifier>{118ba8f7-e0f6-448b-bd26-2a214b855afb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking">
+      <UniqueIdentifier>{63b626cc-51f8-4f14-b28c-533b6bfa0e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NamedPipeline">
+      <UniqueIdentifier>{d4dbf68a-84c6-457f-9830-43dbfec3852b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sound">
+      <UniqueIdentifier>{bf238424-7372-4a4f-91e4-e1ac43ef9e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Video">
+      <UniqueIdentifier>{0440b3f0-59d7-46ee-927d-448023e613d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataStreams">
+      <UniqueIdentifier>{672b077b-2713-4182-b371-34f698dfbc3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GuiElements\GuiContainer">
+      <UniqueIdentifier>{f671c3ef-baa9-4e33-be14-c046218a31d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DebugWindow">
+      <UniqueIdentifier>{49942ae0-9832-4deb-ba31-ac139d9e30a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Starter.cpp">
@@ -93,6 +117,21 @@
     <ClCompile Include="StaticManager.cpp">
       <Filter>Source Files\PrimaryWindow</Filter>
     </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugWindow.cpp">
+      <Filter>Source Files\DebugWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugClass.cpp">
+      <Filter>Source Files\DebugWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="VBox.cpp">
+      <Filter>Source Files\GuiElements\GuiContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugMethod.cpp">
+      <Filter>Source Files\DebugWindow</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderable.h">
@@ -145,6 +184,21 @@
     </ClInclude>
     <ClInclude Include="StaticManager.h">
       <Filter>Source Files\PrimaryWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Source Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugWindow.h">
+      <Filter>Source Files\DebugWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugClass.h">
+      <Filter>Source Files\DebugWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="VBox.h">
+      <Filter>Source Files\GuiElements\GuiContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugMethod.h">
+      <Filter>Source Files\DebugWindow</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -25,6 +25,7 @@ public:
 	void SetText(std::string text);
 	void EventHappened(sf::Event event) override;
 	void CopyLabelStyle(Label *label);
+	void setColor(int r, int g, int b, int a = 255);
 
 	Label *GetLabel();
 

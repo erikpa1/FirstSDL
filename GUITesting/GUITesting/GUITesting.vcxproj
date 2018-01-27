@@ -134,6 +134,10 @@
     <ClCompile Include="BrainBuffer.cpp" />
     <ClCompile Include="Buton.cpp" />
     <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="DebugClass.cpp" />
+    <ClCompile Include="DebugMethod.cpp" />
+    <ClCompile Include="DebugWindow.cpp" />
     <ClCompile Include="EllaAi.cpp" />
     <ClCompile Include="EventReactable.cpp" />
     <ClCompile Include="Label.cpp" />
@@ -148,12 +152,17 @@
     <ClCompile Include="StringArraysAnalyzer.cpp" />
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="TestObject.cpp" />
+    <ClCompile Include="VBox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="BrainBuffer.h" />
     <ClInclude Include="Buton.h" />
     <ClInclude Include="Canvas.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="DebugClass.h" />
+    <ClInclude Include="DebugMethod.h" />
+    <ClInclude Include="DebugWindow.h" />
     <ClInclude Include="EllaAi.h" />
     <ClInclude Include="EventReactable.h" />
     <ClInclude Include="Label.h" />
@@ -167,6 +176,7 @@
     <ClInclude Include="StringArraysAnalyzer.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="TestObject.h" />
+    <ClInclude Include="VBox.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
