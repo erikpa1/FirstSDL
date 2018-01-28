@@ -13,6 +13,7 @@ public:
 
 	void ActivateFlow();
 	void DeactivateFlow();
+	void Rendraw(sf::RenderWindow &window);
 
 private:
 

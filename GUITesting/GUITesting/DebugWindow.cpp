@@ -1,5 +1,9 @@
 #include "DebugWindow.h"
+#include "AppWindow.h"
 
+
+vector<DebugClass> _classes;
+AppWindow debugWindow;
 
 
 DebugWindow::DebugWindow()
@@ -11,18 +15,27 @@ DebugWindow::~DebugWindow()
 {
 }
 
-void DebugWindow::RegisterClass(string className, int ID)
+void DebugWindow::RedrawWindow()
 {
-	_classes.push_back(DebugClass(className, ID));
+	for (auto i = 0; i < _classes.size(); i++)
+	{
+		
+	}
 }
 
-void DebugWindow::RegisterMethod(int classID, string methodName, int methodID)
+void DebugWindow::WatchClass(string className, int ID)
+{
+	DebugClass help(className, ID);
+	_classes.push_back(help);
+}
+
+void DebugWindow::WatchMethod(int classID, string methodName, int methodID)
 {
 	for (auto i = 0; i < _classes.size(); i++)
 	{
 		if(_classes.at(i).GetClassID() == classID)
 		{
-			_classes.at(i).CreateMethod(methodName, methodID);
+			//_classes.at(i).GetClassID();
 		}
 	}
 }
@@ -33,10 +46,19 @@ void DebugWindow::MethodFastBlick(int classID, int methodID)
 	{
 		if (_classes.at(i).GetClassID() == classID)
 		{
-			_classes.at(i).ActivationFlow(classID);
-			_sleep(20);
-
+			//_classes.at(i).ActivationFlow(classID);		
 		}
 	}
 
+}
+
+void DebugWindow::OpenWindow()
+{
+	
+
+}
+
+int DebugWindow::GetNumberOfWatchetObjects()
+{
+	return _classes.size();
 }

@@ -15,6 +15,7 @@ public:
 	void ActivationFlow(int methodID);
 	void DeactivateFlow(int methodID);
 	void CreateMethod(string name, int methodID);
+	void Rendraw(sf::RenderWindow &window);
 
 	int GetClassID(){return _objectID;};
 

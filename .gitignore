@@ -260,3 +260,5 @@ GUITesting/GUITesting/Debug/MouseEvents.obj
 *.ilk
 *.exe
 *.tlog
+*.obj
+*.tlog

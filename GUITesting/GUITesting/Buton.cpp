@@ -40,6 +40,7 @@ void Buton::SetPosition(sf::Vector2f newPosition)
 {
 	Renderable::SetPosition(newPosition);
 	this->_backgroundShape->setPosition(newPosition);
+	this->_buttonText.SetPosition(Renderable::GetMiddlePostion(*this, this->_buttonText));
 }
 
 void Buton::SetDimension(sf::Vector2f newDimension)
