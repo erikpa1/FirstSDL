@@ -1,4 +1,6 @@
 #include "Label.h"
+#include "Fonts.h"
+
 #include <iostream>
 #include <fstream>
 
@@ -9,22 +11,16 @@ Label::Label()
 	this->CommonConstructor();
 }
 
-Label::Label(std::string text) 
+Label::Label(string text) 
 {	
 	this->CommonConstructor();
 	this->_actualText.setString(text);
 }
 
-Label::Label(std::string text, const sf::Vector2f universal) : Renderable(universal)
+Label::Label(string text, int x, int y, int w, int h) : Renderable(x, y ,w ,h)
 {
 	this->CommonConstructor();
 }
-
-Label::Label(std::string text, const sf::Vector2f position, const sf::Vector2f dimension) : Renderable(position, dimension)
-{
-	this->CommonConstructor();
-}
-
 
 Label::~Label()
 {
@@ -46,16 +42,16 @@ void Label::Render()
 	this->_window->draw(this->_actualText);
 }
 
-void Label::SetPosition(sf::Vector2f newPosition)
+void Label::SetPosition(int x, int y)
 {
-	Renderable::SetPosition(newPosition);
-	this->_actualText.setPosition(newPosition);
+	Renderable::SetPosition(x,y);
+	this->_actualText.setPosition(x, y);
 }
 
-void Label::SetDimension(sf::Vector2f newDimension)
+void Label::SetDimension(int x, int y)
 {
-	Renderable::SetDimension(newDimension);
-	this->_actualText.setScale(newDimension);
+	Renderable::SetDimension(x, y);
+	this->_actualText.setScale(x, y);
 }
 
 void Label::SetText(std::string text)
@@ -68,18 +64,21 @@ void Label::SetButtonColor(int r, int g, int b, int a)
 	this->_actualText.setFillColor(sf::Color(r, g, b, a));	
 }
 
-sf::Vector2f Label::GetDimension() const
+int Label::GetDimensionX() const
 {
+	return this->_actualText.getGlobalBounds().width;
+}
 
-	return sf::Vector2f(this->_actualText.getGlobalBounds().width, this->_actualText.getGlobalBounds().height);
+int Label::GetDimensionY() const
+{
+	return this->_actualText.getGlobalBounds().height;
 }
 
 void Label::CommonConstructor()
-{	
-	this->font = new sf::Font();
-	this->font->loadFromFile("Platform/Data/Fonts/micross.ttf");
-	this->_actualText.setFont(*font);
-	this->_actualText.setStyle(sf::Text::Bold);
+{		
+	this->font.loadFromFile(FONT_MICROSS);
+	this->_actualText.setFont(font);
+	this->_actualText.setStyle(Text::Bold);
 	this->_actualText.setString("Default");
 	this->_actualText.setCharacterSize(20);
 	this->_actualText.setFillColor(sf::Color::White);

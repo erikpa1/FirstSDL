@@ -2,7 +2,9 @@
 #include <string>
 #include <vector>
 #include <iostream>
+
 #include "DebugClass.h"
+#include "AppWindow.h"
 
 using namespace std;
 
@@ -17,12 +19,14 @@ public:
 	static void MethodFastBlick(int classID, int methodID);	
 	static void OpenWindow();
 	static int GetNumberOfWatchetObjects();
-
+	
 private:
 	
 	DebugWindow();
 	~DebugWindow();
 
+	static AppWindow *_window;
+	static vector<DebugClass> _classes;
 	static void RedrawWindow();
 
 

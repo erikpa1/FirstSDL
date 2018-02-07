@@ -61,6 +61,9 @@
     <Filter Include="Source Files\DebugWindow">
       <UniqueIdentifier>{49942ae0-9832-4deb-ba31-ac139d9e30a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\SDKtools">
+      <UniqueIdentifier>{5d05b6e8-9dc7-42ed-887b-c8701b3f6b5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Starter.cpp">
@@ -132,6 +135,12 @@
     <ClCompile Include="DebugMethod.cpp">
       <Filter>Source Files\DebugWindow</Filter>
     </ClCompile>
+    <ClCompile Include="ToolBar.cpp">
+      <Filter>Source Files\GuiElements</Filter>
+    </ClCompile>
+    <ClCompile Include="EventPack.cpp">
+      <Filter>Source Files\SDKtools</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderable.h">
@@ -200,5 +209,22 @@
     <ClInclude Include="DebugMethod.h">
       <Filter>Source Files\DebugWindow</Filter>
     </ClInclude>
+    <ClInclude Include="ToolBar.h">
+      <Filter>Source Files\GuiElements</Filter>
+    </ClInclude>
+    <ClInclude Include="Fonts.h">
+      <Filter>Source Files\SDKtools</Filter>
+    </ClInclude>
+    <ClInclude Include="EventPack.h">
+      <Filter>Source Files\SDKtools</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GUITesting.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

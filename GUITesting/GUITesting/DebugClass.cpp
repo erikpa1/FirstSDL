@@ -10,3 +10,7 @@ DebugClass::DebugClass(string name, int ID)
 DebugClass::~DebugClass()
 {
 }
+
+void DebugClass::ActivationFlow(int methodID)
+{
+}

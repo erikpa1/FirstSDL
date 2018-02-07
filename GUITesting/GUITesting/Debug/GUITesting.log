@@ -1,4 +1,7 @@
-﻿  DebugWindow.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\debugwindow.cpp(23): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\debugwindow.cpp(34): warning C4018: '<': signed/unsigned mismatch
+﻿  Buton.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(18): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(100): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   GUITesting.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\Debug\GUITesting.exe

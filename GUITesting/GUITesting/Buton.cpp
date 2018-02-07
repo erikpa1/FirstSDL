@@ -9,16 +9,13 @@ Buton::Buton() : Renderable()
 	this->CommonConstructor();
 }
 
-Buton::Buton(const sf::Vector2f universal) : Renderable(universal)
-			//: Renderable(renderer, universal)
-{
-	this->CommonConstructor();
-}
 
-Buton::Buton(const sf::Vector2f position, const sf::Vector2f dimension) : Renderable(position, dimension)
-			//: Renderable(renderer, _position, _dimension)
+Buton::Buton(int x, int y, int w, int h) : Renderable(x, y, w, h)		
 {
 	this->CommonConstructor();
+	this->SetPosition(x, y);
+	this->_backgroundShape->setPosition(x, y);
+	this->_backgroundShape->setScale(w, h);
 }
 
 Buton::~Buton()
@@ -36,17 +33,19 @@ void Buton::Update()
 	Renderable::Update();
 }
 
-void Buton::SetPosition(sf::Vector2f newPosition)
+void Buton::SetPosition(int x, int y)
 {
-	Renderable::SetPosition(newPosition);
-	this->_backgroundShape->setPosition(newPosition);
-	this->_buttonText.SetPosition(Renderable::GetMiddlePostion(*this, this->_buttonText));
+	Renderable::SetPosition(x, y);
+	this->_backgroundShape->setPosition(x, y);
+
+	Vector2i temp = Renderable::GetMiddlePostion(*this, this->_buttonText);
+	this->_buttonText.SetPosition(temp.x, temp.y);
 }
 
-void Buton::SetDimension(sf::Vector2f newDimension)
+void Buton::SetDimension(int x, int y)
 {
-	Renderable::SetDimension(newDimension);
-	this->_backgroundShape->setScale(newDimension);
+	Renderable::SetDimension(x, y);
+	this->_backgroundShape->setScale(x, y);
 
 }
 
@@ -55,7 +54,11 @@ void Buton::Render()
 {
 	Renderable::Render();
 	this->_buttonText.Render();
-
+	cout << this->_backgroundShape->getScale().x << endl;
+	cout << this->_backgroundShape->getScale().y << endl;
+	cout << this->GetDimensionX() << endl;
+	cout << this->GetDimensionY() << endl;
+	cout << ":::::" << endl;
 }
 
 void Buton::SetRenderer(sf::RenderWindow* window)
@@ -90,13 +93,18 @@ Label* Buton::GetLabel()
 }
 
 void Buton::CommonConstructor()
-{
+{	
+
+	Vector2i temp = this->_position;
 	
-	this->_backgroundShape = new sf::RectangleShape(this->_position);	
-	this->_backgroundShape->setFillColor(sf::Color(sf::Color(50, 50, 50)));
-	this->_backgroundShape->setScale(this->GetDimension());
+	this->_backgroundShape = new sf::RectangleShape(Vector2f(temp.x, temp.y));		
+	this->SetPosition(0, 0);
+	this->_backgroundShape->setPosition(0, 0);
+	this->_backgroundShape->setFillColor(sf::Color(sf::Color(50, 100, 50)));
+	this->_backgroundShape->setScale(50, 50);	
 	this->_drawable = this->_backgroundShape;
 	this->_buttonText.SetParent(this);	
-	this->_buttonText.SetPosition(Renderable::GetMiddlePostion(*this, this->_buttonText));
+	temp = GetMiddlePostion(*this, this->_buttonText);
+	this->_buttonText.SetPosition(temp.x, temp.y);
 
 }

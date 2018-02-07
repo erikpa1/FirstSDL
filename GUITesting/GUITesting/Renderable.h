@@ -1,9 +1,11 @@
 #pragma once
 
 #include "SFML/Graphics.hpp"
+#include "EventPack.h"
 #include <vector>
 
-
+using namespace sf;
+using namespace std;
 
 class Renderable
 {
@@ -12,8 +14,7 @@ public:
 
 	//Renderable(Renderable &parent);
 	Renderable();
-	Renderable(const sf::Vector2f universal);	
-	Renderable(const sf::Vector2f position, const sf::Vector2f dimension);
+	Renderable(int x, int y, int w, int h);
 	~Renderable();
 
 
@@ -22,11 +23,13 @@ public:
 	virtual void Update();	
 	virtual void Render();	
 	virtual void SetRenderer(sf::RenderWindow *window);
-	virtual void SetPosition(sf::Vector2f newPosition);
-	virtual void SetDimension(sf::Vector2f newDimension);
-	virtual void HandleEvents(int event);
-	virtual sf::Vector2f GetPosition() const { return _position; };
-	virtual sf::Vector2f GetDimension() const { return _dimension; };
+	virtual void SetPosition(int x, int y);
+	virtual void SetDimension(int x, int y);
+	virtual void HandleEvents(Event &event);
+	virtual int GetPositionX() const { return _position.x; };
+	virtual int GetPositionY() const { return _position.x; };
+	virtual int GetDimensionX() const { return _dimension.x; };
+	virtual int GetDimensionY() const { return _dimension.y; };
 
 	//Drawing controlling
 	void ChangeDrawinStatus(bool value);
@@ -47,7 +50,7 @@ public:
 	void EraseChildren();
 
 
-	static sf::Vector2f GetMiddlePostion(const Renderable &parent, const Renderable &child);
+	static sf::Vector2i GetMiddlePostion(const Renderable &parent, const Renderable &child);
 	
 protected:
 	
@@ -55,12 +58,12 @@ protected:
 	inline void UpdateChildren();
 
 	Renderable* _parent;
-
-	std::vector<Renderable*> _children;	
-	sf::RenderWindow *_window;
-	sf::Drawable *_drawable;
-	sf::Vector2f _position;
-	sf::Vector2f _dimension;	
+	EventPack* _events;
+	vector<Renderable*> _children;	
+	RenderWindow *_window;
+	Drawable *_drawable;
+	Vector2i _position;
+	Vector2i _dimension;	
 
 	bool _canBeDrawed;
 	bool _canRecieveUpdate;

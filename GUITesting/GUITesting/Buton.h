@@ -5,20 +5,20 @@
 #include "EventReactable.h"
 #include "Label.h"
 
+using namespace sf;
 
 class Buton : public Renderable, EventReactable
 {
 public:
 	
 	Buton();
-	Buton(const sf::Vector2f universal);
-	Buton(const sf::Vector2f position, const sf::Vector2f dimension);
+	Buton(int x, int y, int w, int h);
 	~Buton();
 
 	void Start();
 	void Update();		
-	void SetPosition(sf::Vector2f newPosition);
-	void SetDimension(sf::Vector2f newDimension);
+	void SetPosition(int x, int y);
+	void SetDimension(int x, int y);
 	void Render();
 	void SetRenderer(sf::RenderWindow* window);
 	void SetFontColor(int r, int g, int b, int a);

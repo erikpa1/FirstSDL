@@ -9,11 +9,13 @@
 
 
 using namespace std;
+using namespace sf;
 
 class AppWindow
 {
 
 public:
+
 	AppWindow();
 	~AppWindow();
 	
@@ -21,30 +23,26 @@ public:
 	void Tick();
 	void Pause();
 	void Remove();
-	void AddElement(Renderable *renderable, sf::Vector2f position);
+	void AddElement(Renderable *renderable);
 	void TestingMethod();
 
 
 	bool CanAcceptTick() const { return _window->isOpen() && _canWork;}
-	sf::Vector2i GetWindowPosition() const { return _window->getPosition();};
-	sf::Vector2u GetWindowDimension() const { return _window->getSize();};
-	sf::RenderWindow *GetRenderWindow() { return _window; };
+	int GetWindowPositionX() const { return _window->getPosition().x;};
+	int GetWindowPositionY() const { return _window->getPosition().y; };
 
-	
+	RenderWindow *GetRenderWindow() { return _window; };
 
 	
 	
 private:
 
-	inline void particalTick();
-	void LeftClicked(int x, int y);
-
-	
-	void HandleEvents(sf::Event event);
+	inline void particalTick();	
+	inline void HandleEvents(Event &event);
 	bool _canWork;
 
 	vector<Renderable*> _renderableObjects;
-	sf::RenderWindow *_window;
+	RenderWindow *_window;
 
 
 

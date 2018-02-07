@@ -12,7 +12,7 @@
 //	this->ID = rand();
 //	
 //	
-//
+// 
 //}
 
 Renderable::Renderable()
@@ -26,19 +26,12 @@ Renderable::Renderable()
 
 }
 
-Renderable::Renderable(const sf::Vector2f universal)
+
+Renderable::Renderable(int x, int y, int w, int h)
 {	
 	this->CommonConstructor();
-	this->_position = universal;
-	this->_dimension = universal;
-
-}
-
-Renderable::Renderable(const sf::Vector2f position, const sf::Vector2f dimension)
-{	
-	this->CommonConstructor();
-	this->_position = position;
-	this->_dimension = dimension;
+	this->_position = Vector2i(x, y);
+	this->_dimension = Vector2i(w, h);
 	
 }
 
@@ -73,7 +66,6 @@ void Renderable::EraseChildren()
 	this->_children.clear();
 }
 
-
 int Renderable::numberOfMe = 0;
 
 void Renderable::CommonConstructor()
@@ -81,6 +73,7 @@ void Renderable::CommonConstructor()
 	this->ID = rand();
 	this->_canBeDrawed = true;
 	this->_canRecieveUpdate = true;
+	this->_dimension = sf::Vector2i(50, 100);
 
 	Renderable::numberOfMe++;
 	std::cout << Renderable::numberOfMe << std::endl;
@@ -158,19 +151,24 @@ void Renderable::ChangeUpdateStatus(bool value)
 	this->_canRecieveUpdate = value;
 }
 
-void Renderable::SetPosition(sf::Vector2f newPosition)
+void Renderable::SetPosition(int x, int y)
 {
-	this->_position = newPosition;		
+	this->_position.x = x;
+	this->_position.y = y;
 }
 
-void Renderable::SetDimension(sf::Vector2f newDimension)
+void Renderable::SetDimension(int x, int y)
 {
-	this->_dimension = newDimension;
+	this->_dimension.x = x;
+	this->_dimension.y = y;
 }
 
-void Renderable::HandleEvents(int event)
+void Renderable::HandleEvents(Event &event)
 {
-	std::cout << "Object " << this->ID << " prijal event" << event;
+	std::cout << "Object " << this->ID << " prijal event" << event.type << endl;
+	
+	
+
 }
 
 void Renderable::SetID(int ID)
@@ -187,11 +185,17 @@ sf::RenderWindow* Renderable::GetRenderWindow()
 /**
  * Calculates position for aligment to parent
  */
-sf::Vector2f Renderable::GetMiddlePostion(const Renderable& parent, const Renderable& child)
+Vector2i Renderable::GetMiddlePostion(const Renderable& parent, const Renderable& child)
 {
-	sf::Vector2f temporary = parent.GetPosition();
-	temporary.x += (parent.GetDimension().x/2) - child.GetDimension().x / 2;
-	temporary.y += (parent.GetDimension().y/2) - child.GetDimension().y / 2;
+	int x = parent.GetPositionX();
+	int y = parent.GetPositionY();
+
+	
+	x += (parent.GetDimensionX()/2) - child.GetDimensionX() / 2;
+	y += (parent.GetDimensionY()/2) - child.GetDimensionY() / 2;
+
+	Vector2i temporary(x,y);
+
 	
 	return temporary;
 }

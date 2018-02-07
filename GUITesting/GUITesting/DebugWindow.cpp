@@ -2,8 +2,8 @@
 #include "AppWindow.h"
 
 
-vector<DebugClass> _classes;
-AppWindow debugWindow;
+vector<DebugClass> DebugWindow::_classes;
+AppWindow DebugWindow::*_window;
 
 
 DebugWindow::DebugWindow()
@@ -35,7 +35,7 @@ void DebugWindow::WatchMethod(int classID, string methodName, int methodID)
 	{
 		if(_classes.at(i).GetClassID() == classID)
 		{
-			//_classes.at(i).GetClassID();
+			_classes.at(i).GetClassID();
 		}
 	}
 }
@@ -46,7 +46,7 @@ void DebugWindow::MethodFastBlick(int classID, int methodID)
 	{
 		if (_classes.at(i).GetClassID() == classID)
 		{
-			//_classes.at(i).ActivationFlow(classID);		
+			_classes.at(i).ActivationFlow(classID);		
 		}
 	}
 

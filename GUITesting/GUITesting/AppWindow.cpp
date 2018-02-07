@@ -8,7 +8,6 @@ AppWindow::AppWindow()
 {
 	this->_window = new sf::RenderWindow(sf::VideoMode(800, 600), "Its working");
 	
-
 }
 
 
@@ -31,27 +30,25 @@ void AppWindow::Tick()
 	this->particalTick();
 }
 
-void AppWindow::AddElement(Renderable* renderable, sf::Vector2f position)
-{	
-	renderable->SetRenderer(this->_window);	
+void AppWindow::AddElement(Renderable* renderable)
+{		
 	this->_renderableObjects.push_back(renderable);
-	renderable->SetPosition(position);
+	renderable->SetRenderer(this->_window);
 }
 
 void AppWindow::TestingMethod()
 {
-	//Renderable *testElement = new Renderable(this->_window);
-	//this->AddElement(testElement, sf::Vector2f(10 , 10));
+	
 }
 
 void AppWindow::particalTick()
 {
 
 	this->_window->clear();
-	sf::Event event;
+	Event event;
 	while (this->_window->pollEvent(event))
 	{
-		if (event.type == sf::Event::Closed)
+		if (event.type == Event::Closed)
 		{
 			_window->close();
 		}			
@@ -72,32 +69,11 @@ void AppWindow::particalTick()
 }
 
 
-void AppWindow::HandleEvents(sf::Event event)
+void AppWindow::HandleEvents(Event &event)
 {
 	for (auto i = 0; i < this->_renderableObjects.size(); i++)
 	{
-		std::cout << " hellow " << std::endl;
-		if (typeid(this->_renderableObjects.at(i)) == typeid(Renderable&))
-		{			
-			EventReactable* acceptable = dynamic_cast<EventReactable*>(this->_renderableObjects.at(i));
-			if(acceptable)
-			{
-				acceptable->EventHappened(event);
-			} else
-			{
-				/*std::cout << "Came here" << std::endl;
-				sf::Time a;
-				a = sf::seconds(1);
-				sf::sleep(a);*/
-			}
-			
-		} else
-		{
-			/*std::cout << "Came here" << std::endl;
-			sf::Time a;
-			a = sf::seconds(1);
-			sf::sleep(a);*/
-		}
-		}
+		this->_renderableObjects.at(i)->HandleEvents(event);
 	}
+}
 
