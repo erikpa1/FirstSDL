@@ -1,13 +1,12 @@
 #pragma once
 
 #include "Renderable.h"
-#include "MouseEvents.h"
-#include "EventReactable.h"
+#include "IEventAcceptable.h"
 #include "Label.h"
 
 using namespace sf;
 
-class Buton : public Renderable, EventReactable
+class Buton : public Renderable
 {
 public:
 	
@@ -17,13 +16,13 @@ public:
 
 	void Start();
 	void Update();		
+	void SendEvent(Event& event) override;
 	void SetPosition(int x, int y);
 	void SetDimension(int x, int y);
 	void Render();
-	void SetRenderer(sf::RenderWindow* window);
-	void SetFontColor(int r, int g, int b, int a);
-	void SetText(std::string text);
-	void EventHappened(sf::Event event) override;
+	void SetRenderer(RenderWindow* window);
+	void SetFontColor(int r, int g, int b, int a = 255);
+	void SetText(string text);	
 	void CopyLabelStyle(Label *label);
 	void setColor(int r, int g, int b, int a = 255);
 
@@ -37,7 +36,7 @@ private:
 	Label _buttonText;
 
 	sf::Image _image;
-	sf::Shape *_backgroundShape;
+	sf::RectangleShape *_backgroundShape;
 
 	
 

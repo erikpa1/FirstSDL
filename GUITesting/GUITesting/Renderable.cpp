@@ -73,7 +73,7 @@ void Renderable::CommonConstructor()
 	this->ID = rand();
 	this->_canBeDrawed = true;
 	this->_canRecieveUpdate = true;
-	this->_dimension = sf::Vector2i(50, 100);
+	this->_dimension = sf::Vector2i(50, 50);
 
 	Renderable::numberOfMe++;
 	std::cout << Renderable::numberOfMe << std::endl;
@@ -113,6 +113,7 @@ void Renderable::Update()
 	{
 		return;
 	}
+
 }
 
 void Renderable::Render()
@@ -169,6 +170,11 @@ void Renderable::HandleEvents(Event &event)
 	
 	
 
+}
+
+void Renderable::SendEvent(Event& event)
+{
+	cout << "Object: " << this->ID << " recieved event: " << event.type << endl;
 }
 
 void Renderable::SetID(int ID)

@@ -15,7 +15,7 @@ int main()
 {	
 	AppWindow window;		
 	//Buton* btn = new Buton();
-	Buton* buton = new Buton(100, 100, 50, 50);	
+	Buton* buton = new Buton(10, 10, 50, 50);	
 	window.AddElement(buton);
 	window.IndependentStart();
 	//app.AddWindow(window);	

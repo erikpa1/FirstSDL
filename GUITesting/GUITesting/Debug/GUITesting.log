@@ -1,7 +1,22 @@
-﻿  Buton.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(18): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\buton.cpp(100): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  Renderable.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(61): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(85): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(93): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(125): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Compiling...
+  AppWindow.cpp
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(61): warning C4018: '<': signed/unsigned mismatch
+c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(74): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  VBox.cpp
+  PopUpWindow.cpp
+  Application.cpp
+  Starter.cpp
+  Label.cpp
+  DebugWindow.cpp
+  DebugMethod.cpp
+  DebugClass.cpp
+  Buton.cpp
   GUITesting.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\Debug\GUITesting.exe

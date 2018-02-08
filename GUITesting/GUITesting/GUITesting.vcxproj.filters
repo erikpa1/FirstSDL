@@ -22,9 +22,6 @@
     <Filter Include="Source Files\GuiElements">
       <UniqueIdentifier>{f34a36f4-ec8a-4c90-9dff-8ef5ad4f9385}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\EventHandler">
-      <UniqueIdentifier>{d7855ce6-d90b-4616-a887-f655200a6c90}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Application">
       <UniqueIdentifier>{f1d15f09-4568-4517-b1db-2077c2952800}</UniqueIdentifier>
     </Filter>
@@ -72,9 +69,6 @@
     <ClCompile Include="Renderable.cpp">
       <Filter>Source Files\GuiElements</Filter>
     </ClCompile>
-    <ClCompile Include="MouseEvents.cpp">
-      <Filter>Source Files\EventHandler</Filter>
-    </ClCompile>
     <ClCompile Include="Canvas.cpp">
       <Filter>Source Files\GuiElements</Filter>
     </ClCompile>
@@ -92,9 +86,6 @@
     </ClCompile>
     <ClCompile Include="TestObject.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EventReactable.cpp">
-      <Filter>Source Files\EventHandler</Filter>
     </ClCompile>
     <ClCompile Include="EllaAi.cpp">
       <Filter>Source Files\AI</Filter>
@@ -138,16 +129,13 @@
     <ClCompile Include="ToolBar.cpp">
       <Filter>Source Files\GuiElements</Filter>
     </ClCompile>
-    <ClCompile Include="EventPack.cpp">
+    <ClCompile Include="ReactableArray.cpp">
       <Filter>Source Files\SDKtools</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderable.h">
       <Filter>Source Files\GuiElements</Filter>
-    </ClInclude>
-    <ClInclude Include="MouseEvents.h">
-      <Filter>Source Files\EventHandler</Filter>
     </ClInclude>
     <ClInclude Include="Canvas.h">
       <Filter>Source Files\GuiElements</Filter>
@@ -166,9 +154,6 @@
     </ClInclude>
     <ClInclude Include="TestObject.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EventReactable.h">
-      <Filter>Source Files\EventHandler</Filter>
     </ClInclude>
     <ClInclude Include="EllaAi.h">
       <Filter>Source Files\AI</Filter>
@@ -215,11 +200,14 @@
     <ClInclude Include="Fonts.h">
       <Filter>Source Files\SDKtools</Filter>
     </ClInclude>
-    <ClInclude Include="EventPack.h">
-      <Filter>Source Files\SDKtools</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IEventAcceptable.h">
+      <Filter>Source Files\SDKtools</Filter>
+    </ClInclude>
+    <ClInclude Include="ReactableArray.h">
+      <Filter>Source Files\SDKtools</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

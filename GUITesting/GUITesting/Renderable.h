@@ -1,13 +1,13 @@
 #pragma once
 
 #include "SFML/Graphics.hpp"
-#include "EventPack.h"
+#include "IEventAcceptable.h"
 #include <vector>
 
 using namespace sf;
 using namespace std;
 
-class Renderable
+class Renderable : IEventAcceptable
 {
 
 public:
@@ -26,10 +26,12 @@ public:
 	virtual void SetPosition(int x, int y);
 	virtual void SetDimension(int x, int y);
 	virtual void HandleEvents(Event &event);
+	virtual void SendEvent(Event &event);
 	virtual int GetPositionX() const { return _position.x; };
 	virtual int GetPositionY() const { return _position.x; };
 	virtual int GetDimensionX() const { return _dimension.x; };
 	virtual int GetDimensionY() const { return _dimension.y; };
+	
 
 	//Drawing controlling
 	void ChangeDrawinStatus(bool value);
@@ -58,7 +60,6 @@ protected:
 	inline void UpdateChildren();
 
 	Renderable* _parent;
-	EventPack* _events;
 	vector<Renderable*> _children;	
 	RenderWindow *_window;
 	Drawable *_drawable;
