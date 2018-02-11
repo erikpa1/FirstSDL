@@ -34,9 +34,6 @@
     <Filter Include="Source Files\AI\FileManagement">
       <UniqueIdentifier>{4ae25d4e-e1de-4731-a1c4-e0d11cf6533e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\NamedPipe">
-      <UniqueIdentifier>{118ba8f7-e0f6-448b-bd26-2a214b855afb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Networking">
       <UniqueIdentifier>{63b626cc-51f8-4f14-b28c-533b6bfa0e8f}</UniqueIdentifier>
     </Filter>
@@ -132,6 +129,12 @@
     <ClCompile Include="ReactableArray.cpp">
       <Filter>Source Files\SDKtools</Filter>
     </ClCompile>
+    <ClCompile Include="PipeClient.cpp">
+      <Filter>Source Files\NamedPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeServer.cpp">
+      <Filter>Source Files\NamedPipeline</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderable.h">
@@ -208,6 +211,12 @@
     </ClInclude>
     <ClInclude Include="ReactableArray.h">
       <Filter>Source Files\SDKtools</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeClient.h">
+      <Filter>Source Files\NamedPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeServer.h">
+      <Filter>Source Files\NamedPipeline</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

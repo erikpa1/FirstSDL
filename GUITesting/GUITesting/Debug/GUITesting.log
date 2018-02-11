@@ -1,22 +1,3 @@
-﻿  Renderable.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(61): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(85): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(93): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\renderable.cpp(125): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  Compiling...
-  AppWindow.cpp
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(61): warning C4018: '<': signed/unsigned mismatch
-c:\tvorba\programovanie\gitrepo\firstsdl\guitesting\guitesting\appwindow.cpp(74): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  VBox.cpp
-  PopUpWindow.cpp
-  Application.cpp
-  Starter.cpp
-  Label.cpp
-  DebugWindow.cpp
-  DebugMethod.cpp
-  DebugClass.cpp
-  Buton.cpp
-  GUITesting.vcxproj -> C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\Debug\GUITesting.exe
+﻿  PipeServer.cpp
+PipeServer.obj : error LNK2019: unresolved external symbol "int __cdecl CreateAndConnectInstance(struct _OVERLAPPED *)" (?CreateAndConnectInstance@@YAHPAU_OVERLAPPED@@@Z) referenced in function "public: __thiscall PipeServer::PipeServer(void)" (??0PipeServer@@QAE@XZ)
+C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\Debug\GUITesting.exe : fatal error LNK1120: 1 unresolved externals

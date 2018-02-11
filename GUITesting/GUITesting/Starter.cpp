@@ -6,22 +6,34 @@
 #include "Renderable.h"
 #include "Buton.h"
 #include "TestObject.h"
-//#include "DebugWindow.h"
+#include "DebugWindow.h"
 #include "SQLite/sqlite3.h"
-
+#include "PipeServer.h"
+#include "PipeClient.h"
 
 
 int main()
 {	
-	AppWindow window;		
+	//AppWindow window;		
 	//Buton* btn = new Buton();
-	Buton* buton = new Buton(10, 10, 50, 50);	
-	window.AddElement(buton);
-	window.IndependentStart();
+	//Buton* buton = new Buton(10, 10, 50, 50);	
+	//window.AddElement(buton);
+	//window.IndependentStart();
 	//app.AddWindow(window);	
 	//app.TickAutomaticly();
 	//DebugWindow::WatchClass("okno", 102);
 	//DebugWindow::WatchMethod(102, "srielaj", 1);
+
+	PipeServer server;
+	PipeClient klient("Ulala");
+	string buffered;
+	klient.SendMassage("CAW");
+	klient.ReadMassage(buffered);
+
+	cout << buffered << endl;
+
+
+
 
 	
 	return 0;
