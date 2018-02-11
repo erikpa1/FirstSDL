@@ -9,10 +9,12 @@ class PipeServer
 
 public:
 
-	PipeServer();
+	PipeServer(string pipename);
 	~PipeServer();
+
 	void Read(string &buffedString);
 	void Write(string toWrite);
+	void Disconect();
 
 private: 
 

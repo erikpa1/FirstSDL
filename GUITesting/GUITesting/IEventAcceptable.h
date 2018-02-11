@@ -1,11 +1,10 @@
 #pragma once
 
-#include "SFML/Graphics.hpp"
+#define LEFTCLICK 1;
 
 
-using namespace sf;
 class IEventAcceptable
 {
 public:
-	virtual void SendEvent(Event &event) = 0;
+	virtual void SendEvent(int i) = 0;
 };

@@ -3,13 +3,6 @@
 
 
 
-Buton::Buton() : Renderable()
-		//	: Renderable(renderer)
-{
-	this->CommonConstructor();
-}
-
-
 Buton::Buton(int x, int y, int w, int h) : Renderable(x, y, w, h)		
 {
 	this->CommonConstructor();
@@ -37,6 +30,18 @@ void Buton::Update()
 void Buton::SendEvent(Event& event)
 {
 
+	Renderable::SendEvent(event);
+/*
+	switch (event.type)
+	{
+	case 1:
+		if (this->WasClicked(event.mouseButton.x, event.mouseButton.y))
+		{
+
+		}
+		break;
+	}
+*/
 }
 
 void Buton::SetPosition(int x, int y)
@@ -44,8 +49,8 @@ void Buton::SetPosition(int x, int y)
 	Renderable::SetPosition(x, y);
 	this->_backgroundShape->setPosition(x, y);
 
-	Vector2i temp = Renderable::GetMiddlePostion(*this, this->_buttonText);
-	this->_buttonText.SetPosition(temp.x, temp.y);
+	SetMiddlePostion(*this, this->_buttonText);
+
 }
 
 void Buton::SetDimension(int x, int y)
@@ -102,7 +107,7 @@ void Buton::CommonConstructor()
 	this->_backgroundShape->setFillColor(Color(Color(50, 50, 50)));		
 	this->_drawable = this->_backgroundShape;
 	this->_buttonText.SetParent(this);	
-	temp = GetMiddlePostion(*this, this->_buttonText);
-	this->_buttonText.SetPosition(temp.x, temp.y);
+	SetMiddlePostion(*this, this->_buttonText);
+
 
 }

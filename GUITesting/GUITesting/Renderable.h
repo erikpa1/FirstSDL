@@ -1,13 +1,12 @@
 #pragma once
 
 #include "SFML/Graphics.hpp"
-#include "IEventAcceptable.h"
 #include <vector>
 
 using namespace sf;
 using namespace std;
 
-class Renderable : IEventAcceptable
+class Renderable
 {
 
 public:
@@ -25,40 +24,35 @@ public:
 	virtual void SetRenderer(sf::RenderWindow *window);
 	virtual void SetPosition(int x, int y);
 	virtual void SetDimension(int x, int y);
-	virtual void HandleEvents(Event &event);
 	virtual void SendEvent(Event &event);
-	virtual int GetPositionX() const { return _position.x; };
-	virtual int GetPositionY() const { return _position.x; };
-	virtual int GetDimensionX() const { return _dimension.x; };
-	virtual int GetDimensionY() const { return _dimension.y; };
-	
-
-	//Drawing controlling
-	void ChangeDrawinStatus(bool value);
-	void ChangeUpdateStatus(bool value);
-	
-	void SetID(signed int ID);
-	signed int GetID();
-
-	//Parent attributes
-	sf::RenderWindow *GetRenderWindow();
-	bool GetDrawingState() { return _canBeDrawed; };
-	bool GetUpdateState() { return _canRecieveUpdate; };
-
 	void AddChild(Renderable *child);
 	void SetParent(Renderable *parent);
 	void DisconnectFromParent();
 	void DisconnectChildren();
 	void EraseChildren();
-
-
-	static sf::Vector2i GetMiddlePostion(const Renderable &parent, const Renderable &child);
+	void ChangeDrawinStatus(bool value);
+	void ChangeUpdateStatus(bool value);
+	void SetID(signed int ID);
+	static void SetMiddlePostion(const Renderable &parent, Renderable &child);
 	
+	virtual int GetPositionX() const { return _position.x; }
+	virtual int GetPositionY() const { return _position.x; }
+	virtual int GetDimensionX() const { return _dimension.x; }
+	virtual int GetDimensionY() const { return _dimension.y; }
+	signed int GetID();
+
+	inline bool WasClicked(int x, int y);
+	bool GetDrawingState() { return _canBeDrawed; }
+	bool GetUpdateState() { return _canRecieveUpdate; }
+
+   
+	RenderWindow *GetRenderWindow();
+
 protected:
 	
 	inline void DrawChildren();
 	inline void UpdateChildren();
-
+	
 	Renderable* _parent;
 	vector<Renderable*> _children;	
 	RenderWindow *_window;

@@ -11,13 +11,6 @@ int main()
 	HANDLE hPipe;
 	DWORD dwWritten;
 
-	hPipe = CreateFile(TEXT("\\\\.\\pipe\\test"),
-		GENERIC_READ | GENERIC_WRITE,
-		0,
-		NULL,
-		OPEN_EXISTING,
-		0,
-		NULL);
 
 	if (hPipe != INVALID_HANDLE_VALUE)
 	{

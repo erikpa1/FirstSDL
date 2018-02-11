@@ -139,6 +139,7 @@
     <ClCompile Include="DebugMethod.cpp" />
     <ClCompile Include="DebugWindow.cpp" />
     <ClCompile Include="EllaAi.cpp" />
+    <ClCompile Include="EventPack.cpp" />
     <ClCompile Include="Label.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Orders.cpp" />
@@ -166,6 +167,7 @@
     <ClInclude Include="DebugMethod.h" />
     <ClInclude Include="DebugWindow.h" />
     <ClInclude Include="EllaAi.h" />
+    <ClInclude Include="EventPack.h" />
     <ClInclude Include="Fonts.h" />
     <ClInclude Include="IEventAcceptable.h" />
     <ClInclude Include="Label.h" />

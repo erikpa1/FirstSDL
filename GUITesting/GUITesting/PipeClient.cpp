@@ -1,38 +1,46 @@
 ﻿#include "PipeClient.h"
 #include <iostream>
 
-#define BUFSIZE 512;
 
 using namespace std;
 
 PipeClient::PipeClient(string pipename)
 {		
-	string help = "\\\\.\\pipe\\" + pipename;
-	this->_hpipe = CreateFile(help.c_str(), GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, NULL);
-	DWORD temp = PIPE_READMODE_MESSAGE;	
-	SetNamedPipeHandleState(this->_hpipe, &temp , NULL, NULL);
-	
-	if (this->_hpipe != INVALID_HANDLE_VALUE);
-	cout << "FAIL TO CREATE CONNECTION";
-	
+	this->_hPipe = CreateFile(TEXT("\\\\.\\pipe\\test"),
+		GENERIC_READ | GENERIC_WRITE,
+		0,
+		NULL,
+		OPEN_EXISTING,
+		0,
+		NULL);
+
+
 }
 
 PipeClient::~PipeClient()
 {
+	CloseHandle(this->_hPipe);
 }
 
-void PipeClient::SendMassage(string massage)
+void PipeClient::Write(string massage)
 {
-	DWORD temp = PIPE_READMODE_MESSAGE;
-	bool succesFullWrite = WriteFile(this->_hpipe, massage.c_str(), massage.length(), &temp, NULL);
+
+	DWORD dwWritten;
+
+	if (this->_hPipe != INVALID_HANDLE_VALUE)
+	{
+		WriteFile(this->_hPipe,
+			"Hello Pipe\n",
+			12,   // = length of string + terminating '\0' !!!
+			&dwWritten,
+			NULL);
+	
+	}
+
 }
 
-void PipeClient::ReadMassage(string& stringToBuff)
+void PipeClient::Read(string& stringToBuff)
 {
-	TCHAR  chBuf[512];
-	DWORD size = BUFSIZE;
-	bool succesOfRead = ReadFile(this->_hpipe, chBuf, sizeof(TCHAR), &size , NULL);
-
 }
 
 

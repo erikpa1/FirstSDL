@@ -1,8 +1,11 @@
 #pragma once
-class TestObject
+#include "IEventAcceptable.h"
+class TestObject : IEventAcceptable
 {
 public:
 	TestObject();
 	~TestObject();
+	void SendEvent(int i) override;
+
 };
 

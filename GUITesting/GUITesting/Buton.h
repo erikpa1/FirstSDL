@@ -1,22 +1,21 @@
 #pragma once
 
 #include "Renderable.h"
-#include "IEventAcceptable.h"
+#include "EventPack.h"
 #include "Label.h"
 
 using namespace sf;
 
-class Buton : public Renderable
+class Buton : public Renderable, EventPack
 {
 public:
-	
-	Buton();
+
 	Buton(int x, int y, int w, int h);
 	~Buton();
 
 	void Start();
 	void Update();		
-	void SendEvent(Event& event) override;
+	void SendEvent(Event& event);
 	void SetPosition(int x, int y);
 	void SetDimension(int x, int y);
 	void Render();

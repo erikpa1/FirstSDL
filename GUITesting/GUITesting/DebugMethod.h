@@ -18,8 +18,9 @@ public:
 private:
 
 	int _methodID;
+	Buton *_button;
 	string _name;
-	Buton _button;
+	
 
 };
 

@@ -73,7 +73,7 @@ void AppWindow::HandleEvents(Event &event)
 {
 	for (auto i = 0; i < this->_renderableObjects.size(); i++)
 	{
-		this->_renderableObjects.at(i)->HandleEvents(event);
+		this->_renderableObjects.at(i)->SendEvent(event);
 	}
 }
 

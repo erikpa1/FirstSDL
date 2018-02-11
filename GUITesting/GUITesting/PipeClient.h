@@ -10,12 +10,14 @@ class PipeClient
 public:
 	PipeClient(string pipename);
 	~PipeClient();
-	void SendMassage(string massage);
-	void ReadMassage(string &stringToBuff);
+
+	void Write(string massage);
+	void Read(string &stringToBuff);
+	void Close();
 
 private:
 
-	HANDLE _hpipe;
+	HANDLE _hPipe;
 
 
 	
