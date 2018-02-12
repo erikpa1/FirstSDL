@@ -5,22 +5,27 @@
 #include <fstream>
 
 
-
-Label::Label()
+Label::Label() : GuiElement(0,0,0,0)
 {
 	this->CommonConstructor();
 }
 
-Label::Label(string text) 
-{	
-	this->CommonConstructor();
-	this->_actualText.setString(text);
-}
-
-Label::Label(string text, int x, int y, int w, int h) : Renderable(x, y ,w ,h)
+Label::Label(int x, int y, int w, int h, string text) : GuiElement(x, y ,w ,h)
 {
 	this->CommonConstructor();
 }
+
+void Label::CommonConstructor()
+{
+	this->font.loadFromFile(FONT_MICROSS);
+	this->_actualText.setFont(font);
+	this->_actualText.setStyle(Text::Bold);
+	this->_actualText.setString("Default");
+	this->_actualText.setCharacterSize(20);
+	this->_actualText.setFillColor(sf::Color::White);
+	this->_drawable = &_actualText;
+}
+
 
 Label::~Label()
 {
@@ -74,14 +79,3 @@ int Label::GetDimensionY() const
 	return this->_actualText.getGlobalBounds().height;
 }
 
-void Label::CommonConstructor()
-{		
-	this->font.loadFromFile(FONT_MICROSS);
-	this->_actualText.setFont(font);
-	this->_actualText.setStyle(Text::Bold);
-	this->_actualText.setString("Default");
-	this->_actualText.setCharacterSize(20);
-	this->_actualText.setFillColor(sf::Color::White);
-	this->_drawable = &_actualText;
-	
-}

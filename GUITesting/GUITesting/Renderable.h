@@ -3,6 +3,7 @@
 #include "SFML/Graphics.hpp"
 #include <vector>
 
+
 using namespace sf;
 using namespace std;
 
@@ -32,8 +33,7 @@ public:
 	void EraseChildren();
 	void ChangeDrawinStatus(bool value);
 	void ChangeUpdateStatus(bool value);
-	void SetID(signed int ID);
-	static void SetMiddlePostion(const Renderable &parent, Renderable &child);
+	void SetID(signed int ID);	
 	
 	virtual int GetPositionX() const { return _position.x; }
 	virtual int GetPositionY() const { return _position.x; }
@@ -41,12 +41,13 @@ public:
 	virtual int GetDimensionY() const { return _dimension.y; }
 	signed int GetID();
 
-	inline bool WasClicked(int x, int y);
+	
 	bool GetDrawingState() { return _canBeDrawed; }
 	bool GetUpdateState() { return _canRecieveUpdate; }
 
    
 	RenderWindow *GetRenderWindow();
+	//EventPack *GetEventPack() { return _events; }
 
 protected:
 	
@@ -59,6 +60,7 @@ protected:
 	Drawable *_drawable;
 	Vector2i _position;
 	Vector2i _dimension;	
+	//EventPack *_events;
 
 	bool _canBeDrawed;
 	bool _canRecieveUpdate;

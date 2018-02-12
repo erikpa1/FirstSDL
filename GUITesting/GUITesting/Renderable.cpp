@@ -153,10 +153,6 @@ void Renderable::SetDimension(int x, int y)
 	this->_dimension.y = y;
 }
 
-void Renderable::SendEvent(Event& event)
-{
-	cout << "Object: " << this->ID << " recieved event: " << event.type << endl;
-}
 
 void Renderable::SetID(int ID)
 {
@@ -169,22 +165,8 @@ RenderWindow* Renderable::GetRenderWindow()
 }
 
 
-void Renderable::SetMiddlePostion(const Renderable& parent, Renderable& child)
+void Renderable::SendEvent(Event& event)
 {
-	int x = parent.GetPositionX();
-	int y = parent.GetPositionY();	
-	x += (parent.GetDimensionX()/2) - child.GetDimensionX() / 2;
-	y += (parent.GetDimensionY() / 2) - child.GetDimensionY();
-	child.SetPosition(x, y);
-
+	cout << "Object: " << this->ID << " recieved event: " << event.type << endl;
 }
 
-
-bool Renderable::WasClicked(int x, int y)
-{
-	if ((this->GetPositionX() <= x) && (x <= (this->GetDimensionX() + this->GetPositionX())) && ((this->GetPositionY() <= y) && (y <= this->GetDimensionY() + this->GetDimensionY()))) 
-	{
-		return true;
-	}
-	return false;
-}

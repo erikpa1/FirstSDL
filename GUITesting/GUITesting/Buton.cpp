@@ -3,7 +3,7 @@
 
 
 
-Buton::Buton(int x, int y, int w, int h) : Renderable(x, y, w, h)		
+Buton::Buton(int x, int y, int w, int h) : GuiElement(x, y, w, h)
 {
 	this->CommonConstructor();
 	this->SetPosition(x, y);
@@ -30,18 +30,18 @@ void Buton::Update()
 void Buton::SendEvent(Event& event)
 {
 
-	Renderable::SendEvent(event);
-/*
+	GuiElement::SendEvent(event);
 	switch (event.type)
 	{
-	case 1:
+	case Event::MouseButtonPressed:
 		if (this->WasClicked(event.mouseButton.x, event.mouseButton.y))
 		{
-
+			this->_backgroundShape->setFillColor(Color(rand(), rand(), rand()));
+			
 		}
 		break;
 	}
-*/
+
 }
 
 void Buton::SetPosition(int x, int y)
@@ -49,7 +49,7 @@ void Buton::SetPosition(int x, int y)
 	Renderable::SetPosition(x, y);
 	this->_backgroundShape->setPosition(x, y);
 
-	SetMiddlePostion(*this, this->_buttonText);
+	SetAligment(MIDDLE, *this, this->_buttonText);
 
 }
 
@@ -107,7 +107,9 @@ void Buton::CommonConstructor()
 	this->_backgroundShape->setFillColor(Color(Color(50, 50, 50)));		
 	this->_drawable = this->_backgroundShape;
 	this->_buttonText.SetParent(this);	
-	SetMiddlePostion(*this, this->_buttonText);
+	//this->_events = new EventPack();
+	SetAligment(MIDDLE, *this, this->_buttonText);
+	
 
 
 }

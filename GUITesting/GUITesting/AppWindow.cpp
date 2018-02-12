@@ -1,4 +1,5 @@
 #include "AppWindow.h"
+#include "GuiElement.h"
 #include "Buton.h"
 #include "EventReactable.h"
 #include <iostream>

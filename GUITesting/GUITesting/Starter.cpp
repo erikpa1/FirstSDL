@@ -17,8 +17,10 @@ int main()
 	AppWindow window;		
 	Buton* buton = new Buton(10, 10, 100, 50);	
 	window.AddElement(buton);
+	
 
 	TestObject obj;
+	TestObject *pobj;
 
 	window.IndependentStart();
 	//app.AddWindow(window);	

@@ -1,12 +1,11 @@
 #pragma once
 
-#include "Renderable.h"
-#include "EventPack.h"
+#include "GuiElement.h"
 #include "Label.h"
 
 using namespace sf;
 
-class Buton : public Renderable, EventPack
+class Buton : public GuiElement
 {
 public:
 
@@ -27,18 +26,15 @@ public:
 
 	Label *GetLabel();
 
-	std::string GetButtonText() { return _buttonText.GetText().getString(); };
+	string GetButtonText() { return _buttonText.GetText().getString(); };
 
 private:
 
 	void CommonConstructor();	
+
 	Label _buttonText;
-
-	sf::Image _image;
-	sf::RectangleShape *_backgroundShape;
-
-	
-
+	Image _image;
+	RectangleShape *_backgroundShape;
 
 	
 

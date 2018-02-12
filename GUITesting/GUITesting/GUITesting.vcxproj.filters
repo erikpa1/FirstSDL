@@ -138,8 +138,8 @@
     <ClCompile Include="ReactableArray.cpp">
       <Filter>Source Files\EventHandler</Filter>
     </ClCompile>
-    <ClCompile Include="EventPack.cpp">
-      <Filter>Source Files\EventHandler</Filter>
+    <ClCompile Include="GuiElement.cpp">
+      <Filter>Source Files\GuiElements</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -224,8 +224,11 @@
     <ClInclude Include="ReactableArray.h">
       <Filter>Source Files\EventHandler</Filter>
     </ClInclude>
-    <ClInclude Include="EventPack.h">
-      <Filter>Source Files\EventHandler</Filter>
+    <ClInclude Include="GuiElement.h">
+      <Filter>Source Files\GuiElements</Filter>
+    </ClInclude>
+    <ClInclude Include="Poses.h">
+      <Filter>Source Files\GuiElements</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

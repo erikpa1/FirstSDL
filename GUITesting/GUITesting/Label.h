@@ -1,16 +1,16 @@
 #pragma once
-#include "Renderable.h"
+#include "GuiElement.h"
 #include <string>
 
 using namespace std;
 using namespace sf;
 
-class Label : public Renderable
+class Label : public GuiElement
 {
 public:
+
 	Label();
-	Label(std::string text);
-	Label(std::string text, int x, int y, int w, int h);
+	Label(int x, int y, int w, int h, string text = "Default");
 	~Label();
 
 	void Start();

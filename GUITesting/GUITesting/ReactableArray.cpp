@@ -4,7 +4,7 @@ void ReactableArray::SendEvent(Event& event)
 {		
 	for (auto i = _objects.begin(); i != this->_objects.end(); ++i)
 	{
-		(*i)->SendEvent(event);
+		(*i)->SendEvent(event.type);
 	}
 }
 

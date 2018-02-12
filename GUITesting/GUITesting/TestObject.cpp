@@ -3,7 +3,7 @@
 
 using namespace std;
 
-TestObject::TestObject()
+TestObject::TestObject() : IEventAcceptable()
 {
 }
 
