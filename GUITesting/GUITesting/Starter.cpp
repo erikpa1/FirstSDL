@@ -10,6 +10,7 @@
 #include "SQLite/sqlite3.h"
 #include "PipeServer.h"
 #include "PipeClient.h"
+#include "Box2D/Box2D/Box2D/Box2D.h"
 
 
 int main()
@@ -28,7 +29,7 @@ int main()
 	//DebugWindow::WatchClass("okno", 102);
 	//DebugWindow::WatchMethod(102, "kresli", 1);
 
-	
+
 	
 	return 0;
 }
