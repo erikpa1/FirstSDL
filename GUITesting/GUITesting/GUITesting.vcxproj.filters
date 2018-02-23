@@ -61,6 +61,15 @@
     <Filter Include="Source Files\EventHandler">
       <UniqueIdentifier>{708e83b5-3d5c-46a9-88ad-28530db93173}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\3D">
+      <UniqueIdentifier>{2955e2ed-f891-4190-8099-ac658e9abc76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3D\3Dobject">
+      <UniqueIdentifier>{2a0febdf-44c7-4132-a1d1-9c4e6077daa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3D\Material">
+      <UniqueIdentifier>{88c4b351-0445-471f-92f8-14f3b800e4bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Starter.cpp">

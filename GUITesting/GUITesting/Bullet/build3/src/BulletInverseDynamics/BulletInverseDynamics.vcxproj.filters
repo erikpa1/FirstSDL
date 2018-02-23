@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\IDMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\MultiBodyTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\details\MultiBodyTreeImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\IDConfig.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\IDConfigEigen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\IDMath.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\IDConfigBuiltin.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\IDErrorMessages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\MultiBodyTree.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\details\IDEigenInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\details\IDMatVec.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\details\IDLinearMathInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\details\MultiBodyTreeImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletInverseDynamics\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0756ABB0-C58D-3DB9-9612-D15B1F21A620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0DE68FD1-A4C2-333A-A38C-E1843F5A49AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

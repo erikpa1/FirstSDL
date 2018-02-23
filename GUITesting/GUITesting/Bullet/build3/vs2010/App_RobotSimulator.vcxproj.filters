@@ -2,58 +2,58 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="examples">
-      <UniqueIdentifier>{69871F46-8FE6-F047-A125-7F635C4D73B0}</UniqueIdentifier>
+      <UniqueIdentifier>{949C0556-8D39-074E-AD90-D0A5C233A4C6}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs">
-      <UniqueIdentifier>{F2D26ED2-002E-FC4C-BF38-6F48E53BAA3C}</UniqueIdentifier>
+      <UniqueIdentifier>{E69FF951-CA21-0246-B6C7-2B2276752F36}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Glew">
-      <UniqueIdentifier>{3068C138-22F9-504C-93B8-2A933585487F}</UniqueIdentifier>
+      <UniqueIdentifier>{4DD8B912-4F5E-4943-9FB9-E1E95B2F68F3}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\SharedMemory">
-      <UniqueIdentifier>{7ACE69C8-6A0B-9649-AB21-D81C66FC5BED}</UniqueIdentifier>
+      <UniqueIdentifier>{235E8A48-183E-B745-B352-96ECECDC969B}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\RobotSimulator">
-      <UniqueIdentifier>{28FA49D6-E4EB-B742-BF5B-922EF9318069}</UniqueIdentifier>
+      <UniqueIdentifier>{88DEF6F1-950E-8B42-B55E-E5E295606070}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ExampleBrowser">
-      <UniqueIdentifier>{ECD40A25-F7A2-194F-8707-36892BE92988}</UniqueIdentifier>
+      <UniqueIdentifier>{792C97DE-21C5-BD47-830B-F64D8A6EDD5A}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\TinyRenderer">
-      <UniqueIdentifier>{8A32CD96-9031-6E48-B391-8FA8182A08D1}</UniqueIdentifier>
+      <UniqueIdentifier>{964D5CE0-7CC2-6643-9D3E-102F21548A84}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Utils">
-      <UniqueIdentifier>{7E505A96-B64F-434D-9E6C-C453A2D68B53}</UniqueIdentifier>
+      <UniqueIdentifier>{0B7139FD-6A5C-784B-88BB-1B51021B1386}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\tinyxml">
-      <UniqueIdentifier>{5AD7C6E5-0621-5F4C-88DE-FF4F0AB0E9E1}</UniqueIdentifier>
+      <UniqueIdentifier>{91FFFCEC-B918-AE45-8A46-C91849CA769A}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Wavefront">
-      <UniqueIdentifier>{995175C2-70E9-D44C-B499-14C2800CA7EF}</UniqueIdentifier>
+      <UniqueIdentifier>{96257CDD-C88C-A548-9172-2DD15718782A}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Importers">
-      <UniqueIdentifier>{B5EEED5D-6C0C-7948-9FAF-F8C22F1CB65F}</UniqueIdentifier>
+      <UniqueIdentifier>{1954751A-715E-6A4A-9492-10C775E73717}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Importers\ImportColladaDemo">
-      <UniqueIdentifier>{4F103095-8E19-F942-9681-EB8CC41AC4E3}</UniqueIdentifier>
+      <UniqueIdentifier>{99674C26-53B8-CA47-B88A-5F7E9424C4ED}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Importers\ImportObjDemo">
-      <UniqueIdentifier>{46BB71A8-D0C4-B149-A8FF-D0CE240A41D8}</UniqueIdentifier>
+      <UniqueIdentifier>{0BCD81A2-687C-5645-A7AE-5D73589C1A28}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Importers\ImportMJCFDemo">
-      <UniqueIdentifier>{0E9ABF17-68A3-0344-B316-2B1E57DAEF55}</UniqueIdentifier>
+      <UniqueIdentifier>{CB95D328-D7B8-974D-B452-1D26DA0E62CC}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Importers\ImportURDFDemo">
-      <UniqueIdentifier>{024A1104-5F2C-7849-AAF7-6A60FFCE911E}</UniqueIdentifier>
+      <UniqueIdentifier>{571CDA96-8B8B-A944-A185-E40FB3CF03B5}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\MultiThreading">
-      <UniqueIdentifier>{BD18C149-01AB-EF41-BA2D-C234A6D36986}</UniqueIdentifier>
+      <UniqueIdentifier>{30E8268B-6A9C-4D42-88FE-31F9ADC5A765}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Importers\ImportMeshUtility">
-      <UniqueIdentifier>{2FE96C2D-FCC7-9E49-B8EB-885563481DD1}</UniqueIdentifier>
+      <UniqueIdentifier>{68313443-7BE6-594D-B209-6DD37C35056F}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\stb_image">
-      <UniqueIdentifier>{525559E1-2FDE-6449-B645-F088AC4CB4C7}</UniqueIdentifier>
+      <UniqueIdentifier>{17A1C428-53FF-9149-AE4F-68B5CDA05D3C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

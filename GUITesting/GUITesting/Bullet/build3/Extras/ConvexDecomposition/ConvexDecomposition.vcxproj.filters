@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\bestfitobb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\ConvexBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\cd_wavefront.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\fitsphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\meshvolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\raytri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\vlookup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\bestfit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\cd_hull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\ConvexDecomposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\concavity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\float_math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\planetri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\splitplane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\ConvexDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\cd_vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\concavity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\bestfitobb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\ConvexBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\cd_wavefront.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\fitsphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\meshvolume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\raytri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\vlookup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\bestfit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\cd_hull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\ConvexDecomposition\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0756ABB0-C58D-3DB9-9612-D15B1F21A620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0DE68FD1-A4C2-333A-A38C-E1843F5A49AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

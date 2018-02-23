@@ -2,16 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="test">
-      <UniqueIdentifier>{67230671-3E0F-1C4C-943A-A78AB20416DC}</UniqueIdentifier>
+      <UniqueIdentifier>{17B0672C-E059-8A40-A59B-D1F5B199A105}</UniqueIdentifier>
     </Filter>
     <Filter Include="test\enet">
-      <UniqueIdentifier>{7E6C5485-C43D-364C-9D0E-A616FCEEC1D2}</UniqueIdentifier>
+      <UniqueIdentifier>{38DCAFDB-CECE-FF4E-8BC2-F902A8C1C59A}</UniqueIdentifier>
     </Filter>
     <Filter Include="test\enet\nat_punchthrough">
-      <UniqueIdentifier>{C4ADA8E9-AFCD-5C4E-8D89-6C1EF8AF7863}</UniqueIdentifier>
+      <UniqueIdentifier>{B8D7DAA7-F7BB-D349-A36C-561057CBCDB2}</UniqueIdentifier>
     </Filter>
     <Filter Include="test\enet\nat_punchthrough\server">
-      <UniqueIdentifier>{829D6B2A-6B5E-B549-941A-7747BE0787AE}</UniqueIdentifier>
+      <UniqueIdentifier>{02EE459A-9E30-EA41-9086-DCD3CDB4B485}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

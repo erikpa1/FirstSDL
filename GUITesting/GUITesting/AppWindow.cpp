@@ -3,12 +3,15 @@
 #include "Buton.h"
 #include "EventReactable.h"
 #include <iostream>
+#include "SFML/OpenGL.hpp"
 
 
 AppWindow::AppWindow()
 {
 	this->_window = new sf::RenderWindow(sf::VideoMode(800, 600), "Its working");
-	
+
+
+
 }
 
 

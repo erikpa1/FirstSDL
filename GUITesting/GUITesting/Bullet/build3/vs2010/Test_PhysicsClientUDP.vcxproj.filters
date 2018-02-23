@@ -2,22 +2,22 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="test">
-      <UniqueIdentifier>{E68E5DB4-49B9-6A4E-9175-2248444104F5}</UniqueIdentifier>
+      <UniqueIdentifier>{633E34CF-2E21-CF4C-ACD4-E0E067F8C03F}</UniqueIdentifier>
     </Filter>
     <Filter Include="test\SharedMemory">
-      <UniqueIdentifier>{D248FC22-818B-2543-B237-A1743B8857EE}</UniqueIdentifier>
+      <UniqueIdentifier>{3EB10FD7-FE29-9041-B514-79CE003B5872}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples">
-      <UniqueIdentifier>{2524513D-3072-CE42-A6EC-B25352262DA3}</UniqueIdentifier>
+      <UniqueIdentifier>{2FA390F6-C7F3-9C43-B329-210B26C34232}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\SharedMemory">
-      <UniqueIdentifier>{39E8147B-9A7E-4048-BE8C-F812543B8C4A}</UniqueIdentifier>
+      <UniqueIdentifier>{08D2C448-9D1E-C347-9CE8-9D8644C6C304}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Utils">
-      <UniqueIdentifier>{0174A316-D0EB-4B48-A05C-48729D0D6FC9}</UniqueIdentifier>
+      <UniqueIdentifier>{4C0FAC4F-C1A7-FE42-9229-D58E29BA08A3}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\MultiThreading">
-      <UniqueIdentifier>{3AD2114B-5813-EE47-9B74-182964A26614}</UniqueIdentifier>
+      <UniqueIdentifier>{20491196-BFED-0248-93F4-001ACF95DDCF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

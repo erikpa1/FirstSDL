@@ -2,43 +2,43 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="examples">
-      <UniqueIdentifier>{3A77E34A-96FF-D448-8FCD-9D26ECC2A45E}</UniqueIdentifier>
+      <UniqueIdentifier>{9ED0E9C6-2BB2-6449-850C-C834AB0D46D0}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs">
-      <UniqueIdentifier>{18611AAC-8AFA-9A40-92F3-10DA9C48F2AD}</UniqueIdentifier>
+      <UniqueIdentifier>{4ADD0CC8-FC46-E745-93C1-F07CBCFC0AFC}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Glew">
-      <UniqueIdentifier>{FDC192CF-91E0-D34E-A583-8A85A2C27AF8}</UniqueIdentifier>
+      <UniqueIdentifier>{59FF0E96-02CB-C14E-8B6F-0B0E503EC360}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen">
-      <UniqueIdentifier>{B7668C48-B0B3-9F4C-B7EE-06DE0219FB1E}</UniqueIdentifier>
+      <UniqueIdentifier>{F69C7666-62F6-964D-A6BB-D46041F75AC4}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Controls">
-      <UniqueIdentifier>{983BC062-D45D-8B4A-8241-F06889E14631}</UniqueIdentifier>
+      <UniqueIdentifier>{CF12AC21-B70B-0B44-884C-8E76A4E87F42}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Controls\Dialog">
-      <UniqueIdentifier>{2814E577-48FE-8349-919D-A89F5886DF8B}</UniqueIdentifier>
+      <UniqueIdentifier>{6CF4C7ED-08A8-C040-B9CC-6B0E0C4DE662}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Controls\Dialogs">
-      <UniqueIdentifier>{DEEC7298-34A5-FB4C-B900-F45AE0488528}</UniqueIdentifier>
+      <UniqueIdentifier>{217A4732-FF55-7D4D-B39F-A248FB61FD18}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Controls\Layout">
-      <UniqueIdentifier>{CEE84F31-A0EB-5F40-BCF9-FCE290E4B909}</UniqueIdentifier>
+      <UniqueIdentifier>{4A8B4109-7FBA-3140-B539-AD8BB77D5A34}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Controls\Property">
-      <UniqueIdentifier>{1B828A75-4017-6744-A651-A46D98A24AF2}</UniqueIdentifier>
+      <UniqueIdentifier>{A4656CD7-4787-AE4A-9BB8-A92E655E0CB4}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Input">
-      <UniqueIdentifier>{632F8CB7-35FA-B84E-A3B8-25C2AB6B4E04}</UniqueIdentifier>
+      <UniqueIdentifier>{5B256847-1CAA-BA4F-ADA8-FFC6FDB11506}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Platforms">
-      <UniqueIdentifier>{7E60FB22-006B-6C40-9FA4-3E2248D28E39}</UniqueIdentifier>
+      <UniqueIdentifier>{927D6598-530F-6741-86BF-2A9ECEE79C89}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Renderers">
-      <UniqueIdentifier>{13668A56-19E1-BD41-9EF5-DC711C9998DB}</UniqueIdentifier>
+      <UniqueIdentifier>{70E68044-CC3D-8F42-9FD7-F56D46CEFE50}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Gwen\Skins">
-      <UniqueIdentifier>{68616EFA-819C-F349-B6B4-339BD99FEB99}</UniqueIdentifier>
+      <UniqueIdentifier>{C623DC46-BCEE-1248-A799-B8845280784D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -2,13 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{BF448434-7514-3049-9893-EAA6CA6CC506}</UniqueIdentifier>
+      <UniqueIdentifier>{D830EB17-548A-9241-A409-956BB8527654}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\BulletInverseDynamics">
-      <UniqueIdentifier>{D0AD4C27-CF7B-8C48-AEEB-56D22495441C}</UniqueIdentifier>
+      <UniqueIdentifier>{50742439-7ED4-BF4D-B687-AEFF75E88269}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\BulletInverseDynamics\details">
-      <UniqueIdentifier>{190F3F00-F6B8-3347-964E-555BC26FA2A0}</UniqueIdentifier>
+      <UniqueIdentifier>{1E3381C6-5D34-8B44-92BF-C7FB9FBECB75}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

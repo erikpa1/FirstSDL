@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\ExampleEntries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\Chain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\Bridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\RigidBodyFromObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\SimpleBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\MultipleBoxes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\SimpleCloth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\SimpleJoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\NewtonsCradle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\InclinedPlane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\MultiPendulum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\TinyRenderer\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\TinyRenderer\model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\TinyRenderer\tgaimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\TinyRenderer\our_gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\TinyRenderer\TinyRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\TinyRendererVisualShapeConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\IKTrajectoryHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsClientSharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsClientSharedMemory_C_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsClientC_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsServerExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsServerExampleBullet2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsClientExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PosixSharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\Win32SharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\InProcessMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsServerSharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsDirect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsDirectC_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\SharedMemoryInProcessPhysicsC_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsLoopBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsLoopBackC_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsServerCommandProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\b3PluginManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RobotSimulator\b3RobotSimulatorClientAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\BasicDemo\BasicExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\InverseDynamics\InverseDynamicsExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\InverseKinematics\InverseKinematicsExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ForkLift\ForkLiftDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreadedDemo\MultiThreadedDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreadedDemo\CommonRigidBodyMTBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Tutorial\Tutorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Tutorial\Dof6ConstraintTutorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Evolution\NN3DWalkers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\NewtonsRopeCradle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\CollisionSdkC_Api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\CollisionTutorialBullet2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\Internal\Bullet2CollisionSdk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\Internal\RealTimeBullet3CollisionSdk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\GyroscopicDemo\GyroscopicSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Planar2D\Planar2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RollingFrictionDemo\RollingFrictionDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\FractureDemo\FractureDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\FractureDemo\btFractureBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\FractureDemo\btFractureDynamicsWorld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\DynamicControlDemo\MotorDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreading\MultiThreadingExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreading\b3PosixThreadSupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreading\b3Win32ThreadSupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreading\b3ThreadSupportInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreading\btTaskScheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\TinyRendererSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\TimeSeriesCanvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\TimeSeriesFontData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\DynamicTexturedCubeDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\TinyVRGui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RoboticsLearning\GripperGraspExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RoboticsLearning\R2D2GraspExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RoboticsLearning\KukaGraspExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\CoordinateSystemDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\RaytracerSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\RenderInstancingDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\TimeSeriesExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Benchmarks\BenchmarkDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Raycast\RaytestDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportBullet\SerializeSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\Serialize\BulletFileLoader\bChunk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\Serialize\BulletFileLoader\bFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\Serialize\BulletFileLoader\bDNA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\Extras\Serialize\BulletFileLoader\btBulletFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportMJCFDemo\ImportMJCFSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportBsp\BspConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportBsp\BspLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportBsp\ImportBspExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportColladaDemo\ImportColladaSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportObjDemo\ImportObjExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportObjDemo\LoadMeshFromObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportSTLDemo\ImportSTLSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportSDFDemo\ImportSDFSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\ImportURDFSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\URDF2Bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\UrdfParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\RobotLoggingUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\urdfStringSplit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\BulletUrdfImporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\VoronoiFracture\VoronoiFractureDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\VoronoiFracture\btConvexConvexMprAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Vehicles\Hinge2Vehicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\Pendulum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\MultiBodySoftContact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\TestJointTorqueSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\InvertedPendulumPDControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\MultiBodyConstraintFeedback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\MultiDofDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RigidBody\RigidBodySoftContact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Constraints\TestHingeTorque.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Constraints\ConstraintDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Constraints\Dof6Spring2Setup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Constraints\ConstraintPhysicsSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ThirdPartyLibs\stb_image\stb_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ThirdPartyLibs\tinyxml\tinystr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ThirdPartyLibs\tinyxml\tinyxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ThirdPartyLibs\tinyxml\tinyxmlerror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ThirdPartyLibs\tinyxml\tinyxmlparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\InProcessExampleBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\ExampleEntries.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\Chain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\Bridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\RigidBodyFromObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\SimpleBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\MultipleBoxes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\SimpleCloth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\SimpleJoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\NewtonsCradle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\InclinedPlane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\MultiPendulum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\TinyRendererVisualShapeConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\IKTrajectoryHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsDirect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsDirectC_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsLoopBack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsLoopBackC_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\PhysicsServerCommandProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\SharedMemoryCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\SharedMemory\SharedMemoryPublic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RobotSimulator\b3RobotSimulatorClientAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\BasicDemo\BasicExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\InverseDynamics\InverseDynamicsExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\InverseKinematics\InverseKinematicsExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ForkLift\ForkLiftDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreadedDemo\MultiThreadedDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiThreadedDemo\CommonRigidBodyMTBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Tutorial\Tutorial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Tutorial\Dof6ConstraintTutorial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Evolution\NN3DWalkers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Evolution\NN3DWalkersTimeWarpBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExtendedTutorials\NewtonsRopeCradle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\CollisionSdkC_Api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\CollisionTutorialBullet2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\Internal\Bullet2CollisionSdk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\Internal\CollisionSdkInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Collision\Internal\RealTimeBullet3CollisionSdk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\GyroscopicDemo\GyroscopicSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Planar2D\Planar2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RollingFrictionDemo\RollingFrictionDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\FractureDemo\FractureDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\FractureDemo\btFractureBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\FractureDemo\btFractureDynamicsWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\DynamicControlDemo\MotorDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\TimeSeriesCanvas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\TimeSeriesFontData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\DynamicTexturedCubeDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\TinyVRGui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RoboticsLearning\GripperGraspExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RoboticsLearning\R2D2GraspExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RoboticsLearning\KukaGraspExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\CoordinateSystemDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\RaytracerSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\RenderingExamples\RenderInstancingDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Benchmarks\BenchmarkDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Benchmarks\landscapeData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Benchmarks\TaruData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportBsp\BspConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportBullet\SerializeSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportBsp\BspLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportBsp\ImportBspExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportColladaDemo\btMatrix4x4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportColladaDemo\ColladaGraphicsInstance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportColladaDemo\ImportColladaSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportObjDemo\ImportObjExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportObjDemo\LoadMeshFromObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportSTLDemo\ImportSTLSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportSTLDemo\LoadMeshFromSTL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\ConvertRigidBodies2MultiBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\ImportURDFSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\URDF2Bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\urdf_samples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportMJCFDemo\ImportMJCFSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\RobotLoggingUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\urdfStringSplit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Importers\ImportURDFDemo\BulletUrdfImporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\VoronoiFracture\VoronoiFractureDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\VoronoiFracture\btConvexConvexMprAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Vehicles\Hinge2Vehicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\TestJointTorqueSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\InvertedPendulumPDControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\MultiBody\MultiDofDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Constraints\TestHingeTorque.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Constraints\ConstraintDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Constraints\Dof6Spring2Setup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Constraints\ConstraintPhysicsSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ThirdPartyLibs\stb_image\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\build3\bullet.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0756ABB0-C58D-3DB9-9612-D15B1F21A620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0DE68FD1-A4C2-333A-A38C-E1843F5A49AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

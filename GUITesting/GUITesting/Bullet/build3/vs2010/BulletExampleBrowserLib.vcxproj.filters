@@ -2,28 +2,28 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{C75AA982-7333-6B4E-9816-722F55F00AFD}</UniqueIdentifier>
+      <UniqueIdentifier>{FDDCA38F-8562-3F41-8BA9-C6BCBE527DBB}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\clew">
-      <UniqueIdentifier>{524D47B4-A6E1-2C40-BAE0-567F24BE32F6}</UniqueIdentifier>
+      <UniqueIdentifier>{EC5DF027-8A4C-E24C-BDC2-C91FFA014B9E}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples">
-      <UniqueIdentifier>{8310177A-08C2-8E46-AF6D-BE16D2C4A4CD}</UniqueIdentifier>
+      <UniqueIdentifier>{567B403F-E0FA-494B-8811-EAD8DEF33A54}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs">
-      <UniqueIdentifier>{A2BB6061-378E-9146-90C7-71617DB5F35A}</UniqueIdentifier>
+      <UniqueIdentifier>{6861CFF6-9A25-8846-AAEC-1F983AC4F1DB}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Glew">
-      <UniqueIdentifier>{A49C09F3-E5ED-8A41-B9CC-21659839E81B}</UniqueIdentifier>
+      <UniqueIdentifier>{E14FB529-A819-9C42-967F-65D91C6FBF35}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ExampleBrowser">
-      <UniqueIdentifier>{59863657-5601-0D47-A4A2-7DC6C7361513}</UniqueIdentifier>
+      <UniqueIdentifier>{C159B1D8-FF96-F548-BF18-E7ABA55F6E3C}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Utils">
-      <UniqueIdentifier>{5CBF2742-4DE0-9E4D-B199-9C7BA586734D}</UniqueIdentifier>
+      <UniqueIdentifier>{7D605B74-FC83-7447-B659-7D386F117920}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ExampleBrowser\GwenGUISupport">
-      <UniqueIdentifier>{44919ED5-5B7F-1142-8279-6D79EDB55AEE}</UniqueIdentifier>
+      <UniqueIdentifier>{0985DFBE-AAA1-E743-A5CD-602423A8AB35}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

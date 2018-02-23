@@ -2,16 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="examples">
-      <UniqueIdentifier>{78933F8A-D517-ED41-B0BD-3CE15E41E87C}</UniqueIdentifier>
+      <UniqueIdentifier>{96FA45F2-787A-6541-936A-6B74EA3CEF24}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs">
-      <UniqueIdentifier>{5C28AE0D-ACA1-2644-9C77-A5F1FB45C9B5}</UniqueIdentifier>
+      <UniqueIdentifier>{AA793E54-D7FA-2844-B4F5-602083652F97}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\ThirdPartyLibs\Glew">
-      <UniqueIdentifier>{E3FAA236-357E-084D-AF45-0BF2ED4860B1}</UniqueIdentifier>
+      <UniqueIdentifier>{29CCE78F-85D7-9D41-9409-6895B3C83631}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\OpenGLWindow">
-      <UniqueIdentifier>{14E50F0E-376A-5A4B-9EBA-5938883FF8CE}</UniqueIdentifier>
+      <UniqueIdentifier>{91C14044-9FEB-A441-AC21-1A17EED86E07}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodyHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftRigidCollisionAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftRigidDynamicsWorld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftMultiBodyDynamicsWorld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftSoftCollisionAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btDefaultSoftBodySolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodyData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodyHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftRigidCollisionAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftRigidDynamicsWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftMultiBodyDynamicsWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftSoftCollisionAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSparseSDF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodySolvers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btDefaultSoftBodySolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\btSoftBodySolverVertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\src\BulletSoftBody\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0756ABB0-C58D-3DB9-9612-D15B1F21A620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0DE68FD1-A4C2-333A-A38C-E1843F5A49AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

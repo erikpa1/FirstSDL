@@ -2,22 +2,22 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{75DD5129-D22B-604A-8C28-1C0FD1C2CD74}</UniqueIdentifier>
+      <UniqueIdentifier>{992B5C7B-FE3C-D544-8A0A-5F554007952D}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Bullet3Collision">
-      <UniqueIdentifier>{17D3282A-340D-3F44-9C7C-A6C0947BCDF3}</UniqueIdentifier>
+      <UniqueIdentifier>{CC86EDA3-F9B6-FE45-B478-559D2F8F566C}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Bullet3Collision\BroadPhaseCollision">
-      <UniqueIdentifier>{613AF94C-FBB0-2845-81E2-37F2497EFC75}</UniqueIdentifier>
+      <UniqueIdentifier>{DD7F6C6F-D044-6E42-972A-27DAF7074986}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Bullet3Collision\NarrowPhaseCollision">
-      <UniqueIdentifier>{F5967105-2D62-3247-86B6-3356F392EFED}</UniqueIdentifier>
+      <UniqueIdentifier>{D6DDFB53-8DF5-1445-94CF-CF1545506086}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Bullet3Collision\BroadPhaseCollision\shared">
-      <UniqueIdentifier>{ABBA40DA-6890-494D-827A-E867CAA98CE6}</UniqueIdentifier>
+      <UniqueIdentifier>{BFBE30FB-40CE-844C-95F7-B906760CBCBF}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Bullet3Collision\NarrowPhaseCollision\shared">
-      <UniqueIdentifier>{ED9136A1-CC92-CC4A-BFF6-5FE0B5EECFB8}</UniqueIdentifier>
+      <UniqueIdentifier>{5588C5D3-76BF-784C-B5A8-ADBB0AD9BEC2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

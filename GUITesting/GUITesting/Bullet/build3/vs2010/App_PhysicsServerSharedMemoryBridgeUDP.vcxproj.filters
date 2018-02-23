@@ -2,16 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="examples">
-      <UniqueIdentifier>{2C93CA8C-2052-AD44-B732-002A3E8CF74D}</UniqueIdentifier>
+      <UniqueIdentifier>{70EE8AD5-3443-354F-A861-DEC7666C612F}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\SharedMemory">
-      <UniqueIdentifier>{E9E4FEB5-9309-6E43-B8BF-28CC2E9B853C}</UniqueIdentifier>
+      <UniqueIdentifier>{F75E1054-4356-B24B-8F9E-675150658E04}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\SharedMemory\udp">
-      <UniqueIdentifier>{4DC556F2-CBD5-9849-909E-E57AC60B3FC6}</UniqueIdentifier>
+      <UniqueIdentifier>{F5458BCD-77A3-734D-BDD0-6B33083A1FCC}</UniqueIdentifier>
     </Filter>
     <Filter Include="examples\Utils">
-      <UniqueIdentifier>{F6631F96-5D98-1F42-9B00-F6A12675D070}</UniqueIdentifier>
+      <UniqueIdentifier>{AA2C82EB-5D63-C74F-8C22-56D570A66371}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

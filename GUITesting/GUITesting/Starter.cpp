@@ -10,7 +10,10 @@
 #include "SQLite/sqlite3.h"
 #include "PipeServer.h"
 #include "PipeClient.h"
-#include "Box2D/Box2D/Box2D/Box2D.h"
+#include "Bullet/src/btBulletCollisionCommon.h"
+#include "Bullet/src/btBulletDynamicsCommon.h"
+
+
 
 
 int main()
@@ -18,11 +21,8 @@ int main()
 	AppWindow window;		
 	Buton* buton = new Buton(10, 10, 100, 50);	
 	window.AddElement(buton);
-	
-
 	TestObject obj;
 	TestObject *pobj;
-
 	window.IndependentStart();
 	//app.AddWindow(window);	
 	//app.TickAutomaticly();

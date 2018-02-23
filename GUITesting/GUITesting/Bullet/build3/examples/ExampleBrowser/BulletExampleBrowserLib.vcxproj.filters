@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\OpenGLExampleBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\OpenGLGuiHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GL_ShapeDrawer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\CollisionShape2TriangleMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\b3Clock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\ChromeTraceUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\b3ResourcePath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\GraphingTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\GwenParameterInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\GwenProfileWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\GwenTextureWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\gwenUserInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\CollisionShape2TriangleMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\b3Clock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\ChromeTraceUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\b3ResourcePath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\b3ERPCFMHelper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\Utils\b3ReferenceFrameHelper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\GraphingTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\GwenParameterInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\GwenProfileWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\GwenTextureWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\gwenInternalData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\GwenGUISupport\gwenUserInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Tvorba\Programovanie\GitRepo\FirstSDL\GUITesting\GUITesting\Bullet\examples\ExampleBrowser\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0756ABB0-C58D-3DB9-9612-D15B1F21A620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0DE68FD1-A4C2-333A-A38C-E1843F5A49AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
