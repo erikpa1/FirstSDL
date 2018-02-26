@@ -7,15 +7,29 @@ using namespace std;
 int bitIndexOfBitMask(const byte * bytes,const int bytesCount, byte bitMask)
 {
 
-	void* helpPointer;
+	byte* helpPointer = new byte[bytesCount];
+	memcpy(helpPointer, bytes, bytesCount);
 
-	for (auto i = 0; i < bytesCount * size_t(bytes); i++)
+	for (auto i = 0; i < bytesCount * sizeof(bytes); i++)
 	{
-		int a = (char)(helpPointer) ^ bitMask;
-		if (a == 0)
-		{		
+		byte c = *helpPointer ^ bitMask;
+		if (c == 0)
+		{
 			return i;
-		}						
+		} else
+		{
+			for (auto a = 0; a < bytesCount; a++)
+			{
+				if (helpPointer[a] >= 128 &&  a != 0)
+				{
+					helpPointer[a] <<= 1;
+					helpPointer[a - 1] += 1;
+				} else
+				{
+					helpPointer[a] <<= 1;
+				}
+			}
+		}
 	}
 	
 	return -1;
@@ -25,12 +39,11 @@ int bitIndexOfBitMask(const byte * bytes,const int bytesCount, byte bitMask)
 int main()
 {
 
-	byte byteArray[4] = { 0, 256, 2, 2 };
+	byte byteArray[7] = { 0, 256, 2, 0, 0, 0, 6};
 	byte bitMask = 3;
-	*(byteArray+1) <<= 1;
-	
 
-	int firstBit = bitIndexOfBitMask(byteArray, 4, bitMask);
+
+	int firstBit = bitIndexOfBitMask(byteArray, 7, bitMask);
 
 
 
