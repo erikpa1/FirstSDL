@@ -1,0 +1,19 @@
+
+    // implementacia on click listenera pomocou anonymnej triedy
+     btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://www.google.com/#q=" + check.getText().toString());
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+
+            }
+        });
+
+        check = (CheckBox)findViewById(R.id.checkBox);
+// impelementacia ukladania dat
+        SharedPreferences prefReader =
+                getPreferences(MODE_PRIVATE);
+        Boolean checked = prefReader.getBoolean("checkBox",false);
+        check.setChecked(checked);

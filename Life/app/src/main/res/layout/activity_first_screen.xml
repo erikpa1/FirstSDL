@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="life.life.FirstScreen">
 
     <Button
@@ -14,7 +15,14 @@
         android:onClick="on_lean"
         android:text="Learn"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="123dp" />
+        tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/textView_basic"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="TextView" />
 
     <Button
         android:id="@+id/button_notes"
@@ -23,7 +31,22 @@
         android:onClick="on_notes"
         android:text="NOTES"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="183dp" />
+        tools:layout_editor_absoluteY="182dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBox" />
+
+    <Button
+        android:id="@+id/button_test"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_weight="1"
+        android:text="Button"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="76dp" />
 
     <Button
         android:id="@+id/button_reminder"
@@ -42,4 +65,4 @@
         android:text="My sleep"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="309dp" />
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

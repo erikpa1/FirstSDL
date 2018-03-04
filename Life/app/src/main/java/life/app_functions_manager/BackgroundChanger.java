@@ -6,7 +6,6 @@ package life.app_functions_manager;
 import android.media.Image;
 import android.view.View;
 import android.widget.ImageView;
-
 import java.util.TimerTask;
 
 import life.life.R;
